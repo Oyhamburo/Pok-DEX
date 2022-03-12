@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(218, 246, 255);*/
+    font-style: italic;
+}
+body{
+    background-color: rgb(218, 246, 255);
+}
+/* Titulo*/
+.Titulo{
+    text-align: center;
+    background-color: red;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 600px;
+}
+/*fin*/
+
+
+/* Inicio barra navegación*/
+.Menu__Logo{
+    width: 150px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+.Menu{ 
+    background-color: #DC0A2D;
+    padding: 2px;
+    text-decoration: none;
+}
+.Menu__Completo{
+    display: flex;
+    justify-content: space-between;
+}
+.Menu__Principal{
+    display: flex;
+    align-items: center;
+}
+.Menu__Wallet{
+    display: flex;
+    align-items: center;
+}
+.Menu__Button{
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    font-family: 'Digital Numbers', sans-serif;
+    color: green;
+}
+.Menu__Desplegable{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.Menu__Desplegado{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.Menu__Desplegable:hover .Menu__Desplegado{
+    display: block;
+}
+.Menu__Desplegado__Link{
+    text-align: center;
+    padding: 10px;
+}
+.Menu__Desplegado__Estilo{
+    color: green;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+.Menu__Para__Celular{
+    position: fixed;
+    visibility: hidden;
+}
+@media only screen and (max-width: 1000px)
+{
+    .Menu__Celular{
+        position: fixed;
+        visibility: hidden;
+    }
+    .Menu__Para__Celular{
+        position: relative;
+        visibility: visible;
+    }
+    .Menu__Desplegable{
+        position: fixed;
+        display: none;
+        cursor: none;
+    }
+    .Menu__Desplegado{
+        display: none;
+        position: none;
+        background-color: none;
+        min-width: none;
+        padding: none;
+        z-index: none;
+        border-radius: none;
+    }
+    .Menu__Desplegable:hover .Menu__Desplegado{
+        display: none;
+    }
+    .Menu__Desplegado__Link{
+        text-align: none;
+        padding: none;
+        display: flex;
+    }
+    
+    
+
+
+
+    .Menu__Celular__Desplegable{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .Menu__Celular__Desplegado{
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 1500px 300px;
+        padding: 100px 20px;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .Menu__Celular__Desplegable:hover .Menu__Celular__Desplegado{
+        display: block;
+    }
+    .Menu__Celular__Estilo{
+        padding: 0px 30px 30px 30px;
+    }
+
+}
+/*Fin Barra Navegación*/
+
+/*Inicio SubMenu Exchange*/
+.SubMenu{
+    background-color: aliceblue;
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.SubMenuSombra{
+    padding: 5px 0px 5px 0px;
+    border-radius: 15px;
+    background-color: #DC0A2D;
+}
+.SubMenuOn{
+    background-color: #000000;
+    color: green;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+
+}
+.SubMenuOff{
+    color: rgb(182, 237, 255);
+    background-color: #DC0A2D;
+    border-radius: 15px;
+
+
+}
+
+/*Fin SubMenu*/
+
+/*Incio Swap*/
+
+.ContainerSwap{
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+    background-color: rgb(218, 246, 255);
+}
+.ContainerSwapTitulo{
+    border: solid gray 1px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 15px 0px 15px 0px;
+}
+.Swap{
+    background-color: aliceblue;
+}
+.SwapFrom{
+    background-color: rgb(190, 213, 221);
+    border-radius: 20px 20px 0px 0px;
+
+}
+.SwapToken{
+    background-color: rgb(190, 213, 221);
+    border-radius: 15px;
+    margin: 20px 20px 45px 20px;
+}
+.SwapForm{
+    padding-top: 20px;
+    border: solid gray 1px;
+    border-radius: 0px 0px 20px 20px;
+}
+.SwapButtom{
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+}
+.Pika_Elegante{
+    display: flex;
+    justify-content: space-between;
+}
+.PikaL_Gante{
+    width: 180px;
+    height: 240px;
+}
+/*Fin Swap*/
+/*Pika trader inicio*/
+article img{
+    width: 10%;
+}
+/*Pika trader fin*/
+/*incio Footer*/
+
+.Footer__Fondo{
+    background-color: rgb(36, 37, 51);
+    text-align: center;
+}
+.Footer__Social{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+.Footer__Estilo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.ImgCoder{
+    border-radius: 20px;
+    width: 200px;
+    height: 100px ;
+}
+.ImgNintendo{
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+/*Fin Footer*/
+
+/* Incio Farms */
+/*Inicio Farms encabezado*/
+
+.EncabezadoFarms{
+    padding: 50px;
+    background-color: rgb(133, 204, 228);
+}
+/*Fin Farms encabezado*/
+/*Inicio Famrs*/
+.Farm__Container{
+    display: flex;
+    justify-content: space-around;
+}
+.ArticleFarm{
+    background-color: rgb(240, 248, 255);
+    text-align: center;
+    margin-top: 3%;
+}
+.FarmRecuadro{
+    border: solid;
+    border-radius: 15px;
+    background-color: rgb(220, 10, 45);
+    width: 450px;
+}
+.ParLP{
+    width: 25%;
+    border: 5px;
+    margin: 5px;
+    margin-right: 100px;
+    
+}
+.FarmPar{
+    margin-left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
+.FarmTitulo{
+    vertical-align: middle;
+    padding-bottom: 15px;
+}
+.FarmPantalla{
+    color: green;
+    background-color: #000000;
+    margin: 20px;
+    border: solid grey 17px;
+    border-radius: 5px;
+    padding: 20px 0px 20px 0px;
+    font-family: 'Digital Numbers', sans-serif;
+}
+.FarmL{
+    margin-right: 100px;
+}
+.FarmR{
+    margin-left: 100px;
+}
+.FarmL2{
+    margin-right: 70px;
+}
+.FarmR2{
+    margin-left: 70px;
+}
+.FarmApr{
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.FarmEarn{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.FarmEarned{
+    font-weight: bold;
+}
+.FarmL3{
+    margin-right: 120px;
+}
+.FarmR3{
+    margin-left: 70px;
+}
+.Harvest{
+    background-color: #000000;
+    color: green;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Digital Numbers', sans-serif;
+}
+.FarmEnabeleContract{
+    background-color: #000000;
+    color: green;
+    font-family: 'Digital Numbers', sans-serif;
+    padding: 15px 70px 15px 70px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 1000px){
+    .Farm__Container{
+        flex-direction: column;
+    }
+    .FarmRecuadro{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*Fin Farms*/
+
+/*.BackIMG{
+    background-image: url(../imagenes/FinalPokemoEsmeralda.jpg);
+}*/
+.BackIMG1{
+    background-image: url(../imagenes/Fondo\ negro.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.BackIMG2{
+    background-image: url(../imagenes/FondoPokemonArceus.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+ .BackIMG3{
+     background-image: url(../imagenes/Fondo\ NFT.png);
+     background-repeat: no-repeat;
+     background-attachment: fixed;  
+     background-size: cover;
+ }
+.BackIMG4{
+    background-image: url(../imagenes/FondoPokexOpen.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+
+ /* Inicio Pagina NFT*/
+
+ .MenuNFT{
+     margin-top: 100px;
+     margin-left: 100px;
+     background-color: black;
+     border: solid grey 25px;
+     border-radius: 15px;
+     width: 650px;
+ }
+
+ .NFT{
+     border-radius: 5px;
+     width: 20%;
+     margin: 5%;
+ }
+ .MenuNFTDiv{
+     text-align: center;
+ }
+.MenuSell{
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-family: 'Digital Numbers', sans-serif;
+}
+.MenuSellButton{
+    font-family: 'Digital Numbers', sans-serif;
+    background-color: #000000;
+    border-radius: 15px;
+    color: green;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/*Comienzo cuadro Pagina Incial*/
+
+.Item{
+    border-radius: 40px;
+    font-family: 'Fredoka', sans-serif;
+}
+.Item1{ grid-area: Header;
+    background-image: url(../imagenes/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding: 100px;
+    }
+    .Item2{ grid-area: NFT;
+    background-image: url(../imagenes/Venasur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    }
+    .Item3{ grid-area: TVL;
+        background-color: #000000;
+        color: aliceblue;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: bold;
+    }
+    .Item4{ grid-area: Farm;
+    background-image: url(../imagenes/Charizard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 70px 0px 130px 0px;
+    }
+    .Item5{ grid-area: Pool;
+    background-image: url(../imagenes/Blastoid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 70px 0px 130px 0px;
+    }
+    .Item6{ grid-area: Info;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 10px;
+    }
+    .Item7{ grid-area: Twitter;
+    background-color: black;
+    color: white;
+    }
+    .Item__Relleno{
+        background-image: url(../imagenes/Iniciales.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .Grid__Container{
+        text-align: center;
+        display: grid;
+        grid-template-areas:    
+                'Header Header Header Header Header Header Header Header'
+                'NFT NFT NFT TVL TVL TVL TVL TVL'
+                'NFT NFT NFT Farm Farm x Pool Pool'
+                'Info Info Info Info Twitter Twitter Twitter Twitter';
+        row-gap: 20px;
+        column-gap: 10px;
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .Item__Titulo{
+        font-size: 50px;
+        font-weight: 1200;
+    }
+    .Item__Sub{
+        font-size: 30px;
+        font-weight: 1200;
+    }
+    .Item__NFT{
+        width: 100px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .Item__NFT__Button{
+        background-color: #000000;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+        color: green;
+    }
+    .Item__Stats{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        font-weight: bold;
+    }
+    @media only screen and (max-width: 1100px){
+
+        .Item{
+            border-radius: 40px;
+            font-family: 'Fredoka', sans-serif;
+        }
+        .Item1{ grid-area: Header;
+            background-image: url(../imagenes/Header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+            padding: 100px;
+            }
+            .Item2{ grid-area: NFT;
+            background-image: url(../imagenes/Venasur.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            }
+            .Item3{ grid-area: TVL;
+            background-color: #000000;
+            color: aliceblue;
+            padding-top: 200px;
+            font-weight: bold;
+            }
+            .Item4{ grid-area: Farm;
+            background-image: url(../imagenes/Charizard.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 150px 0px 130px 0px;
+            }
+            .Item5{ grid-area: Pool;
+            background-image: url(../imagenes/Blastoid.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-weight: bold;
+            color: aliceblue;
+            padding: 150px 0px 130px 0px;
+            }
+            .Item6{ grid-area: Info;
+            background-color: black;
+            color: aliceblue;
+            padding-top: 10px;
+            }
+            .Item7{ grid-area: Twitter;
+            background-color: black;
+            color: white;
+            }
+            .Item__Relleno{
+                background-image: url(../imagenes/Iniciales.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            
+            .Grid__Container{
+                text-align: center;
+                display: grid;
+                grid-template-areas:    
+                        'Header Header Header Header'
+                        'NFT NFT TVL TVL'
+                        'Farm Farm Pool Pool'
+                        'Info Info Twitter Twitter';
+                row-gap: 20px;
+                column-gap: 10px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .Item__Titulo{
+                font-size: 50px;
+                font-weight: 1200;
+            }
+            .Item__Sub{
+                font-size: 30px;
+                font-weight: 1200;
+            }
+            .Item__NFT{
+                width: 100px;
+                padding: 5px;
+                border-radius: 15px;
+            }
+            .Item__NFT__Button{
+                background-color: #000000;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 20px;
+                color: green;
+            }
+            .Item__Stats{
+                display: flex;
+                justify-content: space-around;
+                padding: 30px;
+                font-weight: bold;
+            }
+
+    }
+    @media only screen and (max-width: 520px)
+    {
+
+        .Item{
+            border-radius: 40px;
+            font-family: 'Fredoka', sans-serif;
+        }
+        .Item1{ grid-area: Header;
+            background-image: url(../imagenes/Header\ -\ copia.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+            padding: 100px;
+            }
+            .Item2{ grid-area: NFT;
+            background-image: url(../imagenes/Venasur.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            }
+            .Item3{ grid-area: TVL;
+            background-color: #000000;
+            color: aliceblue;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            font-weight: bold;
+            }
+            .Item4{ grid-area: Farm;
+            background-image: url(../imagenes/Charizard.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 200px 0px 180px 0px;
+            }
+            .Item5{ grid-area: Pool;
+            background-image: url(../imagenes/Blastoid.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-weight: bold;
+            color: aliceblue;
+            padding: 200px 0px 180px 0px;
+            }
+            .Item6{ grid-area: Info;
+            background-color: black;
+            color: aliceblue;
+            padding-top: 10px;
+            }
+            .Item7{ grid-area: Twitter;
+            background-color: black;
+            color: white;
+            }
+            .Item__Relleno{
+                background-image: url(../imagenes/Iniciales.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            
+            .Grid__Container{
+                text-align: center;
+                display: grid;
+                grid-template-areas:    
+                        'Header'
+                        'NFT'
+                        'TVL'
+                        'Farm'
+                        'Pool'
+                        'Info'
+                        'Twitter';
+                row-gap: 20px;
+                column-gap: 10px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .Item__Titulo{
+                font-size: 50px;
+                font-weight: 1200;
+            }
+            .Item__Sub{
+                font-size: 30px;
+                font-weight: 1200;
+            }
+            .Item__NFT{
+                width: 100px;
+                padding: 5px;
+                border-radius: 15px;
+            }
+            .Item__NFT__Button{
+                background-color: #000000;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 20px;
+                color: green;
+            }
+            .Item__Stats{
+                display: flex;
+                justify-content: space-around;
+                padding: 30px;
+                font-weight: bold;
+            }
+
+    }
+        
+    
+     /*Fin Cuadro Pagina Inicial*/
