@@ -178,18 +178,36 @@ nav{
 .Swap__Container{
     border: 1px solid rgb(231, 227, 235);
     width: 328px;
-    height: 516px;
+    height: 518px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
     border-radius: 20px;
     background-color: aliceblue;
-    
+}
+.Swap__Titulo__Completo{
+    border-bottom: 1px solid rgb(231, 227, 235);
+    padding: 24px;
+    text-align: center;
 }
 .Swap__Titulo{
-    border-bottom: 1px solid rgb(231, 227, 235);
-}
+    display: flex;
+    justify-content: space-between;
 
+}
+.Swap__Icono{
+    background-color: aliceblue;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+}
+.Swap__Titulo__Swap{
+    margin-left: 65px;
+}
+.Swap__Titulo__Ajustes{
+
+}
 
 /*Pika trader inicio*/
 article img{
