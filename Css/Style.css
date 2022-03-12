@@ -175,57 +175,31 @@ nav{
 
 /*Incio Swap*/
 
-.ContainerSwap{
-    text-align: center;
-    width: 350px;
+.Swap__Container{
+    border: 1px solid rgb(231, 227, 235);
+    width: 328px;
+    height: 516px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6%;
-    background-color: rgb(218, 246, 255);
-}
-.ContainerSwapTitulo{
-    border: solid gray 1px;
-    border-radius: 20px 20px 0px 0px;
-    padding: 15px 0px 15px 0px;
-}
-.Swap{
+    margin-top: 2%;
+    border-radius: 20px;
     background-color: aliceblue;
+    
 }
-.SwapFrom{
-    background-color: rgb(190, 213, 221);
-    border-radius: 20px 20px 0px 0px;
+.Swap__Titulo{
+    border-bottom: 1px solid rgb(231, 227, 235);
+}
 
-}
-.SwapToken{
-    background-color: rgb(190, 213, 221);
-    border-radius: 15px;
-    margin: 20px 20px 45px 20px;
-}
-.SwapForm{
-    padding-top: 20px;
-    border: solid gray 1px;
-    border-radius: 0px 0px 20px 20px;
-}
-.SwapButtom{
-    width: 90%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding: 10px 0px 10px 0px;
-}
-.Pika_Elegante{
-    display: flex;
-    justify-content: space-between;
-}
-.PikaL_Gante{
-    width: 180px;
-    height: 240px;
-}
-/*Fin Swap*/
+
 /*Pika trader inicio*/
 article img{
     width: 10%;
 }
 /*Pika trader fin*/
+
+
+/*Fin Swap*/
+
 /*incio Footer*/
 
 .Footer__Fondo{
