@@ -205,10 +205,54 @@ nav{
 .Swap__Titulo__Swap{
     margin-left: 65px;
 }
-.Swap__Titulo__Ajustes{
-
+.Swap__Option{
+    display: flex;
+    justify-content: space-between;
 }
-
+.Swap__Container__Option{
+    padding: 24px;
+}
+.Swap__Container__Amount{
+    background-color: rgb(122, 110, 170);
+    border-radius: 10px;        
+}
+.Swap__Max{
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px 12px 16px;
+}
+.Swap__Max__Estilo{
+    border: solid 1px rgb(40, 13, 95);
+    border-radius: 5px;
+}
+.Swap__Amount__0{
+    width: 100%;
+    text-align: right;
+    border: none;
+    background-color: rgb(122, 110, 170) ;
+}
+.Swap__Button{
+    text-align: center;
+}
+.Swap__Button__Arrow{
+    border: none;
+    font-size: 30px;
+    padding: 12px 0px 12px 0px;
+    background-color: aliceblue;
+}
+.Swap__Container__Sli{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px 34px 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.Swap__Button__Swap{
+    width: 100%;
+    border-radius: 16px;
+    padding: 10px 24px 10px 24px;
+    font-size: 16px;
+}
 /*Pika trader inicio*/
 article img{
     width: 10%;
