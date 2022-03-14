@@ -18,131 +18,7 @@ body{
 /*fin*/
 
 
-/* Inicio barra navegación*/
-.Menu__Logo{
-    width: 150px;
-}
-nav{
-    position: fixed;
-    width: 100%;
-}
-.Menu{ 
-    background-color: #DC0A2D;
-    padding: 2px;
-    text-decoration: none;
-}
-.Menu__Completo{
-    display: flex;
-    justify-content: space-between;
-}
-.Menu__Principal{
-    display: flex;
-    align-items: center;
-}
-.Menu__Wallet{
-    display: flex;
-    align-items: center;
-}
-.Menu__Button{
-    background-color: black;
-    padding: 10px 10px 10px 10px;
-    margin-right: 20px;
-    border-radius: 15px;
-    font-family: 'Digital Numbers', sans-serif;
-    color: green;
-}
-.Menu__Desplegable{
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-.Menu__Desplegado{
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    min-width: 160px;
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-.Menu__Desplegable:hover .Menu__Desplegado{
-    display: block;
-}
-.Menu__Desplegado__Link{
-    text-align: center;
-    padding: 10px;
-}
-.Menu__Desplegado__Estilo{
-    color: green;
-    font-family: 'Digital Numbers', sans-serif;
-    font-size: 12px;
-    text-decoration: none;
-}
-.Menu__Para__Celular{
-    position: fixed;
-    visibility: hidden;
-}
-@media only screen and (max-width: 1000px)
-{
-    .Menu__Celular{
-        position: fixed;
-        visibility: hidden;
-    }
-    .Menu__Para__Celular{
-        position: relative;
-        visibility: visible;
-    }
-    .Menu__Desplegable{
-        position: fixed;
-        display: none;
-        cursor: none;
-    }
-    .Menu__Desplegado{
-        display: none;
-        position: none;
-        background-color: none;
-        min-width: none;
-        padding: none;
-        z-index: none;
-        border-radius: none;
-    }
-    .Menu__Desplegable:hover .Menu__Desplegado{
-        display: none;
-    }
-    .Menu__Desplegado__Link{
-        text-align: none;
-        padding: none;
-        display: flex;
-    }
-    
-    
 
-
-
-    .Menu__Celular__Desplegable{
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-    }
-    .Menu__Celular__Desplegado{
-        display: none;
-        position: absolute;
-        background-color: #000000;
-        min-width: 1500px 300px;
-        padding: 100px 20px;
-        z-index: 1;
-        border-radius: 20px;
-    }
-    .Menu__Celular__Desplegable:hover .Menu__Celular__Desplegado{
-        display: block;
-    }
-    .Menu__Celular__Estilo{
-        padding: 0px 30px 30px 30px;
-    }
-
-}
-/*Fin Barra Navegación*/
 
 /*Inicio SubMenu Exchange*/
 .SubMenu{
@@ -231,6 +107,7 @@ article img{
 .Footer__Fondo{
     background-color: rgb(36, 37, 51);
     text-align: center;
+    margin-top: 3%;
 }
 .Footer__Social{
     display: flex;
@@ -380,10 +257,10 @@ article img{
     background-size: cover;
 }
  .BackIMG3{
-     background-image: url(../imagenes/Fondo\ NFT.png);
-     background-repeat: no-repeat;
-     background-attachment: fixed;  
-     background-size: cover;
+    background-image: url(../imagenes/fondo__negro__pelotitas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
  }
 .BackIMG4{
     background-image: url(../imagenes/FondoPokexOpen.jpg);
@@ -394,38 +271,59 @@ article img{
 
 
  /* Inicio Pagina NFT*/
-
- .MenuNFT{
-     margin-top: 100px;
-     margin-left: 100px;
-     background-color: black;
-     border: solid grey 25px;
-     border-radius: 15px;
-     width: 650px;
- }
-
- .NFT{
-     border-radius: 5px;
-     width: 20%;
-     margin: 5%;
- }
- .MenuNFTDiv{
-     text-align: center;
- }
-.MenuSell{
-    margin-top: 15px;
-    text-align: center;
-    color: green;
-    font-family: 'Digital Numbers', sans-serif;
+.NFT__Container__Background{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+    padding: 50px;
 }
-.MenuSellButton{
-    font-family: 'Digital Numbers', sans-serif;
+.NFT__Container{
+    color: aliceblue;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    column-gap: 20px;
+}
+.NFT__Container__Collections{
+    border: 10px #DC0A2D solid;
+    width: 340px;
+    border-radius: 20px 20px 10px 80px;
+    background-color: #DC0A2D;
+}
+.NFT__Fondo__Collection{
+    width: 325px;
+    border-radius: 20px;
+    position: absolute;
+    border: solid grey 4px;
+}
+.NFT__Container__Collections__Sub{
+    display: flex;
+    margin-top: 102px;
+    justify-content: space-between;
+    background-color: grey;
+    border-radius: 20px 0px 5px 70px;
+}
+.NFT__Icono{
+    width: 110px;
+    position: relative;
+    border: solid white 5px;
+    border-radius: 50%;
+
+}
+.NFT__Container_Collections__Text{
+}
+.NFT__COllections__Estilo{
     background-color: #000000;
-    border-radius: 15px;
     color: green;
-    padding: 10px;
-    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 55px;
 }
+
+ /* Fin pagina NFT*/
 
 /*Comienzo cuadro Pagina Incial*/
 
@@ -751,3 +649,128 @@ article img{
         
     
      /*Fin Cuadro Pagina Inicial*/
+     /* Inicio barra navegación*/
+.Menu__Logo{
+    width: 150px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+.Menu{ 
+    background-color: #DC0A2D;
+    padding: 2px;
+    text-decoration: none;
+}
+.Menu__Completo{
+    display: flex;
+    justify-content: space-between;
+}
+.Menu__Principal{
+    display: flex;
+    align-items: center;
+}
+.Menu__Wallet{
+    display: flex;
+    align-items: center;
+}
+.Menu__Button{
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    font-family: 'Digital Numbers', sans-serif;
+    color: green;
+}
+.Menu__Desplegable{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.Menu__Desplegado{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.Menu__Desplegable:hover .Menu__Desplegado{
+    display: block;
+}
+.Menu__Desplegado__Link{
+    text-align: center;
+    padding: 10px;
+}
+.Menu__Desplegado__Estilo{
+    color: green;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+.Menu__Para__Celular{
+    position: fixed;
+    visibility: hidden;
+}
+@media only screen and (max-width: 1000px)
+{
+    .Menu__Celular{
+        position: fixed;
+        visibility: hidden;
+    }
+    .Menu__Para__Celular{
+        position: relative;
+        visibility: visible;
+    }
+    .Menu__Desplegable{
+        position: fixed;
+        display: none;
+        cursor: none;
+    }
+    .Menu__Desplegado{
+        display: none;
+        position: none;
+        background-color: none;
+        min-width: none;
+        padding: none;
+        z-index: none;
+        border-radius: none;
+    }
+    .Menu__Desplegable:hover .Menu__Desplegado{
+        display: none;
+    }
+    .Menu__Desplegado__Link{
+        text-align: none;
+        padding: none;
+        display: flex;
+    }
+    
+    
+
+
+
+    .Menu__Celular__Desplegable{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .Menu__Celular__Desplegado{
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 1500px 300px;
+        padding: 100px 20px;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .Menu__Celular__Desplegable:hover .Menu__Celular__Desplegado{
+        display: block;
+    }
+    .Menu__Celular__Estilo{
+        padding: 0px 30px 30px 30px;
+    }
+
+}
+/*Fin Barra Navegación*/
