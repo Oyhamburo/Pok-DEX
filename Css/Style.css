@@ -267,6 +267,7 @@ article img{
 .Footer__Fondo{
     background-color: rgb(36, 37, 51);
     text-align: center;
+    margin-top: 3%;
 }
 .Footer__Social{
     display: flex;
@@ -416,10 +417,10 @@ article img{
     background-size: cover;
 }
  .BackIMG3{
-     background-image: url(../imagenes/Fondo\ NFT.png);
-     background-repeat: no-repeat;
-     background-attachment: fixed;  
-     background-size: cover;
+    background-image: url(../imagenes/fondo__negro__pelotitas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
  }
 .BackIMG4{
     background-image: url(../imagenes/FondoPokexOpen.jpg);
@@ -430,38 +431,57 @@ article img{
 
 
  /* Inicio Pagina NFT*/
-
- .MenuNFT{
-     margin-top: 100px;
-     margin-left: 100px;
-     background-color: black;
-     border: solid grey 25px;
-     border-radius: 15px;
-     width: 650px;
- }
-
- .NFT{
-     border-radius: 5px;
-     width: 20%;
-     margin: 5%;
- }
- .MenuNFTDiv{
-     text-align: center;
- }
-.MenuSell{
-    margin-top: 15px;
-    text-align: center;
-    color: green;
-    font-family: 'Digital Numbers', sans-serif;
+.NFT__Container__Background{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+    padding: 50px;
 }
-.MenuSellButton{
-    font-family: 'Digital Numbers', sans-serif;
+.NFT__Container{
+    color: aliceblue;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    column-gap: 20px;
+}
+.NFT__Container__Collections{
+    border: 10px #DC0A2D solid;
+    width: 340px;
+    border-radius: 20px 20px 10px 80px;
+    background-color: #DC0A2D;
+}
+.NFT__Fondo__Collection{
+    width: 325px;
+    border-radius: 20px;
+    position: absolute;
+    border: solid grey 4px;
+}
+.NFT__Container__Collections__Sub{
+    display: flex;
+    margin-top: 102px;
+    justify-content: space-between;
+    background-color: grey;
+    border-radius: 20px 0px 5px 70px;
+}
+.NFT__Icono{
+    width: 110px;
+    position: relative;
+    border: solid white 5px;
+    border-radius: 50%;
+
+}
+.NFT__COllections__Estilo{
     background-color: #000000;
-    border-radius: 15px;
     color: green;
-    padding: 10px;
-    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 55px;
 }
+
+ /* Fin pagina NFT*/
 
 /*Comienzo cuadro Pagina Incial*/
 
