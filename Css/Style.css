@@ -16,6 +16,160 @@ body{
     margin-left: 600px;
 }
 /*fin*/
+/* Inicio barra navegación*/
+.Menu__Logo{
+    width: 150px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+.Menu{ 
+    background-color: #DC0A2D;
+    padding: 2px;
+    text-decoration: none;
+}
+.Menu__Completo{
+    display: flex;
+    justify-content: space-between;
+}
+.Menu__Principal{
+    display: flex;
+    align-items: center;
+}
+.Menu__Wallet{
+    display: flex;
+    align-items: center;
+}
+.Menu__Button{
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    font-family: 'Digital Numbers', sans-serif;
+    color: green;
+}
+.Menu__Desplegable{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.Menu__Desplegado{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.Menu__Desplegable:hover .Menu__Desplegado{
+    display: block;
+}
+.Menu__Desplegado__Link{
+    text-align: center;
+    padding: 10px;
+}
+.Menu__Desplegado__Estilo{
+    color: green;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+.Menu__Para__Celular{
+    position: fixed;
+    visibility: hidden;
+}
+@media only screen and (max-width: 1000px)
+{
+    .Menu__Celular{
+        position: fixed;
+        visibility: hidden;
+    }
+    .Menu__Para__Celular{
+        position: relative;
+        visibility: visible;
+    }
+    .Menu__Desplegable{
+        position: fixed;
+        display: none;
+        cursor: none;
+    }
+    .Menu__Desplegado{
+        display: none;
+        position: none;
+        background-color: none;
+        min-width: none;
+        padding: none;
+        z-index: none;
+        border-radius: none;
+    }
+    .Menu__Desplegable:hover .Menu__Desplegado{
+        display: none;
+    }
+    .Menu__Desplegado__Link{
+        text-align: none;
+        padding: none;
+        display: flex;
+    }
+    
+    
+
+
+
+    .Menu__Celular__Desplegable{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .Menu__Celular__Desplegado{
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 1500px 300px;
+        padding: 100px 20px;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .Menu__Celular__Desplegable:hover .Menu__Celular__Desplegado{
+        display: block;
+    }
+    .Menu__Celular__Estilo{
+        padding: 0px 30px 30px 30px;
+    }
+
+}
+/*Fin Barra Navegación*/
+
+/*Inicio SubMenu Exchange*/
+.SubMenu{
+    background-color: aliceblue;
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.SubMenuSombra{
+    padding: 5px 0px 5px 0px;
+    border-radius: 15px;
+    background-color: #DC0A2D;
+}
+.SubMenuOn{
+    background-color: #000000;
+    color: green;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+
+}
+.SubMenuOff{
+    color: rgb(182, 237, 255);
+    background-color: #DC0A2D;
+    border-radius: 15px;
+
+
+}
+
+/*Fin SubMenu*/
 
 
 /* Inicio barra navegación*/
