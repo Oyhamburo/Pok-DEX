@@ -58,6 +58,18 @@ body{
 /*Fin Barra Navegación*/
 
 /*Inicio SubMenu Exchange*/
+.checkbox{
+    width: 40px;
+    height: 40px;
+}
+.Sub__Menu__Button{
+    position: absolute;
+    top: -45px;
+    left: 230px;
+    top: 50%;
+    background-color: white;
+    border-radius: 20px;
+}
 .Menu__Left{
     background-color: white;
     flex-direction: column;
@@ -105,6 +117,10 @@ body{
 .checkbox:checked ~ .Dromsi{
     left: 55px;
 }
+.checkbox:checked ~ .Menu__Left__Absolute{
+    left: 15%;
+}
+
 .Menu__Left__Animation:hover {
     background-color: rgb(180, 180, 180);
 }
