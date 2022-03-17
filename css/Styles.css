@@ -88,6 +88,7 @@ article img{
 
 /*Fin Swap*/
 
-.Carrusel1{
-
+.link__decoration {
+    text-decoration: none;
+    color: white;
 }
