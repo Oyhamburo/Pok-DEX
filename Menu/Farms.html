@@ -8,50 +8,317 @@
         <link rel="stylesheet" href="../css2/all.min.css">
         <link rel="stylesheet" href="../css/Styles.css">
         <title>PokéDEX</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-3 border-bottom border-danger fixed-top">
-        <div class="container-fluid">
-            <div>
-                <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="../index.html" class="navbar-brand me-5">PokéDEX</a>
-
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-3 border-bottom border-danger fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="../index.html" class="navbar-brand me-5">PokéDEX</a>
+    
+                </div>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item dropdown me-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Trade
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./exchange.html" class="dropdown-item">exchange</a></li>
+                                <li><a href="./Liquidity.html" class="dropdown-item">Liquidity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Earn
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./farms.html" class="dropdown-item">Farm</a></li>
+                                <li><a href="./pool.html" class="dropdown-item">Pool</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2"><a class="nav-link" href="./nft.html">NFT</a></li>
+                        <li class="nav-item me-2"><a class="nav-link" href="./info.html">Info</a></li>
+                    </ul>
+                </div>
+                    <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Wallet Connect</span>
+                        </span>
+                    </button>
             </div>
-            <div id="MenuNavegacion" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-3">
-                    <li class="nav-item dropdown me-2">
-                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            Trade
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./exchange.html" class="dropdown-item">exchange</a></li>
-                            <li><a href="./Liquidity.html" class="dropdown-item">Liquidity</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            Earn
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./farms.html" class="dropdown-item">Farm</a></li>
-                            <li><a href="./pool.html" class="dropdown-item">Pool</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item me-2"><a class="nav-link" href="./nft.html">NFT</a></li>
-                    <li class="nav-item me-2"><a class="nav-link" href="./info.html">Info</a></li>
-                </ul>
+        </nav>
+        <article >
+            <div class="container__subnav text-center bg-light">
+                <a href="./Farms.html" class="subnav subnav__on ">Farms</a>
+                <a href="./Pool.html" class="subnav ">Pool</a>
             </div>
-                <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0">
-                    <span class="d-flex align-items-center">
-                        <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Wallet Connect</span>
-                    </span>
-                </button>
+        </article>
+    </header>
+    <section class="farm__titulo d-flex justify-content-around ">
+        <div style="padding: 3%;">
+            <h1 style="font-size: 5rem;">Farms</h1>
+            <h4>Stake LP tokens to earn</h4>
         </div>
-    </nav>
-
+            <img src="../imagenes/charizard-sinfondo.png" alt="" width="20%">
+    </section>
+    <section class="farm__container " >
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>
+        <article class="farm__grid" >
+            <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+                <img src="../imagenes/BALL-BNB.png" alt="" style="height: 70px; width: 70px;">
+                <div class="d-flex flex-column justify-content-around">
+                    <div class="ball__bnb">BALL-BNB</div>
+                    <div>
+                        <span class="farm__core"><i class="fa-solid fa-circle-check" style="margin-right: 7px;"></i>Core</span>
+                        <span class="farm__40x">40x</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>APR:</div>
+                <div class="farm__rigth">34% <i class="fa-solid fa-calculator"></i></div>
+            </div>
+            <div class="d-flex justify-content-between farm__div">
+                <div>Earn:</div>
+                <div class="farm__rigth">Cake+Fees</div>
+            </div>
+            <div class="farm__div__earned">BALL earned</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>0.00</div>
+                <button type="button" class="btn btn-outline-danger">harvest</button>
+            </div>
+            <div class="farm__div__earned ">cake-bnb lp staked</div>
+            <div>
+                <button class="btn btn-danger" style="width: 100%; margin: 10px 0px;">Connect Wallet</button>
+            </div>
+        </article>   
+    </section>
+    <br>
+    <footer class="p-3 mb-2 bg-danger bg-gradient text-white border-3 border-top border-danger  py-4 text-center row">
+        <a href="../index.html" class="col-3" ><img src="../imagenes/PokeDEX.png" alt="" style=" width: 150px;"></a>
+        <div class="col">
+            <h3>Strategic Partner</h3>
+            <img src="../imagenes/CoderHouse.png" alt="" style=" width: 200px;" class="rounded-pill">
+        </div>
+        <div class="col-3">
+            <h3>Social</h3>
+            <div class="">
+                <i class="fa-brands fa-twitter"></i>    
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

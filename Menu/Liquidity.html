@@ -9,56 +9,63 @@
         <link rel="stylesheet" href="../css/Styles.css">
         <title>PokéDEX</title>
     </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-3 border-bottom border-danger fixed-top">
-        <div class="container-fluid">
-            <div>
-                <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="../index.html" class="navbar-brand me-5">PokéDEX</a>
-
+<body class="swap__back">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-3 border-bottom border-danger fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="../index.html" class="navbar-brand me-5">PokéDEX</a>
+                </div>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item dropdown me-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Trade
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./exchange.html" class="dropdown-item">exchange</a></li>
+                                <li><a href="./Liquidity.html" class="dropdown-item">Liquidity</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Earn
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./Farms.html" class="dropdown-item">Farm</a></li>
+                                <li><a href="./Pool.html" class="dropdown-item">Pool</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2"><a class="nav-link" href="./nft.html">NFT</a></li>
+                        <li class="nav-item me-2"><a class="nav-link" href="./Info.html">Info</a></li>
+                    </ul>
+                </div>
+                    <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Wallet Connect</span>
+                        </span>
+                    </button>
             </div>
-            <div id="MenuNavegacion" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-3">
-                    <li class="nav-item dropdown me-2">
-                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            Trade
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./exchange.html" class="dropdown-item">exchange</a></li>
-                            <li><a href="./Liquidity.html" class="dropdown-item">Liquidity</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            Earn
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./farms.html" class="dropdown-item">Farm</a></li>
-                            <li><a href="./pool.html" class="dropdown-item">Pool</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item me-2"><a class="nav-link" href="./nft.html">NFT</a></li>
-                    <li class="nav-item me-2"><a class="nav-link" href="./info.html">Info</a></li>
-                </ul>
+        </nav>
+        <article >
+            <div class="container__subnav text-center bg-light">
+                <a href="./Exchange.html" class="subnav">Exchange</a>
+                <a href="./Liquidity.html" class="subnav subnav__on">Liquidity</a>
             </div>
-                <button class="btn btn-danger rounded-pill px-3 mb-2 mb-lg-0">
-                    <span class="d-flex align-items-center">
-                        <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Wallet Connect</span>
-                    </span>
-                </button>
-        </div>
-    </nav>
-    <section class="Display" >
+        </article>
+    </header>
+    <section class="Display " >
         <article class="Swap__Container">
             <div class="Swap__Titulo__Completo">
                 <div class="Swap__Titulo">
                     <div class="Swap__Titulo__Grafica">
                         <button class="Swap__Icono"><i class="fa-solid fa-chart-column"></i></i></button>
                     </div>
-                    <h3 class="Swap__Titulo__Swap">Add</h3>
+                    <h3 class="Swap__Titulo__Swap">Add </h3>
                     <div class="Swap__Titulo__Ajustes">
                         <button class="Swap__Icono"><i class="fa-solid fa-gear"></i></button>
                         <button class="Swap__Icono"><i class="fa-solid fa-clock-rotate-left"></i></button>
@@ -110,12 +117,19 @@
                     <div>11%</div>
                 </div> 
                 <div >
-                    <button class="btn btn-danger" style="width: 100%;">Connect Wallet</button>
+                    <button class="btn btn-danger" style="width: 100%;">Swap</button>
                 </div>   
             </div>
         </article>
+        <article >
+            <div class="img__pika">
+                <div class="img__globo__container"> 
+                    <a href="../menu/info.html" class="img__globo">need your help?</a>
+                </div>
+                <img src="../imagenes/Pikachu R-Gante.jpg" alt="" >
+            </div>
+        </article>
     </section>
-
     <footer class="p-3 mb-2 bg-danger bg-gradient text-white border-3 border-top border-danger  py-4 text-center row">
                 <a href="../index.html" class="col-3" ><img src="../imagenes/PokeDEX.png" alt="" style=" width: 150px;"></a>
                 <div class="col">

@@ -8,8 +8,8 @@
     margin-right: auto;
     border-radius: 20px;
     background-color: white;
-    margin-bottom: 20%;
-    margin-top: 100px;
+    margin-bottom: 0%;
+    margin-top: 2%;
 }
 .Swap__Titulo__Completo{
     border-bottom: 1px solid rgb(231, 227, 235);
@@ -39,7 +39,7 @@
     padding: 24px;
 }
 .Swap__Container__Amount{
-    background-color: #eededa;
+    background-color: #fae3e5;
     border-radius: 10px;        
 }
 .Swap__Max{
@@ -55,7 +55,7 @@
     width: 100%;
     text-align: right;
     border: none;
-    background-color: #eededa ;
+    background-color: #fae3e5;
 }
 .Swap__Button{
     text-align: center;
@@ -91,4 +91,143 @@ article img{
 .link__decoration {
     text-decoration: none;
     color: white;
+}
+
+.container__subnav {
+    margin-top: 60px;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.subnav {
+    text-decoration: none;
+    color: black;
+    margin: 0px 5px 0px 5px;    
+    font-weight: bold;
+}
+
+.subnav__on {
+    color: #dc3545;
+    border-bottom: #dc3545 solid 4px;
+}
+
+.swap__back {
+    background-color: rgba(255, 240, 241, 0.741);
+}
+
+.img__pika {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.img__globo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    border: solid rgb(207, 207, 207) 0.1px;
+    color: #dc3545;
+    text-decoration: none;
+}
+.img__globo:hover {
+    color: black;
+    background-color: yellow;
+}
+
+
+/*Farm inicio*/
+.farm__titulo {
+    background-color: #fae3e5;
+    font-family: 'Roboto', sans-serif;
+    color: #dc3545;
+}
+.farm__titulo2 {
+    background-color: #d4effc;
+    font-family: 'Roboto', sans-serif;
+    color: #0dcaf0;
+}
+.farm__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 2% auto 0% auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(51, 0, 0);
+    width: 1120px;
+}
+.farm__grid{
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: solid red 1px;
+}
+.farm__grid2{
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: solid #0dcaf0 1px;
+}
+.ball__bnb {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: end;
+}
+.farm__core {
+    border: solid 2px #dc3545;
+    color: #dc3545;
+    border-radius: 1rem;
+    padding: 4px 7px;
+    font-size: small;
+}
+.farm__core2 {
+    border: solid 2px #0dcaf0;
+    color: #0dcaf0;
+    border-radius: 1rem;
+    padding: 4px 7px;
+    font-size: small;
+}
+.farm__40x {
+    color: white;
+    background-color: #dc3545;
+    border-radius: 1rem;
+    font-size:  medium;
+    padding: 4px 7px;
+}
+.farm__40x2 {
+    color: white;
+    background-color: #0dcaf0;
+    border-radius: 1rem;
+    font-size:  medium;
+    padding: 4px 7px;
+}
+.farm__div {
+    margin-top: 8px;
+    font-size: medium;
+}
+.farm__rigth {
+    font-weight: bold;
+}
+.farm__div__earned {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #dc3545;
+}
+.farm__div__earned2 {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #0dcaf0;
+}
+.farm__grid:hover {
+    box-shadow: 0 0.1rem 0.4rem black;
+}
+@media only screen and (max-width: 1140px){
+    .farm__container {
+        grid-template-columns: auto auto;
+        width: 720px;
+    }
+    @media only screen and (max-width: 740px)
+    {
+        .farm__container {
+            grid-template-columns: auto;
+            width: 360px;
+        }
+    }
 }
