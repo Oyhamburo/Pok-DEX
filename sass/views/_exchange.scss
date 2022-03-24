@@ -1,0 +1,109 @@
+/*Incio Swap*/
+
+.Swap__Container{
+    border: 1px solid rgb(231, 227, 235);
+    width: 328px;
+    /*height: 518px;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 0%;
+    margin-top: 2%;
+}
+.Swap__Titulo__Completo{
+    border-bottom: 1px solid rgb(231, 227, 235);
+    padding: 24px;
+    text-align: center;
+}
+.Swap__Titulo{
+    display: flex;
+    justify-content: space-between;
+    .Swap__Icono {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 4px;
+    }
+    &__Swap {
+        margin-left: 65px;
+    }
+}
+
+
+.Swap__Container__Option{
+    padding: 24px;
+    .Swap__Option{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Swap__Container__Amount{
+        background-color: #fae3e5;
+        border-radius: 10px;    
+
+        .Swap__Max{
+            display: flex;
+            justify-content: flex-end;
+            padding: 12px 16px 12px 16px;
+            .Swap__Amount__0{
+                width: 100%;
+                text-align: right;
+                border: none;
+                background-color: #fae3e5;
+            }
+            .Swap__Max__Estilo{
+                border: solid 1px rgb(40, 13, 95);
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
+.Swap__Button{
+    text-align: center;
+    &__Arrow{
+        border: none;
+        font-size: 30px;
+        padding: 12px 0px 12px 0px;
+        background-color: white;
+    }
+}
+
+.Swap__Container__Sli{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px 34px 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.swap__back {
+    background-color: rgba(255, 240, 241, 0.741);
+}
+/*Pika trader inicio*/
+article img{
+    width: 10%;
+}
+
+.img__pika {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .img__globo {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1rem;
+        border: solid rgb(207, 207, 207) 0.1px;
+        color: #dc3545;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            background-color: yellow;
+        }
+    }
+}
+
+/*Pika trader fin*/
+
+
+/*Fin Swap*/

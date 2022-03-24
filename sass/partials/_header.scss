@@ -1,0 +1,21 @@
+
+
+.link__decoration {
+    text-decoration: none;
+    color: white;
+}
+
+.container__subnav {
+    margin-top: 60px;
+    padding: 1rem 1rem 0rem 1rem;
+    .subnav {
+        text-decoration: none;
+        color: black;
+        margin: 0px 5px 0px 5px;    
+        font-weight: bold;
+    }
+    .subnav__on {
+        color: #dc3545;
+        border-bottom: #dc3545 solid 4px;
+    }
+}
