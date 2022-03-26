@@ -1,4 +1,7 @@
 /*Views*/
+.background__container__exchange {
+  background-color: #fdfd9c; }
+
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
   background-repeat: no-repeat;
@@ -80,7 +83,8 @@
     padding: 1.5%;
     text-decoration: none;
     color: #646464;
-    position: absolute; }
+    position: absolute;
+    border: solid 1.5px black; }
     .slideshow-container .button__ab:hover {
       background-color: #646464;
       color: black; }
@@ -90,6 +94,21 @@
     .slideshow-container .button__ab__b {
       top: 62%;
       left: 71%; }
+
+#play, #pause {
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.6%;
+  background-color: #828282;
+  font-weight: bold; }
+
+#play {
+  left: 28.5%;
+  top: 92%; }
+
+#pause {
+  left: 28.5%;
+  top: 105%; }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -136,6 +155,43 @@
     font-size: 11px; } }
 
 /*Partials*/
+.nav {
+  background-color: #faf9fa;
+  display: flex;
+  justify-content: space-between; }
+  .nav__bar {
+    display: flex; }
+    .nav__bar div {
+      padding: 5px; }
+    .nav__bar__trade {
+      position: relative;
+      display: inline-block; }
+      .nav__bar__trade__button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer; }
+      .nav__bar__trade__dropdown {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1; }
+
+.nav__bar__trade__button:hover {
+  background-color: aqua;
+  cursor: pointer; }
+
+.nav__bar__trade:hover .nav__bar__trade__dropdown {
+  display: block; }
+
 /*Misc*/
+* {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.1rem; }
+
 * {
   margin: 0px; }

@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <title>PokéDEX</title>
 </head>
 <body class="background__container__home">
+  
   </audio>
     <section >
         <article class="home">
@@ -17,7 +21,7 @@
             <div class="slideshow-container">
             
                 <div class="mySlides fade">
-                  <video src="./img/intro.mp4" muted autoplay loop class="screen"></video>
+                  <video src="./img/intro.mp4"  muted autoplay loop class="screen"></video>
                 </div>
 
                 <div class="mySlides fade">
@@ -39,7 +43,10 @@
                     <a href="" class="down arrow">d</a>
                     <a href="./menu/exchange.html" class="button__ab button__ab__a">A</a>
                     <a href="./menu/farm.html" class="button__ab button__ab__b">B</a>
-                   
+                    <div>
+                      <input type="button" value="»" id="play">
+                      <input type="button" value="■" id="pause">
+                  </div>
                 </div>
                 </div>
                 <br>
@@ -76,7 +83,34 @@
                     slides[slideIndex-1].style.display = "block";  
                     dots[slideIndex-1].className += " active";
                     }
+                    
                 </script>
+                   <script>
+                    window.onload=function(){
+                 
+                        // creamos el objeto audio
+                        var audioElement = document.createElement('audio');
+                 
+                        // indicamos el archivo de audio a cargar
+                        audioElement.setAttribute('src', './img/intro-solo-audio.mp3');
+                 
+                        // Si deseamos que una vez cargado empieze a sonar...
+                        //audioElement.setAttribute('autoplay', 'autoplay');
+                 
+                        document.getElementById("play").addEventListener("click", function() {
+                            // Si deseamos que inicie siempre desde el principio
+                            //audioElement.currentTime = 0;
+                 
+                            // iniciamos el audio
+                            audioElement.play();
+                        });
+                 
+                        document.getElementById("pause").addEventListener("click", function() {
+                            // hacemos pausa
+                            audioElement.pause();
+                        });
+                    };
+                    </script>
                 
         </article>
     </section>    

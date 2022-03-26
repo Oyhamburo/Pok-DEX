@@ -96,6 +96,7 @@
     text-decoration: none;
     color: #646464;
     position: absolute;
+    border: solid 1.5px black;
     &:hover {
       background-color: #646464;
       color: black;
@@ -109,11 +110,22 @@
       left: 71%;
     }
   }
-
-  
-  
 }
-
+#play, #pause {
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.6%;
+  background-color: #828282;
+  font-weight: bold;
+}
+#play {
+  left: 28.5%;
+  top: 92%;
+}
+#pause {
+  left: 28.5%;
+  top: 105%;
+}
 
 
 

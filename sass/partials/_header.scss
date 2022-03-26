@@ -1,0 +1,47 @@
+.nav {
+    background-color: #faf9fa;
+    display: flex;
+    justify-content: space-between;
+    &__bar {
+        display: flex;
+        & div {
+            padding: 5px;
+        }
+        &__trade {
+            position: relative;
+            display: inline-block;
+            &__button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+            &__dropdown {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+        }
+    }
+}
+.nav__bar__trade__button:hover {
+    background-color: aqua; 
+    cursor: pointer;
+}
+.nav__bar__trade:hover .nav__bar__trade__dropdown {display: block;}
+
+
+
+
+  
+
+  
+
+
+  
+  

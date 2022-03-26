@@ -4,43 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body> 
-    
-    <script>
-        window.onload=function(){
-     
-            // creamos el objeto audio
-            var audioElement = document.createElement('audio');
-     
-            // indicamos el archivo de audio a cargar
-            audioElement.setAttribute('src', '../img/intro-solo-audio.mp3');
-     
-            // Si deseamos que una vez cargado empieze a sonar...
-            //audioElement.setAttribute('autoplay', 'autoplay');
-     
-            document.getElementById("play").addEventListener("click", function() {
-                // Si deseamos que inicie siempre desde el principio
-                //audioElement.currentTime = 0;
-     
-                // iniciamos el audio
-                audioElement.play();
-            });
-     
-            document.getElementById("pause").addEventListener("click", function() {
-                // hacemos pausa
-                audioElement.pause();
-            });
-        };
-        </script>
-    </head>
-    <body>
-     
-    <div>
-        <input type="button" value="Play" id="play">
-        <input type="button" value="Pause" id="pause">
-    </div>
+<body class="background__container__exchange"> 
+     <header>
+         <nav class="nav">
+            <div class="nav__bar">
+                <div>pokedx</div>
+                <div class="nav__bar__trade">
+                    <button class="nav__bar__trade__button">trade</button>
+                    <div class="nav__bar__trade__dropdown">
+                        <a href="./exchange.html">Exchange</a>
+                        <a href="">Liquidity</a>
+                    </div>
+                </div>
+                <div >earn</div>
+                <div>nft</div>
+                <div>info</div>
+            </div>
+            <div class="nav__bar">
+                <div>ajustes</div>
+                <div>wallet connect</div>
+            </div>
+         </nav>
+     </header>
+
+
     
 </body>
 </html>
