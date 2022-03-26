@@ -1,0 +1,84 @@
+/*Views*/
+.background__container__home {
+  background-image: url(../img/fondo-index-noche.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.home {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 3%; }
+  .home__gameboy {
+    width: 150%; }
+
+.screen {
+  width: 590px;
+  margin-top: 12.5%;
+  margin-left: 34.5%;
+  border-radius: 1rem;
+  border: solid black 6px; }
+
+/* codigo carrusel de w3school*/
+.mySlides {
+  display: none; }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px; } }
+
+/*Partials*/
+/*Misc*/
+* {
+  margin: 0px; }

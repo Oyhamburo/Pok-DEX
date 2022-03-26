@@ -1,0 +1,19 @@
+
+/*Views*/
+@import "./views/exchange";
+@import "./views/farms";
+@import "./views/home";
+@import "./views/nft";
+
+/*Partials*/
+@import "./partials/header";
+@import "./partials/footer";
+
+/*Misc*/
+@import "./misc/normalize";
+@import "./misc/variables";
+
+
+*{
+    margin: 0px;
+}
