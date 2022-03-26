@@ -11,10 +11,9 @@
             position: relative;
             display: inline-block;
             &__button {
-                background-color: #04AA6D;
-                color: white;
+                background-color: #faf9fa;
+                color: rgb(0, 0, 0);
                 padding: 16px;
-                font-size: 16px;
                 border: none;
                 cursor: pointer;
             }
@@ -26,14 +25,14 @@
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
             }
+            &:hover .nav__bar__trade__dropdown {display: block;}
         }
     }
 }
 .nav__bar__trade__button:hover {
-    background-color: aqua; 
+    background-color: #faf9fa; 
     cursor: pointer;
 }
-.nav__bar__trade:hover .nav__bar__trade__dropdown {display: block;}
 
 
 

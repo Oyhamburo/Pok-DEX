@@ -1,6 +1,6 @@
 /*Views*/
 .background__container__exchange {
-  background-color: #fdfd9c; }
+  background-color: #ffffb8; }
 
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
@@ -167,10 +167,9 @@
       position: relative;
       display: inline-block; }
       .nav__bar__trade__button {
-        background-color: #04AA6D;
-        color: white;
+        background-color: #faf9fa;
+        color: black;
         padding: 16px;
-        font-size: 16px;
         border: none;
         cursor: pointer; }
       .nav__bar__trade__dropdown {
@@ -180,13 +179,12 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1; }
+      .nav__bar__trade:hover .nav__bar__trade__dropdown {
+        display: block; }
 
 .nav__bar__trade__button:hover {
-  background-color: aqua;
+  background-color: #faf9fa;
   cursor: pointer; }
-
-.nav__bar__trade:hover .nav__bar__trade__dropdown {
-  display: block; }
 
 /*Misc*/
 * {
