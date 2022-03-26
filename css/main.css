@@ -4,19 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.home {
+.home__gameboy {
+  left: 15.25%;
+  top: 3%;
   position: absolute;
-  margin-left: 15%;
-  margin-top: 3%; }
-  .home__gameboy {
-    width: 150%; }
-
-.screen {
-  width: 590px;
-  margin-top: 12.5%;
-  margin-left: 34.5%;
-  border-radius: 1rem;
-  border: solid black 6px; }
+  width: 69.5%; }
 
 /* codigo carrusel de w3school*/
 .mySlides {
@@ -25,15 +17,80 @@
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  /* Next & previous buttons */ }
+  .slideshow-container .screen {
+    width: 30%;
+    margin-top: 12.5%;
+    margin-left: 34.5%;
+    border-radius: 1rem;
+    border: solid black 6px; }
+  .slideshow-container .arrow {
+    cursor: pointer;
+    position: absolute;
+    color: #828282;
+    background-color: #828282;
+    left: 24%;
+    top: 62.5%;
+    border: none;
+    text-decoration: none; }
+    .slideshow-container .arrow:hover {
+      color: #444444;
+      background-color: #444444; }
+  .slideshow-container .up {
+    top: 55.5%;
+    padding: 0.6% 1%;
+    border-radius: 15% 15% 0 0;
+    border-bottom: none;
+    border-top: solid 1.5px black;
+    border-left: solid 1.5px black;
+    border-right: solid 1.5px black; }
+  .slideshow-container .down {
+    padding: 0.6% 1%;
+    top: 69.5%;
+    border-radius: 0 0 15% 15%;
+    border-bottom: solid 1.5px black;
+    border-top: none;
+    border-left: solid 1.5px black;
+    border-right: solid 1.5px black; }
+  .slideshow-container .next {
+    padding: 0.6% 1.2% 0.6% 1%;
+    left: 26%;
+    border-radius: 0 15% 15% 0;
+    border-bottom: solid 1.5px black;
+    border-top: solid 1.5px black;
+    border-left: none;
+    border-right: solid 1.5px black; }
+  .slideshow-container .prev {
+    padding: 0.6% 1%;
+    left: 22%;
+    border-radius: 15% 0 0 15%;
+    border-bottom: solid 1.5px black;
+    border-top: solid 1.5px black;
+    border-left: solid 1.5px black;
+    border-right: none; }
+  .slideshow-container .enter {
+    padding: 0.7% 1%; }
+    .slideshow-container .enter:hover {
+      color: #828282;
+      background-color: #828282; }
+  .slideshow-container .button__ab {
+    background-color: #828282;
+    border-radius: 50%;
+    padding: 1.5%;
+    text-decoration: none;
+    color: #646464;
+    position: absolute; }
+    .slideshow-container .button__ab:hover {
+      background-color: #646464;
+      color: black; }
+    .slideshow-container .button__ab__a {
+      top: 52%;
+      left: 76%; }
+    .slideshow-container .button__ab__b {
+      top: 62%;
+      left: 71%; }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  user-select: none; }
-
-/* Position the "next button" to the right */
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
