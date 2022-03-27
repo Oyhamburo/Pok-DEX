@@ -1,0 +1,37 @@
+@import "../misc/variables";
+
+.wallet {  
+    display: block;     
+    .wallet__fondo {
+        background-color: rgba(0, 0, 0, 0.267);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .wallet__container {
+            background-color: $background-blanco;
+            width: 342px;
+            height: 486px;
+            border-radius: 2rem;
+        }
+    }
+    &__encabezado {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $red;
+        border-radius: 2rem 2rem 0 0;
+        &__connect {
+            font-size: 20px;
+        }
+        &__close {
+            cursor: pointer;
+        }
+    }
+}   

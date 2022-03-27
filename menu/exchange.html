@@ -6,33 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
     <title>Document</title>
 </head>
 <body class="background__container__exchange"> 
      <header>
-         <nav class="nav">
-            <div class="nav__bar">
-                <div>pokedx</div>
-                <div class="nav__bar__trade">
-                    <button class="nav__bar__trade__button">trade</button>
-                    <div class="nav__bar__trade__dropdown">
-                        <a href="./exchange.html">Exchange</a>
-                        <a href="">Liquidity</a>
+         <nav class="exchange__nav">
+            <div class="exchange__nav__bar">
+                <div >
+                    <a href="../Index.html" class="exchange__nav__bar__logo">
+                        <img src="../img/pokebola.png" alt="" class="exchange__nav__bar__logo__img">
+                        <div class="exchange__nav__bar__logo__pokedex">PokéDEX</div>
+                    </a>
+                </div>
+                <div class="exchange__nav__bar__trade exchange__nav__bar__trade__on " >
+                    <div class="exchange__nav__bar__hover">
+                        <a href="./exchange.html" class="exchange__nav__bar__hover__link exchange__nav__bar__hover__link__on">Trade</a>
+                    </div>
+                    <div class="exchange__nav__bar__dropdown">
+                        <div class="exchange__nav__bar__dropdown__div__top">
+                            <a href="./exchange.html"  class="exchange__nav__bar__dropdown__link">Exchange</a>
+                        </div>
+                        <div class="exchange__nav__bar__dropdown__div__bot">
+                            <a href="./liquidity.html" class="exchange__nav__bar__dropdown__link">Liquidity</a>
+                        </div>
                     </div>
                 </div>
-                <div >earn</div>
-                <div>nft</div>
-                <div>info</div>
+                <div class="exchange__nav__bar__trade exchange__nav__bar__trade__on " >
+                    <div class="exchange__nav__bar__hover">
+                        <a href="./farm.html" class="exchange__nav__bar__hover__link">Earn</a>
+                    </div>
+                    <div class="exchange__nav__bar__dropdown">
+                        <div class="exchange__nav__bar__dropdown__div__top">
+                            <a href="./farm.html"  class="exchange__nav__bar__dropdown__link">Farms</a>
+                        </div>
+                        <div class="exchange__nav__bar__dropdown__div__bot">
+                            <a href="./pool.html" class="exchange__nav__bar__dropdown__link">Pools</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="exchange__nav__bar__hover">NFTs</div>
+                </div>
+                <div>
+                    <div class="exchange__nav__bar__hover">info</div>
+                </div>
             </div>
-            <div class="nav__bar">
-                <div>ajustes</div>
-                <div>wallet connect</div>
+            <div class="exchange__nav__bar">
+                <div>
+                    <span class="material-icons-outlined exchange__nav__bar__settings">
+                        settings
+                        </span>
+                </div>
+                <div class="exchange__nav__bar__wallet">
+                    <button onclick="document.getElementById('wallet').style.display='block'" class="exchange__nav__bar__wallet__button">Connect Wallet</button>
+                </div>
             </div>
          </nav>
+         <section class="exchange__subnav ">
+             <h2 class="exchange__subnav__h2" ><a href="./exchange.html" class="exchange__subnav__link exchange__subnav__link__on">Swap</a></h2>
+             <h2 class="exchange__subnav__h2"><a href="./liquidity.html" class="exchange__subnav__link">Liquidity</a></h2>
+         </section>
      </header>
-
+     <section class="wallet" id="wallet">
+        <article class="wallet__fondo">
+           <div class="wallet__container">
+            <div class="wallet__encabezado">
+                <div class="wallet__encabezado__connect" >Connect Wallet</div>
+                <span class="material-icons-outlined wallet__encabezado__close" onclick="document.getElementById('wallet').style.display='none'">
+                    close
+                    </span>
+            </div>
+            <!--grid-->
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <div>Metamask</div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div>Binance Wallet</div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div>Coinbase Wallet</div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <div>... More</div>
+                </div>
+            </div>
+            <div>
+                <div>Haven’t got a crypto wallet yet?</div>
+                <button >Learn How to Connect</button>
+            </div>
+           </div>
+        </article>
+     </section>
 
     
 </body>

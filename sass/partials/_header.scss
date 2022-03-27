@@ -1,46 +1,230 @@
+@import "../misc/variables";
+
+/* Navbar Exchange*/
+
+.exchange__nav {
+    background-color: $background-blanco;
+    display: flex;
+    border-bottom: $border-blanco solid 1px;
+    justify-content: space-between;
+    &__bar {
+        display: flex;
+        &__hover:hover {
+            background-color: $hover-blanco;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        &__hover {
+            padding: 12px;
+            &__link {
+                text-decoration: none;
+                color: black;
+                &__on {
+                    color: $red;
+                    font-weight: bold;
+                 }
+            }
+        }
+        &__logo {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 2.5rem;
+            padding: 12px;
+            &__img {
+                height: 27px;
+                margin-right: 2px;
+            }
+            &__pokedex {
+                font-weight: bold;
+                font-size: 22px;
+                font-family: pokemon;
+            }
+        }
+        &__settings {
+            margin-top: 13px;
+            color: $red;
+        }
+        &__wallet {
+            padding: 12px;
+            &__button {
+                background-color: $red;
+                color: $border-blanco;
+                border: none;
+                border-radius: 2rem;
+                width: 135px;
+                cursor: pointer;
+                &:hover {
+                    color: white;
+                    border: solid red 1px;
+                }
+            }
+        }
+    }
+}
+body header nav div div {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url(../letras/ketchum.otf);
+}
+.exchange__nav__bar__dropdown {
+    display: none;
+    position: absolute;
+    width: 278px;
+    border: #e7e3eb solid 1px;
+    color: black;
+    border-radius: 1rem;
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+    &__div__top {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius: 0.8rem 0.8rem 0 0;
+        }
+    }
+    &__div__bot {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius:  0 0 0.8rem 0.8rem;
+        }
+    }
+}
+.exchange__nav__bar__trade:hover .exchange__nav__bar__dropdown {
+    display: block;
+    background-color: #faf9fa;
+}
+/*SubNav*/
+.exchange__subnav {
+    background-color: $background-blanco;
+    display: flex;
+    border-bottom: $border-blanco solid 1px;
+    justify-content: center;
+    &__h2 {
+        padding: 12px 0px 3px 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+        &__on {
+            border-bottom: solid 3px $red;
+            color: $red;
+        }
+    }
+}
+/*Fin Navbar Exchange*/
+
+/*Navbar Liquidity*/
 .nav {
     background-color: #faf9fa;
     display: flex;
     justify-content: space-between;
+    border-bottom: #e7e3eb solid 1px;
     &__bar {
         display: flex;
-        & div {
-            padding: 5px;
+        &__hover:hover {
+            background-color: $hover-blanco;
+            border-radius: 1rem;
+            cursor: pointer;
         }
-        &__trade {
-            position: relative;
-            display: inline-block;
+        &__hover {
+            padding: 12px;
+            &__link {
+                text-decoration: none;
+                color: black;
+                &__on {
+                    color: rgb(192, 192, 20);
+                    font-weight: bold;
+                 }
+            }
+        }
+        &__logo {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 2.5rem;
+            padding: 12px;
+            &__img {
+                height: 27px;
+                margin-right: 2px;
+            }
+            &__pokedex {
+                font-weight: bold;
+                font-size: 22px;
+                font-family: pokemon;
+            }
+        }
+        &__settings {
+            margin-top: 13px;
+        }
+        &__wallet {
+            padding: 12px;
             &__button {
-                background-color: #faf9fa;
-                color: rgb(0, 0, 0);
-                padding: 16px;
+                background-color: rgb(192, 192, 20);
+                color: #e7e3eb;
                 border: none;
+                border-radius: 2rem;
+                width: 135px;
                 cursor: pointer;
+                &:hover {
+                    color: white;
+                    border: solid yellow 1px;
+                }
             }
-            &__dropdown {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            &:hover .nav__bar__trade__dropdown {display: block;}
         }
     }
 }
-.nav__bar__trade__button:hover {
-    background-color: #faf9fa; 
-    cursor: pointer;
+body header nav div div {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
-
-
-
-  
-
-  
-
-
-  
-  
+@font-face {
+    font-family: pokemon;
+    src: url(../letras/ketchum.otf);
+}
+.nav__bar__dropdown {
+    display: none;
+    position: absolute;
+    width: 278px;
+    border: #e7e3eb solid 1px;
+    color: black;
+    border-radius: 1rem;
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+    &__div__top {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius: 0.8rem 0.8rem 0 0;
+        }
+    }
+    &__div__bot {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius:  0 0 0.8rem 0.8rem;
+        }
+    }
+}
+.nav__bar__trade:hover .nav__bar__dropdown {
+    display: block;
+    background-color: #faf9fa;
+}
+/*Fin Navbar Liquidity*/

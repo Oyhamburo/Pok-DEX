@@ -1,0 +1,100 @@
+@import "../misc/variables";
+.nav {
+    background-color: #faf9fa;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #e7e3eb solid 1px;
+    &__bar {
+        display: flex;
+        &__hover:hover {
+            background-color: $hover-blanco;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        &__hover {
+            padding: 12px;
+            &__link {
+                text-decoration: none;
+                color: black;
+                &__on {
+                    color: rgb(192, 192, 20);
+                    font-weight: bold;
+                 }
+            }
+        }
+        &__logo {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 2.5rem;
+            padding: 12px;
+            &__img {
+                height: 27px;
+                margin-right: 2px;
+            }
+            &__pokedex {
+                font-weight: bold;
+                font-size: 22px;
+                font-family: pokemon;
+            }
+        }
+        &__settings {
+            margin-top: 13px;
+        }
+        &__wallet {
+            padding: 12px;
+            &__button {
+                background-color: rgb(192, 192, 20);
+                color: #e7e3eb;
+                border: none;
+                border-radius: 2rem;
+                width: 135px;
+                cursor: pointer;
+                &:hover {
+                    color: white;
+                    border: solid yellow 1px;
+                }
+            }
+        }
+    }
+}
+body header nav div div {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url(../letras/ketchum.otf);
+}
+.nav__bar__dropdown {
+    display: none;
+    position: absolute;
+    width: 278px;
+    border: #e7e3eb solid 1px;
+    color: black;
+    border-radius: 1rem;
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+    &__div__top {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius: 0.8rem 0.8rem 0 0;
+        }
+    }
+    &__div__bot {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius:  0 0 0.8rem 0.8rem;
+        }
+    }
+}
+.nav__bar__trade:hover .nav__bar__dropdown {
+    display: block;
+    background-color: #faf9fa;
+}

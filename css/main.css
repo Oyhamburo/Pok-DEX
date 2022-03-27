@@ -1,6 +1,95 @@
 /*Views*/
-.background__container__exchange {
+/*Generales*/
+/*Variables para header*/
+.nav {
+  background-color: #faf9fa;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #e7e3eb solid 1px; }
+  .nav__bar {
+    display: flex; }
+    .nav__bar__hover:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem;
+      cursor: pointer; }
+    .nav__bar__hover {
+      padding: 12px; }
+      .nav__bar__hover__link {
+        text-decoration: none;
+        color: black; }
+        .nav__bar__hover__link__on {
+          color: #c0c014;
+          font-weight: bold; }
+    .nav__bar__logo {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      margin-left: 1rem;
+      margin-right: 2.5rem;
+      padding: 12px; }
+      .nav__bar__logo__img {
+        height: 27px;
+        margin-right: 2px; }
+      .nav__bar__logo__pokedex {
+        font-weight: bold;
+        font-size: 22px;
+        font-family: pokemon; }
+    .nav__bar__settings {
+      margin-top: 13px; }
+    .nav__bar__wallet {
+      padding: 12px; }
+      .nav__bar__wallet__button {
+        background-color: #c0c014;
+        color: #e7e3eb;
+        border: none;
+        border-radius: 2rem;
+        width: 135px;
+        cursor: pointer; }
+        .nav__bar__wallet__button:hover {
+          color: white;
+          border: solid yellow 1px; }
+
+body header nav div div {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+.nav__bar__dropdown {
+  display: none;
+  position: absolute;
+  width: 278px;
+  border: #e7e3eb solid 1px;
+  color: black;
+  border-radius: 1rem; }
+  .nav__bar__dropdown__link {
+    text-decoration: none;
+    color: black; }
+  .nav__bar__dropdown__div__top {
+    padding: 10px; }
+    .nav__bar__dropdown__div__top:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0.8rem 0.8rem 0 0; }
+  .nav__bar__dropdown__div__bot {
+    padding: 10px; }
+    .nav__bar__dropdown__div__bot:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0 0 0.8rem 0.8rem; }
+
+.nav__bar__trade:hover .nav__bar__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+.background__container__liquidity {
   background-color: #ffffb8; }
+
+.background__container__exchange {
+  background-color: rgba(216, 0, 0, 0.075); }
+
+.jere {
+  display: none; }
 
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
@@ -155,41 +244,231 @@
     font-size: 11px; } }
 
 /*Partials*/
+/*Generales*/
+/*Variables para header*/
+/* Navbar Exchange*/
+.exchange__nav {
+  background-color: #faf9fa;
+  display: flex;
+  border-bottom: #e7e3eb solid 1px;
+  justify-content: space-between; }
+  .exchange__nav__bar {
+    display: flex; }
+    .exchange__nav__bar__hover:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem;
+      cursor: pointer; }
+    .exchange__nav__bar__hover {
+      padding: 12px; }
+      .exchange__nav__bar__hover__link {
+        text-decoration: none;
+        color: black; }
+        .exchange__nav__bar__hover__link__on {
+          color: #dc3545;
+          font-weight: bold; }
+    .exchange__nav__bar__logo {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      margin-left: 1rem;
+      margin-right: 2.5rem;
+      padding: 12px; }
+      .exchange__nav__bar__logo__img {
+        height: 27px;
+        margin-right: 2px; }
+      .exchange__nav__bar__logo__pokedex {
+        font-weight: bold;
+        font-size: 22px;
+        font-family: pokemon; }
+    .exchange__nav__bar__settings {
+      margin-top: 13px;
+      color: #dc3545; }
+    .exchange__nav__bar__wallet {
+      padding: 12px; }
+      .exchange__nav__bar__wallet__button {
+        background-color: #dc3545;
+        color: #e7e3eb;
+        border: none;
+        border-radius: 2rem;
+        width: 135px;
+        cursor: pointer; }
+        .exchange__nav__bar__wallet__button:hover {
+          color: white;
+          border: solid red 1px; }
+
+body header nav div div {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+.exchange__nav__bar__dropdown {
+  display: none;
+  position: absolute;
+  width: 278px;
+  border: #e7e3eb solid 1px;
+  color: black;
+  border-radius: 1rem; }
+  .exchange__nav__bar__dropdown__link {
+    text-decoration: none;
+    color: black; }
+  .exchange__nav__bar__dropdown__div__top {
+    padding: 10px; }
+    .exchange__nav__bar__dropdown__div__top:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0.8rem 0.8rem 0 0; }
+  .exchange__nav__bar__dropdown__div__bot {
+    padding: 10px; }
+    .exchange__nav__bar__dropdown__div__bot:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0 0 0.8rem 0.8rem; }
+
+.exchange__nav__bar__trade:hover .exchange__nav__bar__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+/*SubNav*/
+.exchange__subnav {
+  background-color: #faf9fa;
+  display: flex;
+  border-bottom: #e7e3eb solid 1px;
+  justify-content: center; }
+  .exchange__subnav__h2 {
+    padding: 12px 0px 3px 0px;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .exchange__subnav__h2:hover {
+      background-color: #e1ebe48a; }
+  .exchange__subnav__link {
+    text-decoration: none;
+    color: black; }
+    .exchange__subnav__link__on {
+      border-bottom: solid 3px #dc3545;
+      color: #dc3545; }
+
+/*Fin Navbar Exchange*/
+/*Navbar Liquidity*/
 .nav {
   background-color: #faf9fa;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: #e7e3eb solid 1px; }
   .nav__bar {
     display: flex; }
-    .nav__bar div {
-      padding: 5px; }
-    .nav__bar__trade {
-      position: relative;
-      display: inline-block; }
-      .nav__bar__trade__button {
-        background-color: #faf9fa;
-        color: black;
-        padding: 16px;
+    .nav__bar__hover:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem;
+      cursor: pointer; }
+    .nav__bar__hover {
+      padding: 12px; }
+      .nav__bar__hover__link {
+        text-decoration: none;
+        color: black; }
+        .nav__bar__hover__link__on {
+          color: #c0c014;
+          font-weight: bold; }
+    .nav__bar__logo {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      margin-left: 1rem;
+      margin-right: 2.5rem;
+      padding: 12px; }
+      .nav__bar__logo__img {
+        height: 27px;
+        margin-right: 2px; }
+      .nav__bar__logo__pokedex {
+        font-weight: bold;
+        font-size: 22px;
+        font-family: pokemon; }
+    .nav__bar__settings {
+      margin-top: 13px; }
+    .nav__bar__wallet {
+      padding: 12px; }
+      .nav__bar__wallet__button {
+        background-color: #c0c014;
+        color: #e7e3eb;
         border: none;
+        border-radius: 2rem;
+        width: 135px;
         cursor: pointer; }
-      .nav__bar__trade__dropdown {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1; }
-      .nav__bar__trade:hover .nav__bar__trade__dropdown {
-        display: block; }
+        .nav__bar__wallet__button:hover {
+          color: white;
+          border: solid yellow 1px; }
 
-.nav__bar__trade__button:hover {
-  background-color: #faf9fa;
-  cursor: pointer; }
+body header nav div div {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+.nav__bar__dropdown {
+  display: none;
+  position: absolute;
+  width: 278px;
+  border: #e7e3eb solid 1px;
+  color: black;
+  border-radius: 1rem; }
+  .nav__bar__dropdown__link {
+    text-decoration: none;
+    color: black; }
+  .nav__bar__dropdown__div__top {
+    padding: 10px; }
+    .nav__bar__dropdown__div__top:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0.8rem 0.8rem 0 0; }
+  .nav__bar__dropdown__div__bot {
+    padding: 10px; }
+    .nav__bar__dropdown__div__bot:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0 0 0.8rem 0.8rem; }
+
+.nav__bar__trade:hover .nav__bar__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+/*Fin Navbar Liquidity*/
+/*Generales*/
+/*Variables para header*/
+.wallet {
+  display: block; }
+  .wallet .wallet__fondo {
+    background-color: rgba(0, 0, 0, 0.267);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .wallet .wallet__fondo .wallet__container {
+      background-color: #faf9fa;
+      width: 342px;
+      height: 486px;
+      border-radius: 2rem; }
+  .wallet__encabezado {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc3545;
+    border-radius: 2rem 2rem 0 0; }
+    .wallet__encabezado__connect {
+      font-size: 20px; }
+    .wallet__encabezado__close {
+      cursor: pointer; }
 
 /*Misc*/
 * {
   font-family: 'Kanit', sans-serif;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
+/*Generales*/
+/*Variables para header*/
 * {
   margin: 0px; }

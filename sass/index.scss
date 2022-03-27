@@ -1,5 +1,6 @@
 
 /*Views*/
+@import "./views/liquidity";
 @import "./views/exchange";
 @import "./views/farms";
 @import "./views/home";
@@ -8,6 +9,7 @@
 /*Partials*/
 @import "./partials/header";
 @import "./partials/footer";
+@import "./partials/wallet";
 
 /*Misc*/
 @import "./misc/normalize";
