@@ -7,6 +7,97 @@
 .background__container__exchange {
   background-color: #faeded; }
 
+.swap__container {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.815); }
+  .swap__container .swap {
+    border: solid #e7e3eb 2px;
+    width: 326px;
+    height: 535px;
+    margin-top: 2.2%;
+    background-color: #faf9fa;
+    border-radius: 1.7rem;
+    text-align: center; }
+    .swap__container .swap__top {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border-bottom: solid #e7e3eb 2px; }
+      .swap__container .swap__top__dirrection {
+        display: flex;
+        justify-content: space-between; }
+        .swap__container .swap__top__dirrection__span:hover {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.3s; }
+      .swap__container .swap__top__text {
+        margin-left: 50px;
+        font-size: 1.2rem; }
+    .swap__container .swap__middle {
+      padding: 2rem; }
+      .swap__container .swap__middle__token {
+        display: flex; }
+        .swap__container .swap__middle__token:hover {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.3s; }
+        .swap__container .swap__middle__token__img {
+          height: 25px;
+          width: 25px; }
+      .swap__container .swap__middle__amount {
+        width: 90%;
+        border: solid 2px #e7e3eb;
+        background-color: #faeded;
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: end; }
+      .swap__container .swap__middle__arrow {
+        background-color: #faeded;
+        border-radius: 50%;
+        margin: 1rem;
+        padding: 5px; }
+        .swap__container .swap__middle__arrow:hover {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.3s; }
+    .swap__container .swap__bot {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 1rem; }
+      .swap__container .swap__bot__sli {
+        font-size: small; }
+      .swap__container .swap__bot__p {
+        font-weight: bold;
+        color: #dc3545; }
+      .swap__container .swap__bot__btn {
+        width: 100%;
+        background-color: #dc3545;
+        border-radius: 1rem;
+        color: white;
+        border: none;
+        padding: 0.3rem;
+        font-size: 1.1rem;
+        margin-top: 1rem; }
+        .swap__container .swap__bot__btn:hover {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.3s; }
+
+.jere {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 10%; }
+
+.ujsi {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 20%; }
+
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
   background-repeat: no-repeat;
@@ -163,6 +254,10 @@
 /*Generales*/
 /*Variables para header*/
 /* Navbar Exchange*/
+.header__nav {
+  position: fixed;
+  width: 100%; }
+
 .exchange__nav {
   background-color: #faf9fa;
   display: flex;
@@ -300,15 +395,15 @@ body header nav div div {
 
 /*Fin Navbar Exchange*/
 .mobile {
-  display: none; }
+  display: none;
+  position: fixed;
+  bottom: 0%;
+  width: 100%; }
 
 .exchange__nav__mobile {
   display: flex;
   justify-content: space-around;
-  background-color: #faf9fa;
-  position: absolute;
-  width: 100%;
-  bottom: 0%; }
+  background-color: #faf9fa; }
   .exchange__nav__mobile__container {
     display: flex;
     flex-direction: column;

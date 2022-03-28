@@ -1,7 +1,10 @@
 @import "../misc/variables";
 
 /* Navbar Exchange*/
-
+.header__nav {
+    position: fixed;
+    width: 100%;
+}
 .exchange__nav {
     background-color: $background-blanco;
     display: flex;
@@ -165,16 +168,19 @@ body header nav div div {
     }
 }
 /*Fin Navbar Exchange*/
+.header__nav__mobile {
+
+}
 .mobile {
     display: none;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
 }
 .exchange__nav__mobile {
     display: flex;
     justify-content: space-around;
     background-color: $background-blanco;
-    position: absolute;
-    width: 100%;
-    bottom: 0%;
     &__container{
         display: flex;
         flex-direction: column;
