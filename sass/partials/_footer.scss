@@ -1,0 +1,39 @@
+
+.ujsi {
+    position: absolute;
+    width: 350px;
+    right: 0%;
+    bottom: 0%;
+    margin: 0;
+
+}
+
+.exchange__footer {
+    background-color: $red;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    align-items: center;
+    margin-top: 290px;
+    &__a {
+        &__img {
+            width: 250px;
+        }
+    }
+    &__strategic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 11%;
+        &__img {
+            border-radius: 2rem;
+            width: 200px;
+        }
+        &__text {
+            font-size: 1.6rem;
+            color: white;
+            margin-bottom: 8%;
+        }
+    }
+
+}

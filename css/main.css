@@ -86,18 +86,6 @@
           opacity: 0.5;
           transition: 0.3s; }
 
-.jere {
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  width: 10%; }
-
-.ujsi {
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  width: 20%; }
-
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
   background-repeat: no-repeat;
@@ -436,6 +424,35 @@ body header nav div div {
     display: block; } }
 
 /*Fin responsive Navbar*/
+.ujsi {
+  position: absolute;
+  width: 350px;
+  right: 0%;
+  bottom: 0%;
+  margin: 0; }
+
+.exchange__footer {
+  background-color: #dc3545;
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  align-items: center;
+  margin-top: 290px; }
+  .exchange__footer__a__img {
+    width: 250px; }
+  .exchange__footer__strategic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 11%; }
+    .exchange__footer__strategic__img {
+      border-radius: 2rem;
+      width: 200px; }
+    .exchange__footer__strategic__text {
+      font-size: 1.6rem;
+      color: white;
+      margin-bottom: 8%; }
+
 /*Generales*/
 /*Variables para header*/
 .wallet {

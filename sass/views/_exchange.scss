@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     color: rgba(0, 0, 0, 0.815);
+    
     .swap {
         border: solid $border-blanco 2px;
         width: 326px;
@@ -106,17 +107,4 @@
             }
         }
     }
-}
-.jere {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 10%;
-}
-.ujsi {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 20%;
-
 }
