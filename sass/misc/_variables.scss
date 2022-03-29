@@ -24,6 +24,9 @@ $blue: #0dcaf0;
 .red-b{
     border-bottom: $red solid 3px !important;
 }
+.bg-red-ligth {
+    background-color: #faeded;
+}
 /*green*/
 .bg-green {
     background-color: $green;
@@ -33,6 +36,9 @@ $blue: #0dcaf0;
 }
 .green-b{
     border-bottom: $green solid 3px !important;
+}
+.bg-green-ligth {
+    background-color: rgb(158, 250, 158);
 }
 /*yellow*/
 .bg-yellow {
@@ -44,6 +50,9 @@ $blue: #0dcaf0;
 .yellow-b{
     border-bottom: $yellow solid 3px !important;
 }
+.bg-yellow-ligth {
+    background-color: #FFFFE0;
+}
 /*blue*/
 .bg-blue {
     background-color: $blue;
@@ -53,4 +62,7 @@ $blue: #0dcaf0;
 }
 .blue-b{
     border-bottom: $blue solid 3px !important;
+}
+.bg-blue-ligth {
+    background-color: #d4effc;
 }

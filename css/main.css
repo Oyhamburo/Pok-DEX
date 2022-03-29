@@ -1,4 +1,7 @@
 /*Views*/
+.background__container__pool {
+  background-color: #d4effc; }
+
 /*Generales*/
 /*Variables para header*/
 .bg-white {
@@ -14,6 +17,9 @@
 .red-b {
   border-bottom: #dc3545 solid 3px !important; }
 
+.bg-red-ligth {
+  background-color: #faeded; }
+
 /*green*/
 .bg-green {
   background-color: #1ebd1e; }
@@ -23,6 +29,9 @@
 
 .green-b {
   border-bottom: #1ebd1e solid 3px !important; }
+
+.bg-green-ligth {
+  background-color: #9efa9e; }
 
 /*yellow*/
 .bg-yellow {
@@ -34,6 +43,9 @@
 .yellow-b {
   border-bottom: gold solid 3px !important; }
 
+.bg-yellow-ligth {
+  background-color: #FFFFE0; }
+
 /*blue*/
 .bg-blue {
   background-color: #0dcaf0; }
@@ -43,6 +55,9 @@
 
 .blue-b {
   border-bottom: #0dcaf0 solid 3px !important; }
+
+.bg-blue-ligth {
+  background-color: #d4effc; }
 
 .background__container__liquidity {
   background-color: #FFFFE0; }
@@ -124,6 +139,9 @@
 .red-b {
   border-bottom: #dc3545 solid 3px !important; }
 
+.bg-red-ligth {
+  background-color: #faeded; }
+
 /*green*/
 .bg-green {
   background-color: #1ebd1e; }
@@ -133,6 +151,9 @@
 
 .green-b {
   border-bottom: #1ebd1e solid 3px !important; }
+
+.bg-green-ligth {
+  background-color: #9efa9e; }
 
 /*yellow*/
 .bg-yellow {
@@ -144,6 +165,9 @@
 .yellow-b {
   border-bottom: gold solid 3px !important; }
 
+.bg-yellow-ligth {
+  background-color: #FFFFE0; }
+
 /*blue*/
 .bg-blue {
   background-color: #0dcaf0; }
@@ -153,6 +177,9 @@
 
 .blue-b {
   border-bottom: #0dcaf0 solid 3px !important; }
+
+.bg-blue-ligth {
+  background-color: #d4effc; }
 
 .background__container__exchange {
   background-color: #faeded; }
@@ -255,6 +282,21 @@
       cursor: pointer;
       opacity: 0.5;
       transition: 0.3s; }
+
+.background__container__farm {
+  background-color: #faf9fa; }
+
+.farm__titulo {
+  display: flex;
+  justify-content: space-around; }
+  .farm__titulo__left {
+    margin-top: 2rem; }
+    .farm__titulo__left h1 {
+      font-size: 4rem; }
+    .farm__titulo__left div {
+      font-size: 1.8rem; }
+  .farm__titulo__rigth__img {
+    height: 280px; }
 
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
@@ -424,6 +466,9 @@
 .red-b {
   border-bottom: #dc3545 solid 3px !important; }
 
+.bg-red-ligth {
+  background-color: #faeded; }
+
 /*green*/
 .bg-green {
   background-color: #1ebd1e; }
@@ -433,6 +478,9 @@
 
 .green-b {
   border-bottom: #1ebd1e solid 3px !important; }
+
+.bg-green-ligth {
+  background-color: #9efa9e; }
 
 /*yellow*/
 .bg-yellow {
@@ -444,6 +492,9 @@
 .yellow-b {
   border-bottom: gold solid 3px !important; }
 
+.bg-yellow-ligth {
+  background-color: #FFFFE0; }
+
 /*blue*/
 .bg-blue {
   background-color: #0dcaf0; }
@@ -453,6 +504,9 @@
 
 .blue-b {
   border-bottom: #0dcaf0 solid 3px !important; }
+
+.bg-blue-ligth {
+  background-color: #d4effc; }
 
 /*general*/
 .nav {
@@ -633,47 +687,23 @@ body header nav div div {
 /*Fin responsive Navbar*/
 /*fin general*/
 /*footer exchange*/
-.exchange__footer {
-  background-color: #dc3545;
+.footer {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   display: flex;
   justify-content: space-between;
   padding: 3%;
   align-items: center; }
-  .exchange__footer__a__img {
+  .footer__a__img {
     width: 250px; }
-  .exchange__footer__strategic {
+  .footer__strategic {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 11%; }
-    .exchange__footer__strategic__img {
+    .footer__strategic__img {
       border-radius: 2rem;
       width: 200px; }
-    .exchange__footer__strategic__text {
-      font-size: 1.6rem;
-      color: white;
-      margin-bottom: 8%; }
-
-/*footer liquidity*/
-.liquidity__footer {
-  background-color: gold;
-  /* background-image: linear-gradient(180deg, rgb(255, 215, 0, 0.15), rgb(255, 215, 0));*/
-  display: flex;
-  justify-content: space-between;
-  padding: 3%;
-  align-items: center; }
-  .liquidity__footer__a__img {
-    width: 250px; }
-  .liquidity__footer__strategic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 11%; }
-    .liquidity__footer__strategic__img {
-      border-radius: 2rem;
-      width: 200px; }
-    .liquidity__footer__strategic__text {
+    .footer__strategic__text {
       font-size: 1.6rem;
       color: white;
       margin-bottom: 8%; }
@@ -693,6 +723,9 @@ body header nav div div {
 .red-b {
   border-bottom: #dc3545 solid 3px !important; }
 
+.bg-red-ligth {
+  background-color: #faeded; }
+
 /*green*/
 .bg-green {
   background-color: #1ebd1e; }
@@ -702,6 +735,9 @@ body header nav div div {
 
 .green-b {
   border-bottom: #1ebd1e solid 3px !important; }
+
+.bg-green-ligth {
+  background-color: #9efa9e; }
 
 /*yellow*/
 .bg-yellow {
@@ -713,6 +749,9 @@ body header nav div div {
 .yellow-b {
   border-bottom: gold solid 3px !important; }
 
+.bg-yellow-ligth {
+  background-color: #FFFFE0; }
+
 /*blue*/
 .bg-blue {
   background-color: #0dcaf0; }
@@ -723,11 +762,14 @@ body header nav div div {
 .blue-b {
   border-bottom: #0dcaf0 solid 3px !important; }
 
+.bg-blue-ligth {
+  background-color: #d4effc; }
+
 /* Wallet exchange*/
-.exchange__wallet {
+.wallet {
   display: none;
   border: solid #e7e3eb 1.5px; }
-  .exchange__wallet .exchange__wallet__fondo {
+  .wallet .wallet__fondo {
     background-color: rgba(0, 0, 0, 0.267);
     position: fixed;
     top: 0;
@@ -737,135 +779,61 @@ body header nav div div {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .exchange__wallet .exchange__wallet__fondo .exchange__wallet__container {
-      background-color: #faeded;
+    .wallet .wallet__fondo .wallet__container {
       width: 342px;
       height: 486px;
       border-radius: 2rem; }
-  .exchange__wallet__encabezado {
+  .wallet__encabezado {
     display: flex;
     padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #dc3545;
     border-radius: 2rem 2rem 0 0;
     margin-bottom: 10px; }
-    .exchange__wallet__encabezado__connect {
+    .wallet__encabezado__connect {
       font-size: 20px;
       color: white; }
-    .exchange__wallet__encabezado__close {
+    .wallet__encabezado__close {
       cursor: pointer; }
-  .exchange__wallet__grid {
+  .wallet__grid {
     display: grid;
     grid-template-columns: auto auto; }
-    .exchange__wallet__grid__item {
+    .wallet__grid__item {
       margin: 2rem 2rem 2rem 1.6rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       cursor: pointer; }
-      .exchange__wallet__grid__item:hover {
+      .wallet__grid__item:hover {
         opacity: 0.5;
         transition: 0.3s; }
-      .exchange__wallet__grid__item__img {
+      .wallet__grid__item__img {
         width: 40px;
         height: 40px; }
-      .exchange__wallet__grid__item__text {
+      .wallet__grid__item__text {
         width: max-content; }
-      .exchange__wallet__grid__item__more {
+      .wallet__grid__item__more {
         padding-top: 9px; }
-        .exchange__wallet__grid__item__more__text {
+        .wallet__grid__item__more__text {
           margin-top: 5px; }
-  .exchange__wallet__bot {
+  .wallet__bot {
     border-top: #e7e3eb solid 1.5px; }
-    .exchange__wallet__bot__text {
+    .wallet__bot__text {
       text-align: center;
       margin-top: 20px; }
-    .exchange__wallet__bot__button {
-      background-color: #dc3545;
+    .wallet__bot__button {
       border-radius: 1rem;
       color: white;
       border: none;
       width: 80%;
       padding: 0.5rem;
       font-weight: bold; }
-      .exchange__wallet__bot__button:hover {
+      .wallet__bot__button:hover {
         opacity: 0.5;
         transition: 0.3s;
         cursor: pointer; }
 
 /*Fin Wallet exchange*/
-/*Wallet liquidity*/
-.liquidity__wallet {
-  display: none;
-  border: solid #e7e3eb 1.5px; }
-  .liquidity__wallet .liquidity__wallet__fondo {
-    background-color: rgba(0, 0, 0, 0.267);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .liquidity__wallet .liquidity__wallet__fondo .liquidity__wallet__container {
-      background-color: #FFFFE0;
-      width: 342px;
-      height: 486px;
-      border-radius: 2rem; }
-  .liquidity__wallet__encabezado {
-    display: flex;
-    padding: 1.5rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: gold;
-    border-radius: 2rem 2rem 0 0;
-    margin-bottom: 10px; }
-    .liquidity__wallet__encabezado__connect {
-      font-size: 20px;
-      color: white; }
-    .liquidity__wallet__encabezado__close {
-      cursor: pointer; }
-  .liquidity__wallet__grid {
-    display: grid;
-    grid-template-columns: auto auto; }
-    .liquidity__wallet__grid__item {
-      margin: 2rem 2rem 2rem 1.6rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer; }
-      .liquidity__wallet__grid__item:hover {
-        opacity: 0.5;
-        transition: 0.3s; }
-      .liquidity__wallet__grid__item__img {
-        width: 40px;
-        height: 40px; }
-      .liquidity__wallet__grid__item__text {
-        width: max-content; }
-      .liquidity__wallet__grid__item__more {
-        padding-top: 9px; }
-        .liquidity__wallet__grid__item__more__text {
-          margin-top: 5px; }
-  .liquidity__wallet__bot {
-    border-top: #e7e3eb solid 1.5px; }
-    .liquidity__wallet__bot__text {
-      text-align: center;
-      margin-top: 20px; }
-    .liquidity__wallet__bot__button {
-      background-color: gold;
-      border-radius: 1rem;
-      color: white;
-      border: none;
-      width: 80%;
-      padding: 0.5rem;
-      font-weight: bold; }
-      .liquidity__wallet__bot__button:hover {
-        opacity: 0.5;
-        transition: 0.3s;
-        cursor: pointer; }
-
 /*Misc*/
 * {
   font-family: 'Kanit', sans-serif;
@@ -886,6 +854,9 @@ body header nav div div {
 .red-b {
   border-bottom: #dc3545 solid 3px !important; }
 
+.bg-red-ligth {
+  background-color: #faeded; }
+
 /*green*/
 .bg-green {
   background-color: #1ebd1e; }
@@ -895,6 +866,9 @@ body header nav div div {
 
 .green-b {
   border-bottom: #1ebd1e solid 3px !important; }
+
+.bg-green-ligth {
+  background-color: #9efa9e; }
 
 /*yellow*/
 .bg-yellow {
@@ -906,6 +880,9 @@ body header nav div div {
 .yellow-b {
   border-bottom: gold solid 3px !important; }
 
+.bg-yellow-ligth {
+  background-color: #FFFFE0; }
+
 /*blue*/
 .bg-blue {
   background-color: #0dcaf0; }
@@ -915,6 +892,9 @@ body header nav div div {
 
 .blue-b {
   border-bottom: #0dcaf0 solid 3px !important; }
+
+.bg-blue-ligth {
+  background-color: #d4effc; }
 
 * {
   margin: 0px; }

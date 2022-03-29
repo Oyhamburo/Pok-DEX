@@ -1,0 +1,24 @@
+
+
+.background__container__farm {
+    background-color: $background-blanco;
+}
+
+.farm__titulo {
+    display: flex;
+    justify-content: space-around;
+    &__left {
+        margin-top: 2rem;
+        & h1 {
+            font-size: 4rem;
+        }
+        & div {
+            font-size: 1.8rem;
+        }
+    }
+    &__rigth {
+        &__img {
+            height: 280px;
+        }
+    }
+}
