@@ -295,8 +295,45 @@
       font-size: 4rem; }
     .farm__titulo__left div {
       font-size: 1.8rem; }
-  .farm__titulo__rigth__img {
-    height: 280px; }
+  .farm__titulo__img {
+    height: 240px; }
+
+.farm__container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem; }
+  .farm__container__top {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .farm__container__top__left {
+      display: flex; }
+      .farm__container__top__left div {
+        padding: 0 1rem 0 0.1rem; }
+        .farm__container__top__left div:hover {
+          opacity: 0.5;
+          transition: 0.3s;
+          cursor: pointer; }
+      .farm__container__top__left__live__finished {
+        display: flex;
+        align-items: center;
+        border-radius: 2rem; }
+        .farm__container__top__left__live__finished__on {
+          border-radius: 2rem;
+          padding: 0.2rem 1rem 0.2rem 1rem;
+          margin-right: 3px; }
+    .farm__container__top__rigth {
+      display: flex; }
+      .farm__container__top__rigth__item {
+        margin: 0 5px 0 5px; }
+        .farm__container__top__rigth__item div {
+          font-size: 0.7rem;
+          margin-left: 0.5rem; }
+        .farm__container__top__rigth__item__select {
+          border-radius: 1rem;
+          border: #e7e3eb 1px solid;
+          padding: 0.4rem; }
 
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);

@@ -16,9 +16,56 @@
             font-size: 1.8rem;
         }
     }
-    &__rigth {
-        &__img {
-            height: 280px;
+    &__img {
+        height: 240px;
+    }
+}
+.farm__container {
+    display: flex;  
+    justify-content: center;
+    margin: 2rem;
+    &__top {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left {
+            display: flex;
+            
+            & div {
+                padding: 0 1rem 0 0.1rem;
+                &:hover {
+                    opacity: 0.5;
+                transition: 0.3s;
+                cursor: pointer;
+                }
+            }
+            &__live__finished {
+                display: flex;
+                align-items: center;
+                border-radius: 2rem;
+                &__on {
+                    border-radius: 2rem;
+                    padding: 0.2rem 1rem 0.2rem 1rem;
+                    margin-right: 3px;
+                }
+            }
+        }
+        &__rigth {
+            display: flex;
+            &__item {
+                margin: 0 5px 0 5px;
+                & div {
+                    font-size: 0.7rem;
+                    margin-left: 0.5rem;
+                }
+                &__select {
+                    border-radius: 1rem;
+                    border: $border-blanco 1px solid;
+                    padding: 0.4rem;
+                }
+            }
         }
     }
+    
 }
