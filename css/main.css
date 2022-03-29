@@ -1,6 +1,49 @@
 /*Views*/
 /*Generales*/
 /*Variables para header*/
+.bg-white {
+  background-color: #faf9fa; }
+
+/*red*/
+.bg-red {
+  background-color: #dc3545; }
+
+.red {
+  color: #dc3545 !important; }
+
+.red-b {
+  border-bottom: #dc3545 solid 3px !important; }
+
+/*green*/
+.bg-green {
+  background-color: #1ebd1e; }
+
+.green {
+  color: #1ebd1e !important; }
+
+.green-b {
+  border-bottom: #1ebd1e solid 3px !important; }
+
+/*yellow*/
+.bg-yellow {
+  background-color: gold; }
+
+.yellow {
+  color: gold !important; }
+
+.yellow-b {
+  border-bottom: gold solid 3px !important; }
+
+/*blue*/
+.bg-blue {
+  background-color: #0dcaf0; }
+
+.blue {
+  color: #0dcaf0 !important; }
+
+.blue-b {
+  border-bottom: #0dcaf0 solid 3px !important; }
+
 .background__container__liquidity {
   background-color: #FFFFE0; }
 
@@ -59,7 +102,7 @@
         padding: 0.7rem;
         border-radius: 1rem;
         border: none;
-        background-color: #FFD700;
+        background-color: gold;
         color: white; }
         .liquidity__container__bot__btn:hover {
           cursor: pointer;
@@ -68,6 +111,49 @@
 
 /*Generales*/
 /*Variables para header*/
+.bg-white {
+  background-color: #faf9fa; }
+
+/*red*/
+.bg-red {
+  background-color: #dc3545; }
+
+.red {
+  color: #dc3545 !important; }
+
+.red-b {
+  border-bottom: #dc3545 solid 3px !important; }
+
+/*green*/
+.bg-green {
+  background-color: #1ebd1e; }
+
+.green {
+  color: #1ebd1e !important; }
+
+.green-b {
+  border-bottom: #1ebd1e solid 3px !important; }
+
+/*yellow*/
+.bg-yellow {
+  background-color: gold; }
+
+.yellow {
+  color: gold !important; }
+
+.yellow-b {
+  border-bottom: gold solid 3px !important; }
+
+/*blue*/
+.bg-blue {
+  background-color: #0dcaf0; }
+
+.blue {
+  color: #0dcaf0 !important; }
+
+.blue-b {
+  border-bottom: #0dcaf0 solid 3px !important; }
+
 .background__container__exchange {
   background-color: #faeded; }
 
@@ -325,70 +411,104 @@
 /*Partials*/
 /*Generales*/
 /*Variables para header*/
-/* Navbar Exchange*/
-.header__nav {
-  position: fixed;
-  width: 100%; }
+.bg-white {
+  background-color: #faf9fa; }
 
-.exchange__nav {
-  background-color: #faf9fa;
+/*red*/
+.bg-red {
+  background-color: #dc3545; }
+
+.red {
+  color: #dc3545 !important; }
+
+.red-b {
+  border-bottom: #dc3545 solid 3px !important; }
+
+/*green*/
+.bg-green {
+  background-color: #1ebd1e; }
+
+.green {
+  color: #1ebd1e !important; }
+
+.green-b {
+  border-bottom: #1ebd1e solid 3px !important; }
+
+/*yellow*/
+.bg-yellow {
+  background-color: gold; }
+
+.yellow {
+  color: gold !important; }
+
+.yellow-b {
+  border-bottom: gold solid 3px !important; }
+
+/*blue*/
+.bg-blue {
+  background-color: #0dcaf0; }
+
+.blue {
+  color: #0dcaf0 !important; }
+
+.blue-b {
+  border-bottom: #0dcaf0 solid 3px !important; }
+
+/*general*/
+.nav {
   display: flex;
   border-bottom: #e7e3eb solid 1px;
   justify-content: space-between; }
-  .exchange__nav__bar {
+  .nav__bar {
     display: flex; }
-    .exchange__nav__bar__hover:hover {
-      background-color: #e1ebe48a;
-      border-radius: 1rem;
-      cursor: pointer; }
-    .exchange__nav__bar__hover {
+    .nav__bar__hover {
       padding: 12px; }
-      .exchange__nav__bar__hover__link {
+      .nav__bar__hover:hover {
+        background-color: #e1ebe48a;
+        border-radius: 1rem;
+        cursor: pointer; }
+      .nav__bar__hover__link {
         text-decoration: none;
         color: black; }
-        .exchange__nav__bar__hover__link__on {
-          color: #dc3545;
+        .nav__bar__hover__link__on {
           font-weight: bold; }
-    .exchange__nav__bar__logo {
+    .nav__bar__logo {
       text-decoration: none;
       color: black;
       display: flex;
       margin-left: 1rem;
       margin-right: 2.5rem;
       padding: 12px; }
-      .exchange__nav__bar__logo__img {
+      .nav__bar__logo__img {
         height: 27px;
         margin-right: 2px; }
-      .exchange__nav__bar__logo__pokedex {
+      .nav__bar__logo__pokedex {
         font-weight: bold;
         font-size: 22px;
         font-family: pokemon; }
-    .exchange__nav__bar__language {
+    .nav__bar__language {
       margin-top: 13px;
-      color: #dc3545;
       margin-right: 15px; }
-      .exchange__nav__bar__language:hover {
+      .nav__bar__language:hover {
         opacity: 0.5;
         transition: 0.3s;
         cursor: pointer; }
-    .exchange__nav__bar__settings {
+    .nav__bar__settings {
       margin-top: 13px;
-      color: #dc3545;
       margin-right: 5px; }
-      .exchange__nav__bar__settings:hover {
+      .nav__bar__settings:hover {
         opacity: 0.5;
         transition: 0.3s;
         cursor: pointer; }
-    .exchange__nav__bar__wallet {
+    .nav__bar__wallet {
       padding: 12px; }
-      .exchange__nav__bar__wallet__button {
-        background-color: #dc3545;
+      .nav__bar__wallet__button {
         color: #e7e3eb;
         border: none;
         border-radius: 2rem;
         width: 135px;
         cursor: pointer; }
-        .exchange__nav__bar__wallet__button:hover {
+        .nav__bar__wallet__button:hover {
           opacity: 0.5;
           transition: 0.3s;
           cursor: pointer; }
@@ -401,35 +521,34 @@ body header nav div div {
   font-family: pokemon;
   src: url(../letras/ketchum.otf); }
 
-.exchange__nav__bar__dropdown {
+.nav__bar__dropdown {
   display: none;
   position: absolute;
   width: 278px;
   border: #e7e3eb solid 1px;
   color: black;
   border-radius: 1rem; }
-  .exchange__nav__bar__dropdown__link {
+  .nav__bar__dropdown__link {
     text-decoration: none;
     color: black; }
-  .exchange__nav__bar__dropdown__div__top {
+  .nav__bar__dropdown__div__top {
     padding: 10px; }
-    .exchange__nav__bar__dropdown__div__top:hover {
+    .nav__bar__dropdown__div__top:hover {
       background-color: #e1ebe48a;
       border-radius: 0.8rem 0.8rem 0 0; }
-  .exchange__nav__bar__dropdown__div__bot {
+  .nav__bar__dropdown__div__bot {
     padding: 10px; }
-    .exchange__nav__bar__dropdown__div__bot:hover {
+    .nav__bar__dropdown__div__bot:hover {
       background-color: #e1ebe48a;
       border-radius: 0 0 0.8rem 0.8rem; }
 
-.exchange__nav__bar__trade:hover .exchange__nav__bar__dropdown {
+.nav__bar__trade:hover .nav__bar__dropdown {
   display: block;
   background-color: #faf9fa; }
 
 .language__dropdown {
   display: none;
   position: absolute;
-  background-color: #faf9fa;
   padding: 1rem;
   left: 86%;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -446,24 +565,20 @@ body header nav div div {
   background-color: #faf9fa; }
 
 /*SubNav*/
-.exchange__subnav {
-  background-color: #faf9fa;
+.subnav {
   display: flex;
   border-bottom: #e7e3eb solid 1px;
   justify-content: center;
   margin-top: 33px; }
-  .exchange__subnav__h2 {
+  .subnav__h2 {
     padding: 12px 0px 3px 0px;
     margin-left: 10px;
     margin-right: 10px; }
-    .exchange__subnav__h2:hover {
+    .subnav__h2:hover {
       background-color: #e1ebe48a; }
-  .exchange__subnav__link {
+  .subnav__link {
     text-decoration: none;
     color: black; }
-    .exchange__subnav__link__on {
-      border-bottom: solid 3px #dc3545;
-      color: #dc3545; }
 
 /*Fin Navbar Exchange*/
 .mobile {
@@ -472,37 +587,34 @@ body header nav div div {
   bottom: 0%;
   width: 100%; }
 
-.exchange__nav__mobile {
+.nav__mobile {
   display: flex;
-  justify-content: space-around;
-  background-color: #faf9fa; }
-  .exchange__nav__mobile__container {
+  justify-content: space-around; }
+  .nav__mobile__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
     text-decoration: none;
     padding: 6px; }
-    .exchange__nav__mobile__container__text {
+    .nav__mobile__container__text {
       font-size: 12px; }
-    .exchange__nav__mobile__container__on {
-      color: #dc3545; }
-    .exchange__nav__mobile__container:hover {
+    .nav__mobile__container:hover {
       background-color: #e1ebe48a;
       border-radius: 1rem; }
 
 /*responsive Navbar*/
 @media only screen and (max-width: 1024px) {
-  .exchange__nav__bar__logo {
+  .nav__bar__logo {
     margin-right: 0px; }
-  .exchange__nav__bar__logo__img {
+  .nav__bar__logo__img {
     height: 32px;
     margin-right: 0px; }
-  .exchange__nav__bar__logo__pokedex {
+  .nav__bar__logo__pokedex {
     display: none; } }
 
 @media only screen and (max-width: 1024px) and (max-width: 767px) {
-  .exchange__nav__bar__info, .exchange__nav__bar__trade, .exchange__nav__bar__nft {
+  .nav__bar__info, .nav__bar__trade, .nav__bar__nft {
     display: none; }
   .mobile {
     display: block; }
@@ -519,410 +631,11 @@ body header nav div div {
     margin-bottom: 40px; } }
 
 /*Fin responsive Navbar*/
-/* Navbar liquidty*/
-.header__nav {
-  position: fixed;
-  width: 100%; }
-
-.liquidity__nav {
-  background-color: #faf9fa;
-  display: flex;
-  border-bottom: #e7e3eb solid 1px;
-  justify-content: space-between; }
-  .liquidity__nav__bar {
-    display: flex; }
-    .liquidity__nav__bar__hover:hover {
-      background-color: #e1ebe48a;
-      border-radius: 1rem;
-      cursor: pointer; }
-    .liquidity__nav__bar__hover {
-      padding: 12px; }
-      .liquidity__nav__bar__hover__link {
-        text-decoration: none;
-        color: black; }
-        .liquidity__nav__bar__hover__link__on {
-          color: #FFD700;
-          font-weight: bold; }
-    .liquidity__nav__bar__logo {
-      text-decoration: none;
-      color: black;
-      display: flex;
-      margin-left: 1rem;
-      margin-right: 2.5rem;
-      padding: 12px; }
-      .liquidity__nav__bar__logo__img {
-        height: 27px;
-        margin-right: 2px; }
-      .liquidity__nav__bar__logo__pokedex {
-        font-weight: bold;
-        font-size: 22px;
-        font-family: pokemon; }
-    .liquidity__nav__bar__language {
-      margin-top: 13px;
-      color: #FFD700;
-      margin-right: 15px; }
-      .liquidity__nav__bar__language:hover {
-        opacity: 0.5;
-        transition: 0.3s;
-        cursor: pointer; }
-    .liquidity__nav__bar__settings {
-      margin-top: 13px;
-      color: #FFD700;
-      margin-right: 5px; }
-      .liquidity__nav__bar__settings:hover {
-        opacity: 0.5;
-        transition: 0.3s;
-        cursor: pointer; }
-    .liquidity__nav__bar__wallet {
-      padding: 12px; }
-      .liquidity__nav__bar__wallet__button {
-        background-color: #FFD700;
-        color: #e7e3eb;
-        border: none;
-        border-radius: 2rem;
-        width: 135px;
-        cursor: pointer; }
-        .liquidity__nav__bar__wallet__button:hover {
-          opacity: 0.5;
-          transition: 0.3s;
-          cursor: pointer; }
-
-body header nav div div {
-  margin-top: 2px;
-  margin-bottom: 2px; }
-
-@font-face {
-  font-family: pokemon;
-  src: url(../letras/ketchum.otf); }
-
-.liquidity__nav__bar__dropdown {
-  display: none;
-  position: absolute;
-  width: 278px;
-  border: #e7e3eb solid 1px;
-  color: black;
-  border-radius: 1rem; }
-  .liquidity__nav__bar__dropdown__link {
-    text-decoration: none;
-    color: black; }
-  .liquidity__nav__bar__dropdown__div__top {
-    padding: 10px; }
-    .liquidity__nav__bar__dropdown__div__top:hover {
-      background-color: #e1ebe48a;
-      border-radius: 0.8rem 0.8rem 0 0; }
-  .liquidity__nav__bar__dropdown__div__bot {
-    padding: 10px; }
-    .liquidity__nav__bar__dropdown__div__bot:hover {
-      background-color: #e1ebe48a;
-      border-radius: 0 0 0.8rem 0.8rem; }
-
-.liquidity__nav__bar__trade:hover .liquidity__nav__bar__dropdown {
-  display: block;
-  background-color: #faf9fa; }
-
-.language__dropdown {
-  display: none;
-  position: absolute;
-  background-color: #faf9fa;
-  padding: 1rem;
-  left: 86%;
-  border-radius: 0 0 0.5rem 0.5rem;
-  border: #e7e3eb solid 1px; }
-  .language__dropdown__text {
-    padding: 10px; }
-    .language__dropdown__text:hover {
-      opacity: 0.5;
-      transition: 0.3s;
-      cursor: pointer; }
-
-.language:hover .language__dropdown {
-  display: block;
-  background-color: #faf9fa; }
-
-/*SubNav*/
-.liquidity__subnav {
-  background-color: #faf9fa;
-  display: flex;
-  border-bottom: #e7e3eb solid 1px;
-  justify-content: center;
-  margin-top: 33px; }
-  .liquidity__subnav__h2 {
-    padding: 12px 0px 3px 0px;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .liquidity__subnav__h2:hover {
-      background-color: #e1ebe48a; }
-  .liquidity__subnav__link {
-    text-decoration: none;
-    color: black; }
-    .liquidity__subnav__link__on {
-      border-bottom: solid 3px #FFD700;
-      color: #FFD700; }
-
-.mobile {
-  display: none;
-  position: fixed;
-  bottom: 0%;
-  width: 100%; }
-
-.liquidity__nav__mobile {
-  display: flex;
-  justify-content: space-around;
-  background-color: #faf9fa; }
-  .liquidity__nav__mobile__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-    padding: 6px; }
-    .liquidity__nav__mobile__container__text {
-      font-size: 12px; }
-    .liquidity__nav__mobile__container__on {
-      color: #FFD700; }
-    .liquidity__nav__mobile__container:hover {
-      background-color: #e1ebe48a;
-      border-radius: 1rem; }
-
-/*responsive Navbar*/
-@media only screen and (max-width: 1024px) {
-  .liquidity__nav__bar__logo {
-    margin-right: 0px; }
-  .liquidity__nav__bar__logo__img {
-    height: 32px;
-    margin-right: 0px; }
-  .liquidity__nav__bar__logo__pokedex {
-    display: none; } }
-
-@media only screen and (max-width: 1024px) and (max-width: 767px) {
-  .liquidity__nav__bar__info, .liquidity__nav__bar__trade, .liquidity__nav__bar__nft {
-    display: none; }
-  .mobile {
-    display: block; }
-  .help__none {
-    display: none; }
-  .liquidity__pikachu__trader {
-    display: flex;
-    justify-content: center; }
-    .liquidity__pikachu__trader__img {
-      width: 40%; }
-    .liquidity__pikachu__trader__globo {
-      text-align: center;
-      width: 110px;
-      margin-top: 40px; }
-      .liquidity__pikachu__trader__globo__img {
-        width: 100%;
-        margin-top: 4%; }
-        .liquidity__pikachu__trader__globo__img:hover {
-          cursor: pointer;
-          opacity: 0.1;
-          transition: 0.2s; } }
-
-/*Fin responsive Navbar*/
-/*Fin Navbar Liquidity*/
-/*Nabar Farm*/
-.header__nav {
-  position: fixed;
-  width: 100%; }
-
-.farm__nav {
-  background-color: #faf9fa;
-  display: flex;
-  border-bottom: #e7e3eb solid 1px;
-  justify-content: space-between; }
-  .farm__nav__bar {
-    display: flex; }
-    .farm__nav__bar__hover:hover {
-      background-color: #e1ebe48a;
-      border-radius: 1rem;
-      cursor: pointer; }
-    .farm__nav__bar__hover {
-      padding: 12px; }
-      .farm__nav__bar__hover__link {
-        text-decoration: none;
-        color: black; }
-        .farm__nav__bar__hover__link__on {
-          color: #FFD700;
-          font-weight: bold; }
-    .farm__nav__bar__logo {
-      text-decoration: none;
-      color: black;
-      display: flex;
-      margin-left: 1rem;
-      margin-right: 2.5rem;
-      padding: 12px; }
-      .farm__nav__bar__logo__img {
-        height: 27px;
-        margin-right: 2px; }
-      .farm__nav__bar__logo__pokedex {
-        font-weight: bold;
-        font-size: 22px;
-        font-family: pokemon; }
-    .farm__nav__bar__language {
-      margin-top: 13px;
-      color: #FFD700;
-      margin-right: 15px; }
-      .farm__nav__bar__language:hover {
-        opacity: 0.5;
-        transition: 0.3s;
-        cursor: pointer; }
-    .farm__nav__bar__settings {
-      margin-top: 13px;
-      color: #FFD700;
-      margin-right: 5px; }
-      .farm__nav__bar__settings:hover {
-        opacity: 0.5;
-        transition: 0.3s;
-        cursor: pointer; }
-    .farm__nav__bar__wallet {
-      padding: 12px; }
-      .farm__nav__bar__wallet__button {
-        background-color: #FFD700;
-        color: #e7e3eb;
-        border: none;
-        border-radius: 2rem;
-        width: 135px;
-        cursor: pointer; }
-        .farm__nav__bar__wallet__button:hover {
-          opacity: 0.5;
-          transition: 0.3s;
-          cursor: pointer; }
-
-body header nav div div {
-  margin-top: 2px;
-  margin-bottom: 2px; }
-
-@font-face {
-  font-family: pokemon;
-  src: url(../letras/ketchum.otf); }
-
-.farm__nav__bar__dropdown {
-  display: none;
-  position: absolute;
-  width: 278px;
-  border: #e7e3eb solid 1px;
-  color: black;
-  border-radius: 1rem; }
-  .farm__nav__bar__dropdown__link {
-    text-decoration: none;
-    color: black; }
-  .farm__nav__bar__dropdown__div__top {
-    padding: 10px; }
-    .farm__nav__bar__dropdown__div__top:hover {
-      background-color: #e1ebe48a;
-      border-radius: 0.8rem 0.8rem 0 0; }
-  .farm__nav__bar__dropdown__div__bot {
-    padding: 10px; }
-    .farm__nav__bar__dropdown__div__bot:hover {
-      background-color: #e1ebe48a;
-      border-radius: 0 0 0.8rem 0.8rem; }
-
-.farm__nav__bar__trade:hover .farm__nav__bar__dropdown {
-  display: block;
-  background-color: #faf9fa; }
-
-.language__dropdown {
-  display: none;
-  position: absolute;
-  background-color: #faf9fa;
-  padding: 1rem;
-  left: 86%;
-  border-radius: 0 0 0.5rem 0.5rem;
-  border: #e7e3eb solid 1px; }
-  .language__dropdown__text {
-    padding: 10px; }
-    .language__dropdown__text:hover {
-      opacity: 0.5;
-      transition: 0.3s;
-      cursor: pointer; }
-
-.language:hover .language__dropdown {
-  display: block;
-  background-color: #faf9fa; }
-
-/*SubNav*/
-.farm__subnav {
-  background-color: #faf9fa;
-  display: flex;
-  border-bottom: #e7e3eb solid 1px;
-  justify-content: center;
-  margin-top: 33px; }
-  .farm__subnav__h2 {
-    padding: 12px 0px 3px 0px;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .farm__subnav__h2:hover {
-      background-color: #e1ebe48a; }
-  .farm__subnav__link {
-    text-decoration: none;
-    color: black; }
-    .farm__subnav__link__on {
-      border-bottom: solid 3px #FFD700;
-      color: #FFD700; }
-
-.mobile {
-  display: none;
-  position: fixed;
-  bottom: 0%;
-  width: 100%; }
-
-.farm__nav__mobile {
-  display: flex;
-  justify-content: space-around;
-  background-color: #faf9fa; }
-  .farm__nav__mobile__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-    padding: 6px; }
-    .farm__nav__mobile__container__text {
-      font-size: 12px; }
-    .farm__nav__mobile__container__on {
-      color: #FFD700; }
-    .farm__nav__mobile__container:hover {
-      background-color: #e1ebe48a;
-      border-radius: 1rem; }
-
-/*responsive Navbar*/
-@media only screen and (max-width: 1024px) {
-  .farm__nav__bar__logo {
-    margin-right: 0px; }
-  .farm__nav__bar__logo__img {
-    height: 32px;
-    margin-right: 0px; }
-  .farm__nav__bar__logo__pokedex {
-    display: none; } }
-
-@media only screen and (max-width: 1024px) and (max-width: 767px) {
-  .farm__nav__bar__info, .farm__nav__bar__trade, .farm__nav__bar__nft {
-    display: none; }
-  .mobile {
-    display: block; }
-  .help__none {
-    display: none; }
-  .farm__pikachu__trader {
-    display: flex;
-    justify-content: center; }
-    .farm__pikachu__trader__img {
-      width: 40%; }
-    .farm__pikachu__trader__globo {
-      text-align: center;
-      width: 110px;
-      margin-top: 40px; }
-      .farm__pikachu__trader__globo__img {
-        width: 100%;
-        margin-top: 4%; }
-        .farm__pikachu__trader__globo__img:hover {
-          cursor: pointer;
-          opacity: 0.1;
-          transition: 0.2s; } }
-
-/*Nabar Farm*/
+/*fin general*/
 /*footer exchange*/
 .exchange__footer {
   background-color: #dc3545;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   display: flex;
   justify-content: space-between;
   padding: 3%;
@@ -944,7 +657,8 @@ body header nav div div {
 
 /*footer liquidity*/
 .liquidity__footer {
-  background-color: #FFD700;
+  background-color: gold;
+  /* background-image: linear-gradient(180deg, rgb(255, 215, 0, 0.15), rgb(255, 215, 0));*/
   display: flex;
   justify-content: space-between;
   padding: 3%;
@@ -966,6 +680,49 @@ body header nav div div {
 
 /*Generales*/
 /*Variables para header*/
+.bg-white {
+  background-color: #faf9fa; }
+
+/*red*/
+.bg-red {
+  background-color: #dc3545; }
+
+.red {
+  color: #dc3545 !important; }
+
+.red-b {
+  border-bottom: #dc3545 solid 3px !important; }
+
+/*green*/
+.bg-green {
+  background-color: #1ebd1e; }
+
+.green {
+  color: #1ebd1e !important; }
+
+.green-b {
+  border-bottom: #1ebd1e solid 3px !important; }
+
+/*yellow*/
+.bg-yellow {
+  background-color: gold; }
+
+.yellow {
+  color: gold !important; }
+
+.yellow-b {
+  border-bottom: gold solid 3px !important; }
+
+/*blue*/
+.bg-blue {
+  background-color: #0dcaf0; }
+
+.blue {
+  color: #0dcaf0 !important; }
+
+.blue-b {
+  border-bottom: #0dcaf0 solid 3px !important; }
+
 /* Wallet exchange*/
 .exchange__wallet {
   display: none;
@@ -1062,7 +819,7 @@ body header nav div div {
     padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFD700;
+    background-color: gold;
     border-radius: 2rem 2rem 0 0;
     margin-bottom: 10px; }
     .liquidity__wallet__encabezado__connect {
@@ -1097,7 +854,7 @@ body header nav div div {
       text-align: center;
       margin-top: 20px; }
     .liquidity__wallet__bot__button {
-      background-color: #FFD700;
+      background-color: gold;
       border-radius: 1rem;
       color: white;
       border: none;
@@ -1116,5 +873,48 @@ body header nav div div {
 
 /*Generales*/
 /*Variables para header*/
+.bg-white {
+  background-color: #faf9fa; }
+
+/*red*/
+.bg-red {
+  background-color: #dc3545; }
+
+.red {
+  color: #dc3545 !important; }
+
+.red-b {
+  border-bottom: #dc3545 solid 3px !important; }
+
+/*green*/
+.bg-green {
+  background-color: #1ebd1e; }
+
+.green {
+  color: #1ebd1e !important; }
+
+.green-b {
+  border-bottom: #1ebd1e solid 3px !important; }
+
+/*yellow*/
+.bg-yellow {
+  background-color: gold; }
+
+.yellow {
+  color: gold !important; }
+
+.yellow-b {
+  border-bottom: gold solid 3px !important; }
+
+/*blue*/
+.bg-blue {
+  background-color: #0dcaf0; }
+
+.blue {
+  color: #0dcaf0 !important; }
+
+.blue-b {
+  border-bottom: #0dcaf0 solid 3px !important; }
+
 * {
   margin: 0px; }

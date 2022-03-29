@@ -5,5 +5,52 @@ $border-blanco:#e7e3eb;
 
 /*Variables para header*/
 
-$yellow:#FFD700;
+$yellow:rgb(255, 215, 0);
 $red:#dc3545; 
+$green:rgb(30, 189, 30);
+$blue: #0dcaf0;
+
+
+.bg-white{
+    background-color: $background-blanco;
+}
+/*red*/
+.bg-red {
+    background-color: $red;
+}
+.red {
+    color: $red !important;
+}
+.red-b{
+    border-bottom: $red solid 3px !important;
+}
+/*green*/
+.bg-green {
+    background-color: $green;
+}
+.green {
+    color: $green !important;
+}
+.green-b{
+    border-bottom: $green solid 3px !important;
+}
+/*yellow*/
+.bg-yellow {
+    background-color: $yellow;
+}
+.yellow {
+    color: $yellow !important;
+}
+.yellow-b{
+    border-bottom: $yellow solid 3px !important;
+}
+/*blue*/
+.bg-blue {
+    background-color: $blue;
+}
+.blue {
+    color: $blue !important;
+}
+.blue-b{
+    border-bottom: $blue solid 3px !important;
+}
