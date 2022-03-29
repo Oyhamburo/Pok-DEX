@@ -53,7 +53,7 @@
       background-color: #e0e0ba9f; }
     .liquidity__container__bot {
       text-align: center;
-      margin-top: 1.7rem; }
+      margin-top: 1rem; }
       .liquidity__container__bot__btn {
         width: 80%;
         padding: 0.7rem;
@@ -507,7 +507,16 @@ body header nav div div {
   .mobile {
     display: block; }
   .footer__none {
-    display: none; } }
+    display: none; }
+  .help {
+    justify-content: center; }
+    .help__img {
+      width: 60%; }
+    .help__text {
+      margin-left: 12%;
+      margin-top: 4%; }
+  .swap {
+    margin-bottom: 40px; } }
 
 /*Fin responsive Navbar*/
 /* Navbar liquidty*/
@@ -692,21 +701,226 @@ body header nav div div {
     display: block; }
   .help__none {
     display: none; }
-  .footer__none {
-    display: none; } }
-
-.jere {
-  color: red; }
+  .liquidity__pikachu__trader {
+    display: flex;
+    justify-content: center; }
+    .liquidity__pikachu__trader__img {
+      width: 40%; }
+    .liquidity__pikachu__trader__globo {
+      text-align: center;
+      width: 110px;
+      margin-top: 40px; }
+      .liquidity__pikachu__trader__globo__img {
+        width: 100%;
+        margin-top: 4%; }
+        .liquidity__pikachu__trader__globo__img:hover {
+          cursor: pointer;
+          opacity: 0.1;
+          transition: 0.2s; } }
 
 /*Fin responsive Navbar*/
 /*Fin Navbar Liquidity*/
-.ujsi {
-  position: absolute;
-  width: 350px;
-  right: 0%;
-  bottom: 0%;
-  margin: 0; }
+/*Nabar Farm*/
+.header__nav {
+  position: fixed;
+  width: 100%; }
 
+.farm__nav {
+  background-color: #faf9fa;
+  display: flex;
+  border-bottom: #e7e3eb solid 1px;
+  justify-content: space-between; }
+  .farm__nav__bar {
+    display: flex; }
+    .farm__nav__bar__hover:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem;
+      cursor: pointer; }
+    .farm__nav__bar__hover {
+      padding: 12px; }
+      .farm__nav__bar__hover__link {
+        text-decoration: none;
+        color: black; }
+        .farm__nav__bar__hover__link__on {
+          color: #FFD700;
+          font-weight: bold; }
+    .farm__nav__bar__logo {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      margin-left: 1rem;
+      margin-right: 2.5rem;
+      padding: 12px; }
+      .farm__nav__bar__logo__img {
+        height: 27px;
+        margin-right: 2px; }
+      .farm__nav__bar__logo__pokedex {
+        font-weight: bold;
+        font-size: 22px;
+        font-family: pokemon; }
+    .farm__nav__bar__language {
+      margin-top: 13px;
+      color: #FFD700;
+      margin-right: 15px; }
+      .farm__nav__bar__language:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer; }
+    .farm__nav__bar__settings {
+      margin-top: 13px;
+      color: #FFD700;
+      margin-right: 5px; }
+      .farm__nav__bar__settings:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer; }
+    .farm__nav__bar__wallet {
+      padding: 12px; }
+      .farm__nav__bar__wallet__button {
+        background-color: #FFD700;
+        color: #e7e3eb;
+        border: none;
+        border-radius: 2rem;
+        width: 135px;
+        cursor: pointer; }
+        .farm__nav__bar__wallet__button:hover {
+          opacity: 0.5;
+          transition: 0.3s;
+          cursor: pointer; }
+
+body header nav div div {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+.farm__nav__bar__dropdown {
+  display: none;
+  position: absolute;
+  width: 278px;
+  border: #e7e3eb solid 1px;
+  color: black;
+  border-radius: 1rem; }
+  .farm__nav__bar__dropdown__link {
+    text-decoration: none;
+    color: black; }
+  .farm__nav__bar__dropdown__div__top {
+    padding: 10px; }
+    .farm__nav__bar__dropdown__div__top:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0.8rem 0.8rem 0 0; }
+  .farm__nav__bar__dropdown__div__bot {
+    padding: 10px; }
+    .farm__nav__bar__dropdown__div__bot:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0 0 0.8rem 0.8rem; }
+
+.farm__nav__bar__trade:hover .farm__nav__bar__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+.language__dropdown {
+  display: none;
+  position: absolute;
+  background-color: #faf9fa;
+  padding: 1rem;
+  left: 86%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border: #e7e3eb solid 1px; }
+  .language__dropdown__text {
+    padding: 10px; }
+    .language__dropdown__text:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+      cursor: pointer; }
+
+.language:hover .language__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+/*SubNav*/
+.farm__subnav {
+  background-color: #faf9fa;
+  display: flex;
+  border-bottom: #e7e3eb solid 1px;
+  justify-content: center;
+  margin-top: 33px; }
+  .farm__subnav__h2 {
+    padding: 12px 0px 3px 0px;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .farm__subnav__h2:hover {
+      background-color: #e1ebe48a; }
+  .farm__subnav__link {
+    text-decoration: none;
+    color: black; }
+    .farm__subnav__link__on {
+      border-bottom: solid 3px #FFD700;
+      color: #FFD700; }
+
+.mobile {
+  display: none;
+  position: fixed;
+  bottom: 0%;
+  width: 100%; }
+
+.farm__nav__mobile {
+  display: flex;
+  justify-content: space-around;
+  background-color: #faf9fa; }
+  .farm__nav__mobile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding: 6px; }
+    .farm__nav__mobile__container__text {
+      font-size: 12px; }
+    .farm__nav__mobile__container__on {
+      color: #FFD700; }
+    .farm__nav__mobile__container:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem; }
+
+/*responsive Navbar*/
+@media only screen and (max-width: 1024px) {
+  .farm__nav__bar__logo {
+    margin-right: 0px; }
+  .farm__nav__bar__logo__img {
+    height: 32px;
+    margin-right: 0px; }
+  .farm__nav__bar__logo__pokedex {
+    display: none; } }
+
+@media only screen and (max-width: 1024px) and (max-width: 767px) {
+  .farm__nav__bar__info, .farm__nav__bar__trade, .farm__nav__bar__nft {
+    display: none; }
+  .mobile {
+    display: block; }
+  .help__none {
+    display: none; }
+  .farm__pikachu__trader {
+    display: flex;
+    justify-content: center; }
+    .farm__pikachu__trader__img {
+      width: 40%; }
+    .farm__pikachu__trader__globo {
+      text-align: center;
+      width: 110px;
+      margin-top: 40px; }
+      .farm__pikachu__trader__globo__img {
+        width: 100%;
+        margin-top: 4%; }
+        .farm__pikachu__trader__globo__img:hover {
+          cursor: pointer;
+          opacity: 0.1;
+          transition: 0.2s; } }
+
+/*Nabar Farm*/
+/*footer exchange*/
 .exchange__footer {
   background-color: #dc3545;
   display: flex;
@@ -724,6 +938,28 @@ body header nav div div {
       border-radius: 2rem;
       width: 200px; }
     .exchange__footer__strategic__text {
+      font-size: 1.6rem;
+      color: white;
+      margin-bottom: 8%; }
+
+/*footer liquidity*/
+.liquidity__footer {
+  background-color: #FFD700;
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  align-items: center; }
+  .liquidity__footer__a__img {
+    width: 250px; }
+  .liquidity__footer__strategic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 11%; }
+    .liquidity__footer__strategic__img {
+      border-radius: 2rem;
+      width: 200px; }
+    .liquidity__footer__strategic__text {
       font-size: 1.6rem;
       color: white;
       margin-bottom: 8%; }
