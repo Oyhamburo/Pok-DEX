@@ -13,62 +13,190 @@
 </head>
 <body class="background__container__liquidity"> 
      <header>
-         <nav class="nav">
-            <div class="nav__bar">
-                <div >
-                    <a href="../Index.html" class="nav__bar__logo">
-                        <img src="../img/pokebola.png" alt="" class="nav__bar__logo__img">
-                        <div class="nav__bar__logo__pokedex">PokéDEX</div>
+        <nav class="header__nav" >
+            <section class="liquidity__nav">
+                <div class="liquidity__nav__bar">
+                    <div >
+                        <a href="../Index.html" class="liquidity__nav__bar__logo">
+                            <img src="../img/pokebola.png" alt="" class="liquidity__nav__bar__logo__img">
+                            <div class="liquidity__nav__bar__logo__pokedex">PokéDEX</div>
+                        </a>
+                    </div>
+                    <div class="liquidity__nav__bar__trade liquidity__nav__bar__trade__on " >
+                        <div class="liquidity__nav__bar__hover">
+                            <a href="./exchange.html" class="liquidity__nav__bar__hover__link liquidity__nav__bar__hover__link__on">Trade</a>
+                        </div>
+                        <div class="liquidity__nav__bar__dropdown">
+                            <div class="liquidity__nav__bar__dropdown__div__top">
+                                <a href="./exchange.html"  class="liquidity__nav__bar__dropdown__link">Exchange</a>
+                            </div>
+                            <div class="liquidity__nav__bar__dropdown__div__bot">
+                                <a href="./liquidity.html" class="liquidity__nav__bar__dropdown__link">Liquidity</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="liquidity__nav__bar__trade liquidity__nav__bar__trade__on " >
+                        <div class="liquidity__nav__bar__hover">
+                            <a href="./farm.html" class="liquidity__nav__bar__hover__link">Earn</a>
+                        </div>
+                        <div class="liquidity__nav__bar__dropdown">
+                            <div class="liquidity__nav__bar__dropdown__div__top">
+                                <a href="./farm.html"  class="liquidity__nav__bar__dropdown__link">Farms</a>
+                            </div>
+                            <div class="liquidity__nav__bar__dropdown__div__bot">
+                                <a href="./pool.html" class="liquidity__nav__bar__dropdown__link">Pools</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="liquidity__nav__bar__nft">
+                        <div class="liquidity__nav__bar__hover">NFTs</div>
+                    </div>
+                    <div class="liquidity__nav__bar__info"> 
+                        <div class="liquidity__nav__bar__hover">info</div>
+                    </div>
+                </div>
+                <div class="liquidity__nav__bar">
+                    <div class="language">
+                            <span class="material-icons-outlined liquidity__nav__bar__language">
+                            language
+                            </span>
+                       <div class="language__dropdown">
+                           <div class="language__dropdown__text">English</div>
+                           <div class="language__dropdown__text">Español</div>
+                           <div class="language__dropdown__text">Deutsch</div>
+                           <div class="language__dropdown__text">Italiano</div>
+                           <div class="language__dropdown__text">Portugues</div>
+                           <div class="language__dropdown__text">Nederlands</div>
+                       </div>
+                    </div>
+                    <div>
+                        <span class="material-icons-outlined liquidity__nav__bar__settings">
+                            settings
+                            </span>
+                    </div>
+                    <div class="liquidity__nav__bar__wallet">
+                        <button onclick="document.getElementById('walle').style.display='block'" class="liquidity__nav__bar__wallet__button">Connect Wallet</button>
+                    </div>
+                </div>
+    
+            </section>
+         </nav>
+         <section class="header__nav__mobile">
+                                   <!--Navbar mobile-->
+                <article class="mobile">
+                <div class="liquidity__nav__mobile">
+                    <a href="./exchange.html" class="liquidity__nav__mobile__container liquidity__nav__mobile__container__on">
+                        <span class="material-icons-outlined">
+                            currency_exchange
+                            </span>
+                        <div class="liquidity__nav__mobile__container__text">Trade</div>
+                    </a>
+                    <a href="./farm.html" class="liquidity__nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            agriculture
+                            </span>
+                        <div class="liquidity__nav__mobile__container__text">Farms</div>
+                    </a>
+                    <a href="./pool.html" class="liquidity__nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            pool
+                            </span>
+                        <div class="liquidity__nav__mobile__container__text">Pools</div>
+                    </a>
+                    <a href="./nft.html" class="liquidity__nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            catching_pokemon
+                            </span>
+                        <div class="liquidity__nav__mobile__container__text">NFT</div>
+                    </a>
+                    <a href="./info.html" class="liquidity__nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            more_horiz
+                            </span>
+                        <div class="liquidity__nav__mobile__container__text">Info</div>
                     </a>
                 </div>
-                <div class="nav__bar__trade nav__bar__trade__on " >
-                    <div class="nav__bar__hover">
-                        <a href="./exchange.html" class="nav__bar__hover__link nav__bar__hover__link__on">Trade</a>
-                    </div>
-                    <div class="nav__bar__dropdown">
-                        <div class="nav__bar__dropdown__div__top">
-                            <a href="./exchange.html"  class="nav__bar__dropdown__link">Exchange</a>
-                        </div>
-                        <div class="nav__bar__dropdown__div__bot">
-                            <a href="./liquidity.html" class="nav__bar__dropdown__link">Liquidity</a>
-                        </div>
-                    </div>
+                </article>
+         </section>
+     </header>
+     <br>
+     <article class="liquidity__subnav">
+        <h2 class="liquidity__subnav__h2" ><a href="./exchange.html" class="liquidity__subnav__link">Swap</a></h2>
+        <h2 class="liquidity__subnav__h2"><a href="./liquidity.html" class="liquidity__subnav__link liquidity__subnav__link__on">Liquidity</a></h2>
+    </article>
+    <!--Wallet-->
+     <section class="liquidity__wallet" id="walle" >
+        <article class="liquidity__wallet__fondo">
+           <div class="liquidity__wallet__container" >
+            <div class="liquidity__wallet__encabezado">
+                <div class="liquidity__wallet__encabezado__connect" >Connect Wallet</div>
+                <span class="material-icons-outlined liquidity__wallet__encabezado__close" onclick="document.getElementById('walle').style.display='none'">
+                    close
+                    </span>
+            </div>
+            <!--grid-->
+            <div class="liquidity__wallet__grid">
+                <div class="liquidity__wallet__grid__item">
+                    <img src="../img/metamask.png" alt="" class="liquidity__wallet__grid__item__img">
+                    <div class="liquidity__wallet__grid__item__text">Metamask</div>
                 </div>
-                <div class="nav__bar__trade nav__bar__trade__on " >
-                    <div class="nav__bar__hover">
-                        <a href="./farm.html" class="nav__bar__hover__link">Earn</a>
-                    </div>
-                    <div class="nav__bar__dropdown">
-                        <div class="nav__bar__dropdown__div__top">
-                            <a href="./farm.html"  class="nav__bar__dropdown__link">Farms</a>
-                        </div>
-                        <div class="nav__bar__dropdown__div__bot">
-                            <a href="./pool.html" class="nav__bar__dropdown__link">Pools</a>
-                        </div>
-                    </div>
+                <div class="liquidity__wallet__grid__item">
+                    <img src="../img/walletbnb.png" alt="" class="liquidity__wallet__grid__item__img">
+                    <div class="liquidity__wallet__grid__item__text">Binance Wallet</div>
                 </div>
-                <div>
-                    <div class="nav__bar__hover">NFTs</div>
+                <div class="liquidity__wallet__grid__item">
+                    <img src="../img/coinbase.png" alt="" class="liquidity__wallet__grid__item__img">
+                    <div class="liquidity__wallet__grid__item__text">Coinbase Wallet</div>
                 </div>
-                <div>
-                    <div class="nav__bar__hover">info</div>
+                <div class="liquidity__wallet__grid__item liquidity__wallet__grid__item__more">
+                    <span class="material-icons-outlined">
+                        more_horiz
+                        </span>
+                    <div class="liquidity__wallet__grid__item__text liquidity__wallet__grid__item__more__text">More</div>
                 </div>
             </div>
-            <div class="nav__bar">
+            <div class="liquidity__wallet__bot">
+                <div class="liquidity__wallet__bot__text">Haven’t got a crypto wallet yet?</div>
+                <div class="liquidity__wallet__bot__text"><button class="liquidity__wallet__bot__button">Learn How to Connect</button></div>
+            </div>
+           </div>
+        </article>
+     </section>
+     <!--Pikachu img-->
+     <div>
+         <img src="../img/pikachu-golpeado.png" alt="" class="liquidity__pikachu">
+     </div>
+     <!--Liquidty-->
+     <section class="liquidity">
+        <article class="liquidity__container">
+            <div class="liquidity__container__top">
                 <div>
-                    <span class="material-icons-outlined nav__bar__settings">
+                    <h1 class="liquidity__container__top__h1">Your Liquidity</h1>
+                    <p class="liquidity__container__top__text">Remove liquidity to receive tokens back</p>
+                </div>
+                <div class="liquidity__container__top__icon">
+                    <span class="material-icons-outlined" style="margin-left: 20px;">
                         settings
                         </span>
                 </div>
-                <div class="nav__bar__wallet">
-                    <button class="nav__bar__wallet__button">Connect Wallet</button>
+                <div class="liquidity__container__top__icon">
+                    <span class="material-icons-outlined">
+                        restore
+                        </span>
                 </div>
             </div>
-         </nav>
-     </header>
-
-
-
+            <div class="liquidity__container__middle">
+                <p>Connect to a wallet to view your liquidity.</p>
+            </div>
+            <div class="liquidity__container__bot">
+                <button class="liquidity__container__bot__btn">+ Add Liquidity</button>
+            </div>
+        </article>
+     </section>
+     <div class="liquidity__pikachu__trader">
+         <a href="./info.html" class="liquidity__pikachu__trader__globo"><img src="../img/globo.png" alt="" class="liquidity__pikachu__trader__globo__img"></a>
+        <img src="../img/pikachu-r-gante.jpg" alt="" class="liquidity__pikachu__trader__img">
+    </div>
     
 </body>
 </html>

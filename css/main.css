@@ -2,8 +2,72 @@
 /*Generales*/
 /*Variables para header*/
 .background__container__liquidity {
-  background-color: #ffffb8; }
+  background-color: #FFFFE0; }
 
+.liquidity__pikachu {
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  top: 130px; }
+
+.liquidity__pikachu__trader {
+  display: flex;
+  justify-content: end; }
+  .liquidity__pikachu__trader__img {
+    width: 20%; }
+  .liquidity__pikachu__trader__globo {
+    text-align: end; }
+    .liquidity__pikachu__trader__globo__img {
+      width: 20%;
+      margin-top: 4%; }
+      .liquidity__pikachu__trader__globo__img:hover {
+        cursor: pointer;
+        opacity: 0.1;
+        transition: 0.2s; }
+
+.liquidity {
+  display: flex;
+  justify-content: center; }
+  .liquidity__container {
+    border: #e7e3eb solid 1px;
+    background-color: white;
+    border-radius: 1.3rem;
+    width: 436px;
+    height: 273px;
+    margin-top: 144px; }
+    .liquidity__container__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      border-bottom: #e7e3eb solid 1px; }
+      .liquidity__container__top__icon:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.3s; }
+      .liquidity__container__top__h1 {
+        font-size: 2rem; }
+    .liquidity__container__middle {
+      border-bottom: #e7e3eb solid 1px;
+      padding: 1.5rem;
+      background-color: #e0e0ba9f; }
+    .liquidity__container__bot {
+      text-align: center;
+      margin-top: 1.7rem; }
+      .liquidity__container__bot__btn {
+        width: 80%;
+        padding: 0.7rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: #FFD700;
+        color: white; }
+        .liquidity__container__bot__btn:hover {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.3s; }
+
+/*Generales*/
+/*Variables para header*/
 .background__container__exchange {
   background-color: #faeded; }
 
@@ -85,6 +149,26 @@
           cursor: pointer;
           opacity: 0.5;
           transition: 0.3s; }
+
+.help {
+  display: flex;
+  justify-content: end; }
+  .help__img {
+    width: 20%; }
+  .help__text {
+    background-color: #ff4800;
+    border-radius: 50%;
+    padding: 1rem;
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 0.6%;
+    border-top: solid 3px #ffce00;
+    border-left: solid 3px #ffce00;
+    color: #ffce00; }
+    .help__text:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 0.3s; }
 
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
@@ -421,9 +505,201 @@ body header nav div div {
   .exchange__nav__bar__info, .exchange__nav__bar__trade, .exchange__nav__bar__nft {
     display: none; }
   .mobile {
-    display: block; } }
+    display: block; }
+  .footer__none {
+    display: none; } }
 
 /*Fin responsive Navbar*/
+/* Navbar liquidty*/
+.header__nav {
+  position: fixed;
+  width: 100%; }
+
+.liquidity__nav {
+  background-color: #faf9fa;
+  display: flex;
+  border-bottom: #e7e3eb solid 1px;
+  justify-content: space-between; }
+  .liquidity__nav__bar {
+    display: flex; }
+    .liquidity__nav__bar__hover:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem;
+      cursor: pointer; }
+    .liquidity__nav__bar__hover {
+      padding: 12px; }
+      .liquidity__nav__bar__hover__link {
+        text-decoration: none;
+        color: black; }
+        .liquidity__nav__bar__hover__link__on {
+          color: #FFD700;
+          font-weight: bold; }
+    .liquidity__nav__bar__logo {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      margin-left: 1rem;
+      margin-right: 2.5rem;
+      padding: 12px; }
+      .liquidity__nav__bar__logo__img {
+        height: 27px;
+        margin-right: 2px; }
+      .liquidity__nav__bar__logo__pokedex {
+        font-weight: bold;
+        font-size: 22px;
+        font-family: pokemon; }
+    .liquidity__nav__bar__language {
+      margin-top: 13px;
+      color: #FFD700;
+      margin-right: 15px; }
+      .liquidity__nav__bar__language:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer; }
+    .liquidity__nav__bar__settings {
+      margin-top: 13px;
+      color: #FFD700;
+      margin-right: 5px; }
+      .liquidity__nav__bar__settings:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer; }
+    .liquidity__nav__bar__wallet {
+      padding: 12px; }
+      .liquidity__nav__bar__wallet__button {
+        background-color: #FFD700;
+        color: #e7e3eb;
+        border: none;
+        border-radius: 2rem;
+        width: 135px;
+        cursor: pointer; }
+        .liquidity__nav__bar__wallet__button:hover {
+          opacity: 0.5;
+          transition: 0.3s;
+          cursor: pointer; }
+
+body header nav div div {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+.liquidity__nav__bar__dropdown {
+  display: none;
+  position: absolute;
+  width: 278px;
+  border: #e7e3eb solid 1px;
+  color: black;
+  border-radius: 1rem; }
+  .liquidity__nav__bar__dropdown__link {
+    text-decoration: none;
+    color: black; }
+  .liquidity__nav__bar__dropdown__div__top {
+    padding: 10px; }
+    .liquidity__nav__bar__dropdown__div__top:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0.8rem 0.8rem 0 0; }
+  .liquidity__nav__bar__dropdown__div__bot {
+    padding: 10px; }
+    .liquidity__nav__bar__dropdown__div__bot:hover {
+      background-color: #e1ebe48a;
+      border-radius: 0 0 0.8rem 0.8rem; }
+
+.liquidity__nav__bar__trade:hover .liquidity__nav__bar__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+.language__dropdown {
+  display: none;
+  position: absolute;
+  background-color: #faf9fa;
+  padding: 1rem;
+  left: 86%;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border: #e7e3eb solid 1px; }
+  .language__dropdown__text {
+    padding: 10px; }
+    .language__dropdown__text:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+      cursor: pointer; }
+
+.language:hover .language__dropdown {
+  display: block;
+  background-color: #faf9fa; }
+
+/*SubNav*/
+.liquidity__subnav {
+  background-color: #faf9fa;
+  display: flex;
+  border-bottom: #e7e3eb solid 1px;
+  justify-content: center;
+  margin-top: 33px; }
+  .liquidity__subnav__h2 {
+    padding: 12px 0px 3px 0px;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .liquidity__subnav__h2:hover {
+      background-color: #e1ebe48a; }
+  .liquidity__subnav__link {
+    text-decoration: none;
+    color: black; }
+    .liquidity__subnav__link__on {
+      border-bottom: solid 3px #FFD700;
+      color: #FFD700; }
+
+.mobile {
+  display: none;
+  position: fixed;
+  bottom: 0%;
+  width: 100%; }
+
+.liquidity__nav__mobile {
+  display: flex;
+  justify-content: space-around;
+  background-color: #faf9fa; }
+  .liquidity__nav__mobile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding: 6px; }
+    .liquidity__nav__mobile__container__text {
+      font-size: 12px; }
+    .liquidity__nav__mobile__container__on {
+      color: #FFD700; }
+    .liquidity__nav__mobile__container:hover {
+      background-color: #e1ebe48a;
+      border-radius: 1rem; }
+
+/*responsive Navbar*/
+@media only screen and (max-width: 1024px) {
+  .liquidity__nav__bar__logo {
+    margin-right: 0px; }
+  .liquidity__nav__bar__logo__img {
+    height: 32px;
+    margin-right: 0px; }
+  .liquidity__nav__bar__logo__pokedex {
+    display: none; } }
+
+@media only screen and (max-width: 1024px) and (max-width: 767px) {
+  .liquidity__nav__bar__info, .liquidity__nav__bar__trade, .liquidity__nav__bar__nft {
+    display: none; }
+  .mobile {
+    display: block; }
+  .help__none {
+    display: none; }
+  .footer__none {
+    display: none; } }
+
+.jere {
+  color: red; }
+
+/*Fin responsive Navbar*/
+/*Fin Navbar Liquidity*/
 .ujsi {
   position: absolute;
   width: 350px;
@@ -436,8 +712,7 @@ body header nav div div {
   display: flex;
   justify-content: space-between;
   padding: 3%;
-  align-items: center;
-  margin-top: 290px; }
+  align-items: center; }
   .exchange__footer__a__img {
     width: 250px; }
   .exchange__footer__strategic {
@@ -455,10 +730,11 @@ body header nav div div {
 
 /*Generales*/
 /*Variables para header*/
-.wallet {
+/* Wallet exchange*/
+.exchange__wallet {
   display: none;
   border: solid #e7e3eb 1.5px; }
-  .wallet .wallet__fondo {
+  .exchange__wallet .exchange__wallet__fondo {
     background-color: rgba(0, 0, 0, 0.267);
     position: fixed;
     top: 0;
@@ -468,12 +744,12 @@ body header nav div div {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .wallet .wallet__fondo .wallet__container {
+    .exchange__wallet .exchange__wallet__fondo .exchange__wallet__container {
       background-color: #faeded;
       width: 342px;
       height: 486px;
       border-radius: 2rem; }
-  .wallet__encabezado {
+  .exchange__wallet__encabezado {
     display: flex;
     padding: 1.5rem;
     justify-content: space-between;
@@ -481,38 +757,38 @@ body header nav div div {
     background-color: #dc3545;
     border-radius: 2rem 2rem 0 0;
     margin-bottom: 10px; }
-    .wallet__encabezado__connect {
+    .exchange__wallet__encabezado__connect {
       font-size: 20px;
       color: white; }
-    .wallet__encabezado__close {
+    .exchange__wallet__encabezado__close {
       cursor: pointer; }
-  .wallet__grid {
+  .exchange__wallet__grid {
     display: grid;
     grid-template-columns: auto auto; }
-    .wallet__grid__item {
+    .exchange__wallet__grid__item {
       margin: 2rem 2rem 2rem 1.6rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       cursor: pointer; }
-      .wallet__grid__item:hover {
+      .exchange__wallet__grid__item:hover {
         opacity: 0.5;
         transition: 0.3s; }
-      .wallet__grid__item__img {
+      .exchange__wallet__grid__item__img {
         width: 40px;
         height: 40px; }
-      .wallet__grid__item__text {
+      .exchange__wallet__grid__item__text {
         width: max-content; }
-      .wallet__grid__item__more {
+      .exchange__wallet__grid__item__more {
         padding-top: 9px; }
-        .wallet__grid__item__more__text {
+        .exchange__wallet__grid__item__more__text {
           margin-top: 5px; }
-  .wallet__bot {
+  .exchange__wallet__bot {
     border-top: #e7e3eb solid 1.5px; }
-    .wallet__bot__text {
+    .exchange__wallet__bot__text {
       text-align: center;
       margin-top: 20px; }
-    .wallet__bot__button {
+    .exchange__wallet__bot__button {
       background-color: #dc3545;
       border-radius: 1rem;
       color: white;
@@ -520,7 +796,79 @@ body header nav div div {
       width: 80%;
       padding: 0.5rem;
       font-weight: bold; }
-      .wallet__bot__button:hover {
+      .exchange__wallet__bot__button:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer; }
+
+/*Fin Wallet exchange*/
+/*Wallet liquidity*/
+.liquidity__wallet {
+  display: none;
+  border: solid #e7e3eb 1.5px; }
+  .liquidity__wallet .liquidity__wallet__fondo {
+    background-color: rgba(0, 0, 0, 0.267);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .liquidity__wallet .liquidity__wallet__fondo .liquidity__wallet__container {
+      background-color: #FFFFE0;
+      width: 342px;
+      height: 486px;
+      border-radius: 2rem; }
+  .liquidity__wallet__encabezado {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700;
+    border-radius: 2rem 2rem 0 0;
+    margin-bottom: 10px; }
+    .liquidity__wallet__encabezado__connect {
+      font-size: 20px;
+      color: white; }
+    .liquidity__wallet__encabezado__close {
+      cursor: pointer; }
+  .liquidity__wallet__grid {
+    display: grid;
+    grid-template-columns: auto auto; }
+    .liquidity__wallet__grid__item {
+      margin: 2rem 2rem 2rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer; }
+      .liquidity__wallet__grid__item:hover {
+        opacity: 0.5;
+        transition: 0.3s; }
+      .liquidity__wallet__grid__item__img {
+        width: 40px;
+        height: 40px; }
+      .liquidity__wallet__grid__item__text {
+        width: max-content; }
+      .liquidity__wallet__grid__item__more {
+        padding-top: 9px; }
+        .liquidity__wallet__grid__item__more__text {
+          margin-top: 5px; }
+  .liquidity__wallet__bot {
+    border-top: #e7e3eb solid 1.5px; }
+    .liquidity__wallet__bot__text {
+      text-align: center;
+      margin-top: 20px; }
+    .liquidity__wallet__bot__button {
+      background-color: #FFD700;
+      border-radius: 1rem;
+      color: white;
+      border: none;
+      width: 80%;
+      padding: 0.5rem;
+      font-weight: bold; }
+      .liquidity__wallet__bot__button:hover {
         opacity: 0.5;
         transition: 0.3s;
         cursor: pointer; }

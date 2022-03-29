@@ -75,14 +75,14 @@
                             </span>
                     </div>
                     <div class="exchange__nav__bar__wallet">
-                        <button onclick="document.getElementById('wallet').style.display='block'" class="exchange__nav__bar__wallet__button">Connect Wallet</button>
+                        <button onclick="document.getElementById('walle').style.display='block'" class="exchange__nav__bar__wallet__button">Connect Wallet</button>
                     </div>
                 </div>
     
             </section>
-         </nav>
-         <section class="header__nav__mobile">
-                                   <!--Navbar mobile-->
+         </nav>                                
+          <!--Navbar mobile-->
+         <section>
             <article class="mobile">
                 <div class="exchange__nav__mobile">
                     <a href="./exchange.html" class="exchange__nav__mobile__container exchange__nav__mobile__container__on">
@@ -124,39 +124,40 @@
         <h2 class="exchange__subnav__h2" ><a href="./exchange.html" class="exchange__subnav__link exchange__subnav__link__on">Swap</a></h2>
         <h2 class="exchange__subnav__h2"><a href="./liquidity.html" class="exchange__subnav__link">Liquidity</a></h2>
     </article>
-     <section class="wallet" id="wallet">
-        <article class="wallet__fondo">
-           <div class="wallet__container">
-            <div class="wallet__encabezado">
-                <div class="wallet__encabezado__connect" >Connect Wallet</div>
-                <span class="material-icons-outlined wallet__encabezado__close" onclick="document.getElementById('wallet').style.display='none'">
+    <!--Wallet-->
+     <section class="exchange__wallet" id="walle" >
+        <article class="exchange__wallet__fondo">
+           <div class="exchange__wallet__container" >
+            <div class="exchange__wallet__encabezado">
+                <div class="exchange__wallet__encabezado__connect" >Connect Wallet</div>
+                <span class="material-icons-outlined exchange__wallet__encabezado__close" onclick="document.getElementById('walle').style.display='none'">
                     close
                     </span>
             </div>
             <!--grid-->
-            <div class="wallet__grid">
-                <div class="wallet__grid__item">
-                    <img src="../img/metamask.png" alt="" class="wallet__grid__item__img">
-                    <div class="wallet__grid__item__text">Metamask</div>
+            <div class="exchange__wallet__grid">
+                <div class="exchange__wallet__grid__item">
+                    <img src="../img/metamask.png" alt="" class="exchange__wallet__grid__item__img">
+                    <div class="exchange__wallet__grid__item__text">Metamask</div>
                 </div>
-                <div class="wallet__grid__item">
-                    <img src="../img/walletbnb.png" alt="" class="wallet__grid__item__img">
-                    <div class="wallet__grid__item__text">Binance Wallet</div>
+                <div class="exchange__wallet__grid__item">
+                    <img src="../img/walletbnb.png" alt="" class="exchange__wallet__grid__item__img">
+                    <div class="exchange__wallet__grid__item__text">Binance Wallet</div>
                 </div>
-                <div class="wallet__grid__item">
-                    <img src="../img/coinbase.png" alt="" class="wallet__grid__item__img">
-                    <div class="wallet__grid__item__text">Coinbase Wallet</div>
+                <div class="exchange__wallet__grid__item">
+                    <img src="../img/coinbase.png" alt="" class="exchange__wallet__grid__item__img">
+                    <div class="exchange__wallet__grid__item__text">Coinbase Wallet</div>
                 </div>
-                <div class="wallet__grid__item wallet__grid__item__more">
+                <div class="exchange__wallet__grid__item exchange__wallet__grid__item__more">
                     <span class="material-icons-outlined">
                         more_horiz
                         </span>
-                    <div class="wallet__grid__item__text wallet__grid__item__more__text">More</div>
+                    <div class="exchange__wallet__grid__item__text exchange__wallet__grid__item__more__text">More</div>
                 </div>
             </div>
-            <div class="wallet__bot">
-                <div class="wallet__bot__text">Haven’t got a crypto wallet yet?</div>
-                <div class="wallet__bot__text"><button class="wallet__bot__button">Learn How to Connect</button></div>
+            <div class="exchange__wallet__bot">
+                <div class="exchange__wallet__bot__text">Haven’t got a crypto wallet yet?</div>
+                <div class="exchange__wallet__bot__text"><button class="exchange__wallet__bot__button">Learn How to Connect</button></div>
             </div>
            </div>
         </article>
@@ -231,20 +232,27 @@
         </article>
     </section>
                                                     <!--Fin SWAP-->
-    <img src="../img/charizard-help.png" alt="" class="ujsi">
-
-    <footer class="exchange__footer">
+    <div class="help">
+        <div>
+            <a href="../menu/info.html" style="text-decoration: none;"><span class="help__text">help?</span></a>
+        </div>
+        <img src="../img/charizard-help.png" alt="" class="help__img">
+    </div>
+    <h1 class="jere">jere</h1>
+    <footer class="footer__none">
         
-        <a href="../index.html" class="exchange__footer__a" ><img src="../img/PokeDEX.png" alt="" class="exchange__footer__a__img" ></a>
-        <div class="exchange__footer__strategic">
-            <h3 class="exchange__footer__strategic__text">Strategic Partner</h3>
-            <img src="../img/CoderHouse.png" alt=""  class="exchange__footer__strategic__img">
-        </div>
-        <div class="exchange__footer__social">
-            <h3 class="exchange__footer__social__text">Social</h3>
-            <div class="">
+        <section class="exchange__footer">
+            <a href="../index.html" class="exchange__footer__a" ><img src="../img/PokeDEX.png" alt="" class="exchange__footer__a__img" ></a>
+            <div class="exchange__footer__strategic">
+                <h3 class="exchange__footer__strategic__text">Strategic Partner</h3>
+                <img src="../img/CoderHouse.png" alt=""  class="exchange__footer__strategic__img">
             </div>
-        </div>
+            <div class="exchange__footer__social">
+                <h3 class="exchange__footer__social__text">Social</h3>
+                <div class="">
+                </div>
+            </div>
+        </section>
 
 </footer>
 </body>

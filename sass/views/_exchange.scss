@@ -1,7 +1,4 @@
-.background__container__liquidity {
-    background-color: rgb(255, 255, 184);
-}
-
+@import "../misc/variables";
 .background__container__exchange {
     background-color: rgb(250, 237, 237);
 }
@@ -105,6 +102,30 @@
                     transition: 0.3s;
                 }
             }
+        }
+    }
+}
+
+.help {
+    display: flex;
+    justify-content: end;
+    &__img {
+        width: 20%;
+    }
+    &__text {
+        background-color: #ff4800;
+        border-radius: 50%;
+        padding: 1rem;
+        position: absolute;
+        margin-left: 4%;
+        margin-top: 0.6%;
+        border-top: solid 3px #ffce00;
+        border-left: solid 3px #ffce00;
+        color: #ffce00;
+            &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 0.3s;
         }
     }
 }

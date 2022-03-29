@@ -168,9 +168,7 @@ body header nav div div {
     }
 }
 /*Fin Navbar Exchange*/
-.header__nav__mobile {
 
-}
 .mobile {
     display: none;
     position: fixed;
@@ -223,8 +221,246 @@ body header nav div div {
         .mobile {
             display: block;
         }
-
+        .footer__none {
+            display: none;
+        }
     }
 }
 
 /*Fin responsive Navbar*/
+
+
+/* Navbar liquidty*/
+.header__nav {
+    position: fixed;
+    width: 100%;
+}
+.liquidity__nav {
+    background-color: $background-blanco;
+    display: flex;
+    border-bottom: $border-blanco solid 1px;
+    justify-content: space-between;
+    &__bar {
+        display: flex;
+        &__hover:hover {
+            background-color: $hover-blanco;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        &__hover {
+            padding: 12px;
+            &__link {
+                text-decoration: none;
+                color: black;
+                &__on {
+                    color: $yellow;
+                    font-weight: bold;
+                 }
+            }
+        }
+        &__logo {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 2.5rem;
+            padding: 12px;
+            &__img {
+                height: 27px;
+                margin-right: 2px;
+            }
+            &__pokedex {
+                font-weight: bold;
+                font-size: 22px;
+                font-family: pokemon;
+            }
+        }
+        &__language{
+            margin-top: 13px;
+            color: $yellow;
+            margin-right: 15px;
+            &:hover {
+                opacity: 0.5;
+            transition: 0.3s;
+            cursor: pointer;
+            }
+        }
+        &__settings {
+            margin-top: 13px;
+            color: $yellow;
+            margin-right: 5px;
+            &:hover {
+                opacity: 0.5;
+            transition: 0.3s;
+            cursor: pointer;
+            }
+        }
+        &__wallet {
+            padding: 12px;
+            &__button {
+                background-color: $yellow;
+                color: $border-blanco;
+                border: none;
+                border-radius: 2rem;
+                width: 135px;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.5;
+                transition: 0.3s;
+                cursor: pointer;
+                }
+            }
+        }
+    }
+}
+body header nav div div {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url(../letras/ketchum.otf);
+}
+.liquidity__nav__bar__dropdown {
+    display: none;
+    position: absolute;
+    width: 278px;
+    border: #e7e3eb solid 1px;
+    color: black;
+    border-radius: 1rem;
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+    &__div__top {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius: 0.8rem 0.8rem 0 0;
+        }
+    }
+    &__div__bot {
+        padding: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius:  0 0 0.8rem 0.8rem;
+        }
+    }
+} 
+.liquidity__nav__bar__trade:hover .liquidity__nav__bar__dropdown {
+    display: block;
+    background-color: #faf9fa;
+}
+.language__dropdown {
+    display: none;
+    position: absolute;
+    background-color: $background-blanco;
+    padding: 1rem;
+    left: 86%;
+    border-radius: 0 0 0.5rem 0.5rem;
+    border: $border-blanco solid 1px;
+    &__text {
+        padding: 10px;
+        &:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+.language:hover .language__dropdown {
+    display: block;
+    background-color: #faf9fa;
+}
+/*SubNav*/
+.liquidity__subnav {
+    background-color: $background-blanco;
+    display: flex;
+    border-bottom: $border-blanco solid 1px;
+    justify-content: center;
+    margin-top: 33px;
+    &__h2 {
+        padding: 12px 0px 3px 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:hover {
+            background-color: $hover-blanco;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+        &__on {
+            border-bottom: solid 3px $yellow;
+            color: $yellow;
+        }
+    }
+}
+
+
+.mobile {
+    display: none;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+.liquidity__nav__mobile {
+    display: flex;
+    justify-content: space-around;
+    background-color: $background-blanco;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        padding: 6px;
+        &__text {
+            font-size: 12px;
+        }
+        &__on {
+            color: $yellow;
+        }
+        &:hover {
+            background-color: $hover-blanco;
+            border-radius: 1rem;
+        }
+    }
+}
+
+/*responsive Navbar*/
+@media only screen and (max-width: 1024px){
+
+    .liquidity__nav__bar__logo {
+        margin-right: 0px;
+    }
+    .liquidity__nav__bar__logo__img {
+        height: 32px;
+        margin-right: 0px;
+    }
+    .liquidity__nav__bar__logo__pokedex {
+        display: none;
+    }
+    @media only screen and (max-width: 767px) {
+
+        .liquidity__nav__bar__info , .liquidity__nav__bar__trade , .liquidity__nav__bar__nft{
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .help__none {
+            display: none;
+        }
+        .footer__none {
+            display: none;
+        }
+    }
+}
+.jere {
+    color: red;
+}
+/*Fin responsive Navbar*/
+
+/*Fin Navbar Liquidity*/

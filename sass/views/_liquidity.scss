@@ -1,1 +1,82 @@
 @import "../misc/variables";
+.background__container__liquidity {
+    background-color: #FFFFE0;
+}
+
+.liquidity__pikachu {
+    width: 120px;
+    position: absolute  ;
+    left: 50%;
+    top: 130px;
+}
+.liquidity__pikachu__trader {
+    display: flex;
+    justify-content: end;
+    &__img {
+        width: 20%;
+    }
+    &__globo {
+        text-align: end;
+        &__img {
+            width: 20%;
+            margin-top: 4%;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.1;
+                transition: 0.2s;
+            }
+        }
+
+    }
+}
+
+
+.liquidity {
+    display: flex;
+    justify-content: center;
+    &__container {
+        border: $border-blanco solid 1px ;
+        background-color: white;
+        border-radius: 1.3rem;
+        width: 436px;
+        height: 273px;
+        margin-top: 144px;
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: $border-blanco solid 1px;
+            &__icon:hover {
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 0.3s;
+            }
+            &__h1 {
+                font-size: 2rem;
+            }
+        }
+        &__middle {
+            border-bottom: $border-blanco solid 1px;
+            padding: 1.5rem;
+            background-color: #e0e0ba9f;
+        }
+        &__bot {
+            text-align: center;
+            margin-top: 1.7rem;
+            &__btn {
+                width: 80%;
+                padding: 0.7rem;
+                border-radius: 1rem;
+                border: none;
+                background-color: $yellow;
+                color: white;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}   
