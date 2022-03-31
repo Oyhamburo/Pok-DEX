@@ -1,0 +1,15 @@
+.collection {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.collection__h1 {
+    @extend .collection;
+    background-color: orange;
+    font-weight: bold;
+}
+.collection__img {
+    @extend .collection;
+    padding: 1rem;
+}

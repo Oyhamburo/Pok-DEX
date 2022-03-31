@@ -11,62 +11,12 @@ $red:#dc3545;
 $green:#1ebd1e;
 $blue: #0dcaf0;
 
-
-
-
 .flex {
     display: flex;
-}
-.hover:hover {
-    cursor: pointer;
-    opacity: 0.7;
-    transition: 0.2s;
 }
 .bg-white{
     background-color: $background-blanco;
 }
-/*red*/
-.bg-red {
-    background-color: $red;
-}
-.red-b{
-    border-bottom: $red solid 3px !important;
-}
-.bg-red-ligth {
-    background-color: #faeded;
-}
-/*green*/
-.bg-green {
-    background-color: $green;
-}
-.green-b{
-    border-bottom: $green solid 3px !important;
-}
-.bg-green-ligth {
-    background-color: rgb(158, 250, 158);
-}
-/*yellow*/
-.bg-yellow {
-    background-color: $yellow;
-}
-.yellow-b{
-    border-bottom: $yellow solid 3px !important;
-}
-.bg-yellow-ligth {
-    background-color: #FFFFE0;
-}
-/*blue*/
-.bg-blue {
-    background-color: $blue;
-}
-.blue-b{
-    border-bottom: $blue solid 3px !important;
-}
-.bg-blue-ligth {
-    background-color: #d4effc;
-}
-
-
 
 /*Fuentes*/
 @font-face {

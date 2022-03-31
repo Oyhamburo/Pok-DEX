@@ -1,7 +1,12 @@
 
+/*Maps*/
 
-
-/*Mixin*/
+$colores2:(
+    blue: #d4effc,
+    red:#faeded,
+    green:#9efa9e,
+    yellow:#FFFFE0
+);
 
 $colores:(
     blue: #0dcaf0,
@@ -10,9 +15,32 @@ $colores:(
     yellow:#ffd700
 );
 
-@each $aceite, $queso in $colores {
+@each $aceite, $var-colores in $colores {
     .#{$aceite}{
-        color: $queso !important;
+        color: $var-colores !important;
     }
-    
+    .bg-#{$aceite}{
+        background-color: $var-colores ;
+    }
+    .#{$aceite}-b{
+        border-bottom: $var-colores solid 3px !important;
+    }   
+}
+
+@each $aceite-oliva, $var-colores2 in $colores2 {
+    .bg-#{$aceite-oliva}-ligth{
+        background-color: $var-colores2 ;
+    }
+}
+
+
+/*mixins*/
+
+@mixin var-hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+.hover:hover {
+    @include var-hover;
 }
