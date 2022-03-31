@@ -6,6 +6,7 @@ sitio:"Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Sm
 *PALABRAS CLAVE: mediante la etiqueta meta name keywords, agregue las siguiente palabras claves: 
   "DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT"
 
+*TITULO cambie la etiqueta  <title>Document</title>  <title>PokéDEX</title>
 En el exchange.html
 
 *ENCABEZADO: cambie el titulo de la pagina que se encontraba en <h3> (que utilice por su font-size default) por un <h1>
