@@ -783,14 +783,17 @@
   100% {
     opacity: 1; } }
 
+/*extend*/
 .collection, .collection__h1, .collection__img {
   width: 200px;
   height: 200px;
-  background-color: yellow; }
+  background-color: yellow;
+  margin-left: 700px; }
 
 .collection__h1 {
   background-color: orange;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 3rem; }
 
 .collection__img {
   padding: 1rem; }

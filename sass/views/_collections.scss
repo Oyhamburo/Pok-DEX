@@ -1,13 +1,18 @@
+/*extend*/
+
+
 .collection {
     width: 200px;
     height: 200px;
     background-color: yellow;
+    margin-left: 700px;
 }
 
 .collection__h1 {
     @extend .collection;
     background-color: orange;
     font-weight: bold;
+    font-size: 3rem;
 }
 .collection__img {
     @extend .collection;

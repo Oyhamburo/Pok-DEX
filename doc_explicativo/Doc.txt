@@ -1,0 +1,11 @@
+En los archivos .html sume el SEO con las siguientes caracteristicas:
+
+*DESCRIPCION: mediante la etiqueta meta name description, agregue el siguiente párrafo que explica en pocas palabras el contedido del
+sitio:"Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Smart Chain (BSC) trainers with the best DeFi farms."
+
+*PALABRAS CLAVE: mediante la etiqueta meta name keywords, agregue las siguiente palabras claves: 
+  "DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT"
+
+En el exchange.html
+
+*ENCABEZADO: cambie el titulo de la pagina que se encontraba en <h3> (que utilice por su font-size default) por un <h1>
