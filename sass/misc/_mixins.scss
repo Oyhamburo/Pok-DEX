@@ -1,0 +1,18 @@
+
+
+
+/*Mixin*/
+
+$colores:(
+    blue: #0dcaf0,
+    red:#dc3545,
+    green:#1ebd1e,
+    yellow:#ffd700
+);
+
+@each $aceite, $queso in $colores {
+    .#{$aceite}{
+        color: $queso !important;
+    }
+    
+}

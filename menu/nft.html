@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+        <title>Document</title>
+    </head>
+<body style="background-color: #f7f7f7;">
+    
+<article>
+    <div class="border__left border"></div>
+    <div class="border__right border"></div>
+    <img src="../img/ash.png" alt="" class="ash" id="ash-right">
+</article>
+
+<article class="recuadro" id="recuadro-left">
+    <div class="recuadro__opt">
+        <div>
+            <div>
+                <a href="" class="recuadro__opt__collections">Collections</a>
+            </div>
+            <div>
+                <a href="" class="recuadro__opt__lands">Lands</a>
+            </div>
+            <div>
+                <a href="" class="recuadro__opt__mint">Mint a NFT</a>
+            </div>
+        </div>
+    </div>
+</article>
+<button class="btn" onclick="mover()">
+    <div>   
+        <p id="demo"></p>
+    </div>
+</button>
+
+
+<article>
+
+    <audio src="../audio/audio.mp3"  loop id="myAudio"></audio>
+
+    <button class="audio" onclick="audio()" id="myBtn">
+        &#128264;
+    </button>
+</article>
+<script>
+    var i = 0;
+    var txt = 'Are you ready to catch your first NFT pokemon?';
+    var speed = 50;
+    var audios = document.getElementById("myAudio");
+    var btn = document.getElementById("myBtn");
+    
+    function mover() {
+        document.getElementById ("ash-right").classList.add ("class-ash-right");
+        document.getElementById ("recuadro-left").classList.add ("recuadro-click");
+        if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(mover, speed);
+      }
+    }
+    function audio() {
+      if (audios.paused) {
+        audios.play();
+        btn.innerHTML = "&#128266;";
+      } else {
+        myAudio.pause();
+        btn.innerHTML = "&#128264;";
+      }
+    }
+</script>
+<script>
+
+    </script>
+   
+    
+</body>
+</html>

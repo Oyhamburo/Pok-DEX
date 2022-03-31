@@ -1,3 +1,162 @@
+@import "../misc/variables";
 .background__container__pool {
-    background-color: #d4effc;
+    background-color: $background-blanco;
 }
+
+.pool__titulo {
+    display: flex;
+    justify-content: space-around;
+    &__left {
+        margin-top: 2rem;
+        & h1 {
+            font-size: 4rem;
+        }
+        & div {
+            font-size: 1.8rem;
+        }
+    }
+    &__img {
+        height: 240px;
+    }
+}
+.pool__container__flex{
+    display: flex;
+    justify-content: center;
+    .pool__container__grid {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 1rem;
+        &__item {
+            width: 320px;
+            height: 350px;
+            border: solid 1px $border-blanco;
+            border-radius: 1.5rem;
+            background-color: white;
+            color: rgb(3, 70, 109);
+            &__top {
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem;
+                align-items: center;
+                border-radius: 1.5rem 1.5rem 0 0;
+                &__h1 {
+                    font-size: 1.6rem;
+                    color: $blue;
+                }
+                &__ball {
+                    width: 32px;
+                    height: 32px;
+                    position: absolute;
+                    margin-left: 68px;
+                    margin-top: 3px;
+                    border: solid rgba(0, 0, 0, 0.25) 1px;
+                    border-radius: 50%;
+                }
+                &__img {
+                    width: 62px;
+                    height: 62px;
+                    border: solid rgba(0, 0, 0, 0.25) 1px;
+                    border-radius: 50%;
+                }       
+            }
+            &__middle {
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem;
+                &__p {
+                    display: flex;
+                    justify-items: center;
+                }
+                &__bot {
+                    padding: 0 1.5rem 1.5rem 1.5rem;
+                    border-bottom: $border-blanco solid 1px;
+                    &__text {
+                        font-size: 0.7rem;
+                        font-weight: 800;
+                    }
+                    &__btn {
+                        width: 100%;
+                        border-radius: 1rem;
+                        border: 0;
+                        color: white;
+                        padding: 0.7rem;
+                        font-size: 1.1rem;
+                        margin-top: 10px;
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.7;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+            &__bot {
+                justify-content: space-between;
+                padding: 1rem 1.5rem 0.5rem 1.5rem;
+                &__left {
+                    align-items: center;
+                    &__manual {
+                        border: 2px solid $blue;
+                        border-radius: 1rem;
+                        align-items: center;
+                        padding: 0.1rem;
+                        & div , span {
+                            font-size: 0.9rem;
+                            font-weight: bold;
+                            color: $blue;
+                            margin: 0px 5px 0px 5px;                            
+                        }
+                        & span {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                &rigth {
+                    display: flex;
+                }
+            }
+        }
+    }
+}    
+@media only screen and (max-width: 1024px){
+
+    .pool__container__grid {
+        grid-template-columns: auto auto !important;
+    }
+    .pool__container__top {
+        flex-direction: column;
+        &__left {
+            margin-bottom: 15px;
+        }
+    }
+    @media only screen and (max-width: 776px) {
+        .pool__container__grid {
+            grid-template-columns: auto  !important;
+        }
+        .pool__titulo {
+            &__left {
+                & h1 {
+                    font-size: 3rem !important;
+                }
+                & div {
+                    font-size: 1.3rem !important;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

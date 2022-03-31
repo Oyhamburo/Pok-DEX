@@ -1,3 +1,4 @@
+
 /*Generales*/
 $hover-blanco: #e1ebe48a;
 $background-blanco:#faf9fa;
@@ -5,21 +6,28 @@ $border-blanco:#e7e3eb;
 
 /*Variables para header*/
 
-$yellow:rgb(255, 215, 0);
+$yellow:#ffd700;
 $red:#dc3545; 
-$green:rgb(30, 189, 30);
+$green:#1ebd1e;
 $blue: #0dcaf0;
 
 
+
+
+.flex {
+    display: flex;
+}
+.hover:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
 .bg-white{
     background-color: $background-blanco;
 }
 /*red*/
 .bg-red {
     background-color: $red;
-}
-.red {
-    color: $red !important;
 }
 .red-b{
     border-bottom: $red solid 3px !important;
@@ -31,9 +39,6 @@ $blue: #0dcaf0;
 .bg-green {
     background-color: $green;
 }
-.green {
-    color: $green !important;
-}
 .green-b{
     border-bottom: $green solid 3px !important;
 }
@@ -43,9 +48,6 @@ $blue: #0dcaf0;
 /*yellow*/
 .bg-yellow {
     background-color: $yellow;
-}
-.yellow {
-    color: $yellow !important;
 }
 .yellow-b{
     border-bottom: $yellow solid 3px !important;
@@ -57,12 +59,24 @@ $blue: #0dcaf0;
 .bg-blue {
     background-color: $blue;
 }
-.blue {
-    color: $blue !important;
-}
 .blue-b{
     border-bottom: $blue solid 3px !important;
 }
 .bg-blue-ligth {
     background-color: #d4effc;
 }
+
+
+
+/*Fuentes*/
+@font-face {
+    font-family: pokemon;
+    src: url(../letras/ketchum.otf);
+}
+@font-face {
+    font-family: gameboy;
+    src: url(../letras/pokemon-classic.ttf);
+}
+
+
+
