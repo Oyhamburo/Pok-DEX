@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Smart Chain (BSC) trainers with the best DeFi farms.">
-    <meta name="keywords" content="DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
-    <title>PokéDEX</title>
-</head>
-<body class="background__container__liquidity"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Smart Chain (BSC) trainers with the best DeFi farms.">
+        <meta name="keywords" content="DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+        <title>PokéDEX</title>
+    </head>
+<body style="background-color: #f7f7f7;">
+
     <header>
         <nav class="header__nav" >
             <section class="nav bg-white">
                 <div class="nav__bar">
                     <div >
                         <a href="../Index.html" class="nav__bar__logo">
-                            <img src="../img/pokebola.png" alt="" class="nav__bar__logo__img">
+                            <img src="../img/pokebola.png" alt="Logo" class="nav__bar__logo__img">
                             <div class="nav__bar__logo__pokedex">PokéDEX</div>
                         </a>
                     </div>
                     <div class="nav__bar__trade nav__bar__trade__on " >
                         <div class="nav__bar__hover">
-                            <a href="./exchange.html" class="nav__bar__hover__link yellow ">Trade</a>
+                            <a href="./exchange.html" class="nav__bar__hover__link red ">Trade</a>
                         </div>
                         <div class="nav__bar__dropdown">
                             <div class="nav__bar__dropdown__div__top">
@@ -59,7 +60,7 @@
                 </div>
                 <div class="nav__bar">
                     <div class="language">
-                            <span class="material-icons-outlined nav__bar__language yellow">
+                            <span class="material-icons-outlined nav__bar__language red">
                             language
                             </span>
                        <div class="language__dropdown bg-white">
@@ -72,12 +73,12 @@
                        </div>
                     </div>
                     <div>
-                        <span class="material-icons-outlined nav__bar__settings yellow">
+                        <span class="material-icons-outlined nav__bar__settings red">
                             settings
                             </span>
                     </div>
                     <div class="nav__bar__wallet">
-                        <button onclick="document.getElementById('walle').style.display='block'" class="nav__bar__wallet__button bg-yellow">Connect Wallet</button>
+                        <button onclick="document.getElementById('walle').style.display='block'" class="nav__bar__wallet__button bg-red">Connect Wallet</button>
                     </div>
                 </div>
     
@@ -87,7 +88,7 @@
                                    <!--Navbar mobile-->
                 <article class="mobile">
                 <div class="nav__mobile bg-white">
-                    <a href="./exchange.html" class="nav__mobile__container yellow">
+                    <a href="./exchange.html" class="nav__mobile__container red">
                         <span class="material-icons-outlined">
                             currency_exchange
                             </span>
@@ -122,14 +123,14 @@
          </section>
      </header>
      <article class="subnav bg-white" style="margin-top: 0;">
-        <h2 class="subnav__h2" ><a href="./exchange.html" class="subnav__link   subnav__link__on ">Swap</a></h2>
-        <h2 class="subnav__h2"><a href="./liquidity.html" class="subnav__link yellow yellow-b">Liquidity</a></h2>
+        <h2 class="subnav__h2" ><a href="./exchange.html" class="subnav__link   subnav__link__on red red-b">Swap</a></h2>
+        <h2 class="subnav__h2"><a href="./liquidity.html" class="subnav__link">Liquidity</a></h2>
     </article>
-     <!--Wallet-->
+    <!--Wallet-->
      <section class="wallet" id="walle" >
         <article class="wallet__fondo">
-           <div class="wallet__container bg-yellow-ligth" >
-            <div class="wallet__encabezado bg-yellow">
+           <div class="wallet__container bg-red-ligth" >
+            <div class="wallet__encabezado bg-red">
                 <div class="wallet__encabezado__connect" >Connect Wallet</div>
                 <span class="material-icons-outlined wallet__encabezado__close" onclick="document.getElementById('walle').style.display='none'">
                     close
@@ -138,15 +139,15 @@
             <!--grid-->
             <div class="wallet__grid">
                 <div class="wallet__grid__item">
-                    <img src="../img/metamask.png" alt="" class="wallet__grid__item__img">
+                    <img src="../img/metamask.png" alt="wallet" class="wallet__grid__item__img">
                     <div class="wallet__grid__item__text">Metamask</div>
                 </div>
                 <div class="wallet__grid__item">
-                    <img src="../img/walletbnb.png" alt="" class="wallet__grid__item__img">
+                    <img src="../img/walletbnb.png" alt="wallet" class="wallet__grid__item__img">
                     <div class="wallet__grid__item__text">Binance Wallet</div>
                 </div>
                 <div class="wallet__grid__item">
-                    <img src="../img/coinbase.png" alt="" class="wallet__grid__item__img">
+                    <img src="../img/coinbase.png" alt="wallet" class="wallet__grid__item__img">
                     <div class="wallet__grid__item__text">Coinbase Wallet</div>
                 </div>
                 <div class="wallet__grid__item wallet__grid__item__more">
@@ -158,65 +159,34 @@
             </div>
             <div class="wallet__bot">
                 <div class="wallet__bot__text">Haven’t got a crypto wallet yet?</div>
-                <div class="wallet__bot__text"><button class="wallet__bot__button bg-yellow">Learn How to Connect</button></div>
+                <div class="wallet__bot__text"><button class="wallet__bot__button bg-red">Learn How to Connect</button></div>
             </div>
            </div>
         </article>
      </section>
-     <!--Pikachu img-->
-     <div>
-         <img src="../img/pikachu-golpeado.png" alt="" class="liquidity__pikachu">
-     </div>
-     <!--Liquidty-->
-     <section class="liquidity">
-        <article class="liquidity__container">
-            <div class="liquidity__container__top">
+     <section class="lands">  
+        <article>
+            <div>
+                <div>todas las collecciones</div>
+                <div>buscador</div>
+            </div>
+            <div>
+                <img src="../img/fondolands.jpg" alt="" class="lands__img">
+            </div>
+            <div>
+                <img src="" alt="" class="lands__gif">
+            </div>
+            <div>
                 <div>
-                      <!--Encabezado-->
-                    <h1 class="liquidity__container__top__h1">Your Liquidity</h1>
-                    <p class="liquidity__container__top__text">Remove liquidity to receive tokens back</p>
+                    <h1></h1>
+                    <p></p>
                 </div>
-                <div class="liquidity__container__top__icon">
-                    <span class="material-icons-outlined" style="margin-left: 20px;">
-                        settings
-                        </span>
+                <div >
+                    articulos
                 </div>
-                <div class="liquidity__container__top__icon">
-                    <span class="material-icons-outlined">
-                        restore
-                        </span>
-                </div>
-            </div>
-            <div class="liquidity__container__middle">
-                <p>Connect to a wallet to view your liquidity.</p>
-            </div>
-            <div class="liquidity__container__bot">
-                <button class="liquidity__container__bot__btn">+ Add Liquidity</button>
             </div>
         </article>
-     </section>
-     <div class="liquidity__pikachu__trader">
-         <a href="./info.html" class="liquidity__pikachu__trader__globo" >
-             <img src="../img/globo.png" alt="" class="liquidity__pikachu__trader__globo__img" >
-        </a>
-        <img src="../img/pikachu-r-gante.jpg" alt="" class="liquidity__pikachu__trader__img">
-    </div>
-    
-    <footer class="footer__none bg-yellow">    
-        <section class="footer">
-            <a href="../index.html" class="footer__a" >
-                <img src="../img/PokeDEX.png" alt="" class="footer__a__img" >
-            </a>
-            <div class="footer__strategic">
-                <h3 class="footer__strategic__text">Strategic Partner</h3>
-                <img src="../img/CoderHouse.png" alt=""  class="footer__strategic__img">
-            </div>
-            <div class="footer__social">
-                <h3 class="footer__social__text">Social</h3>
-                <div class="">
-                </div>
-            </div>
-        </section>
-    </footer>
+
+    </section>
 </body>
 </html>

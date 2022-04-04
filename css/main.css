@@ -798,6 +798,16 @@
 .collection__img {
   padding: 1rem; }
 
+.lands {
+  display: flex;
+  justify-content: center;
+  background-color: #d1c8c8; }
+  .lands__img {
+    border-radius: 2rem; }
+
+.jere {
+  width: 40%; }
+
 /*Partials*/
 /*Generales*/
 /*Variables para header*/
