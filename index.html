@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Smart Chain (BSC) trainers with the best DeFi farms.">
+    <meta name="keywords" content="DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <title>PokéDEX</title>
+</head>
+<body class="background__container__home">
+     <section >
+        <article class="home">
+            <img src="./img/gameboy.png" alt="" class="home__gameboy">
+        </article>
+        <article >
+            <div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                  <video src="./img/intro.mp4" muted autoplay loop class="screen"></video>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./img/mivecinogengar.jpg" class="screen">
+                  <div class="text">Trade Now<br>Press A</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="./img/animado.jpg" class="screen">
+                  <div class="text">Farms & Pool<br>Press B</div>
+                </div>
+                
+                <!-- Next y Prev para las botones del gameboy-->
+                <div>
+                    <a class="prev arrow" onclick="plusSlides(-1)">l</a>
+                    <a class="next arrow" onclick="plusSlides(1)">r</a>
+                    <a href="" class="enter arrow">c</a>
+                    <a href="" class="up arrow">u</a>
+                    <a href="" class="down arrow">d</a>
+                    <a href="./menu/exchange.html" class="button__ab button__ab__a">A</a>
+                    <a href="./menu/farm.html" class="button__ab button__ab__b">B</a>
+                    <div>
+                      <input type="button" value="»" id="play">
+                      <input type="button" value="■" id="pause">
+                  </div>
+                </div>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                    
+                </script>
+                   <script>
+                    window.onload=function(){
+                 
+                        // creamos el objeto audio
+                        var audioElement = document.createElement('audio');
+                 
+                        // indicamos el archivo de audio a cargar
+                        audioElement.setAttribute('src', './img/intro-solo-audio.mp3');
+                 
+                        // Si deseamos que una vez cargado empieze a sonar...
+                        //audioElement.setAttribute('autoplay', 'autoplay');
+                 
+                        document.getElementById("play").addEventListener("click", function() {
+                            // Si deseamos que inicie siempre desde el principio
+                            //audioElement.currentTime = 0;
+                 
+                            // iniciamos el audio
+                            audioElement.play();
+                        });
+                 
+                        document.getElementById("pause").addEventListener("click", function() {
+                            // hacemos pausa
+                            audioElement.pause();
+                        });
+                    };
+                    </script>
+                
+        </article>
+    </section>    
+        
+    
+        
+</html>
