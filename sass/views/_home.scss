@@ -1,9 +1,8 @@
-
-
 .background__container__home{
     background-image: url(../img/fondo-index-noche.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .home {
@@ -11,7 +10,10 @@
       left: 15.25%;
       top: 3%;
       position: absolute;
-        width: 69.5%;
+      width: 69.5%;
+    }
+    &__gameboy__color {
+      display: none;
     }
 }
 
@@ -176,4 +178,104 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+//mind width
+
+@media only screen and (max-width: 1024px){
+
+  .background__container__home{
+    background-image: none;
+    background-color: #652f8d;
+  }
+  .home {
+    &__gameboy {
+      display: none;
+    }
+    &__gameboy__color {
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .art {
+    top: 4%;
+    background-image: url(../img/gameboy-colo.png);
+    background-size: cover;
+    width: 500px;
+    height: 827px;
+  }
+  .button__ab {
+    border-radius: 50%;
+    padding: 1.5%;
+    position: absolute;
+    border: solid 1.5px black;
+    &__a {
+      top: 52%;
+      left: 76%;
+    }
+    &__b {
+      top: 62%;
+      left: 71%;
+    }
+  }
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    .screen {
+      width: 52.4%; 
+      height: 238px;
+      margin-top: 28.5%;
+      margin-left: 23%;
+      border-radius: 0.8rem;
+      border: solid black 3px;
+    }
+  }
+  .arrow {
+    left: 17% !important;
+    top: 69% !important;
+  }
+  .up {
+    top: 64.5% !important;
+    padding: 1.6% 2.9% !important;
+  }
+  .down {
+    padding: 1.6% 2.9% !important;
+    top: 73.5% !important;
+  }
+  .next {
+    padding: 1.6% 0.7% 0.6% 6% !important;
+    left: 24% !important;
+  }
+  .prev {
+    padding: 1.2% 3.2% !important;
+    left: 22%;
+    margin: 0px 0px 0px -36px;
+  }
+  .enter {
+    padding: 1.7% 3% !important;
+  }
+  .button__ab {
+    border-radius: 50%;
+    padding: 0.5% 4% !important;
+    font-size: 2.5rem;
+    &__a {
+      top: 64% !important;
+      left: 79% !important;
+    }
+    &__b {
+      top: 68.5% !important;
+      left: 63% !important;
+    }
+  }
+  #play {
+    left: 34.5% !important;
+    top: 83% !important;
+  }
+  #pause {
+    left: 51.5% !important;
+    top: 83% !important;
+  }
+  
 }

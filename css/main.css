@@ -493,13 +493,17 @@
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
 
 .home__gameboy {
   left: 15.25%;
   top: 3%;
   position: absolute;
   width: 69.5%; }
+
+.home__gameboy__color {
+  display: none; }
 
 /* codigo carrusel de w3school*/
 .mySlides {
@@ -641,6 +645,79 @@
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
     font-size: 11px; } }
+
+@media only screen and (max-width: 1024px) {
+  .background__container__home {
+    background-image: none;
+    background-color: #652f8d; }
+  .home__gameboy {
+    display: none; }
+  .home__gameboy__color {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
+  .art {
+    top: 4%;
+    background-image: url(../img/gameboy-colo.png);
+    background-size: cover;
+    width: 500px;
+    height: 827px; }
+  .button__ab {
+    border-radius: 50%;
+    padding: 1.5%;
+    position: absolute;
+    border: solid 1.5px black; }
+    .button__ab__a {
+      top: 52%;
+      left: 76%; }
+    .button__ab__b {
+      top: 62%;
+      left: 71%; }
+  .slideshow-container {
+    position: relative;
+    margin: auto; }
+    .slideshow-container .screen {
+      width: 52.4%;
+      height: 238px;
+      margin-top: 28.5%;
+      margin-left: 23%;
+      border-radius: 0.8rem;
+      border: solid black 3px; }
+  .arrow {
+    left: 17% !important;
+    top: 69% !important; }
+  .up {
+    top: 64.5% !important;
+    padding: 1.6% 2.9% !important; }
+  .down {
+    padding: 1.6% 2.9% !important;
+    top: 73.5% !important; }
+  .next {
+    padding: 1.6% 0.7% 0.6% 6% !important;
+    left: 24% !important; }
+  .prev {
+    padding: 1.2% 3.2% !important;
+    left: 22%;
+    margin: 0px 0px 0px -36px; }
+  .enter {
+    padding: 1.7% 3% !important; }
+  .button__ab {
+    border-radius: 50%;
+    padding: 0.5% 4% !important;
+    font-size: 2.5rem; }
+    .button__ab__a {
+      top: 64% !important;
+      left: 79% !important; }
+    .button__ab__b {
+      top: 68.5% !important;
+      left: 63% !important; }
+  #play {
+    left: 34.5% !important;
+    top: 83% !important; }
+  #pause {
+    left: 51.5% !important;
+    top: 83% !important; } }
 
 /* Bordes Negros */
 .border__left {
@@ -805,8 +882,50 @@
   .lands__img {
     border-radius: 2rem; }
 
-.jere {
-  width: 40%; }
+/*Generales*/
+/*Variables para header*/
+.flex {
+  display: flex; }
+
+.bg-white {
+  background-color: #faf9fa; }
+
+/*Fuentes*/
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+@font-face {
+  font-family: gameboy;
+  src: url(../letras/pokemon-classic.ttf); }
+
+.background__container__info {
+  background-image: url(../img/fondo-info.gif);
+  background-size: 80%;
+  background-repeat: repeat-y;
+  background-position: top; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2%; }
+  .info h1 {
+    font-family: pokemon;
+    font-size: 5rem; }
+  .info article {
+    background-color: #faf9fa23;
+    border: solid 1px #e7e3eb;
+    width: 90%; }
+    .info article h2 {
+      border-bottom: solid 1px #e7e3eb;
+      padding: 1rem;
+      font-size: 1.8rem;
+      font-family: gameboy; }
+    .info article p {
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-family: gameboy; }
 
 /*Partials*/
 /*Generales*/
@@ -885,9 +1004,8 @@
           transition: 0.3s;
           cursor: pointer; }
 
-body header nav div div {
-  margin-top: 2px;
-  margin-bottom: 2px; }
+.nav__bar__hover {
+  margin-top: 2px; }
 
 .nav__bar__dropdown {
   display: none;
@@ -1000,27 +1118,125 @@ body header nav div div {
 
 /*Fin responsive Navbar*/
 /*fin general*/
+/*Generales*/
+/*Variables para header*/
+.flex {
+  display: flex; }
+
+.bg-white {
+  background-color: #faf9fa; }
+
+/*Fuentes*/
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+@font-face {
+  font-family: gameboy;
+  src: url(../letras/pokemon-classic.ttf); }
+
+/*Maps*/
+.blue {
+  color: #0dcaf0 !important; }
+
+.bg-blue {
+  background-color: #0dcaf0; }
+
+.blue-b {
+  border-bottom: #0dcaf0 solid 3px !important; }
+
+.red {
+  color: #dc3545 !important; }
+
+.bg-red {
+  background-color: #dc3545; }
+
+.red-b {
+  border-bottom: #dc3545 solid 3px !important; }
+
+.green {
+  color: #1ebd1e !important; }
+
+.bg-green {
+  background-color: #1ebd1e; }
+
+.green-b {
+  border-bottom: #1ebd1e solid 3px !important; }
+
+.yellow {
+  color: #ffd700 !important; }
+
+.bg-yellow {
+  background-color: #ffd700; }
+
+.yellow-b {
+  border-bottom: #ffd700 solid 3px !important; }
+
+.bg-blue-ligth {
+  background-color: #d4effc; }
+
+.bg-red-ligth {
+  background-color: #faeded; }
+
+.bg-green-ligth {
+  background-color: #9efa9e; }
+
+.bg-yellow-ligth {
+  background-color: #FFFFE0; }
+
+/*mixins*/
+.hover:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s; }
+
 /*footer exchange*/
 .footer {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.144), rgba(255, 255, 255, 0));
+  padding: 2% 8%;
   display: flex;
-  justify-content: space-between;
-  padding: 3%;
+  justify-content: center;
+  flex-direction: column;
   align-items: center; }
-  .footer__a__img {
-    width: 250px; }
-  .footer__strategic {
+  .footer article {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 11%; }
-    .footer__strategic__img {
-      border-radius: 2rem;
-      width: 200px; }
-    .footer__strategic__text {
-      font-size: 1.6rem;
+    width: 80%;
+    justify-content: space-between; }
+    .footer article div ul {
+      list-style: none; }
+      .footer article div ul li a {
+        font-family: pokemon;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem; }
+        .footer article div ul li a:hover {
+          color: black; }
+      .footer article div ul li h2 {
+        font-family: pokemon;
+        font-size: 2rem !important;
+        margin-bottom: 10px; }
+  .footer__img {
+    width: 10%;
+    height: 40px; }
+    .footer__img__2 {
+      height: 64px;
+      border-radius: 1rem; }
+  .footer article div ul li h2 {
+    color: #420000;
+    font-size: 1.5rem; }
+  .footer__li {
+    text-align: center; }
+  .footer__social {
+    justify-content: flex-start !important; }
+    .footer__social div span:hover {
       color: white;
-      margin-bottom: 8%; }
+      cursor: pointer; }
+    .footer__social__img {
+      height: 1.6rem;
+      cursor: pointer; }
+
+.wp {
+  margin-left: 30px; }
 
 /*Generales*/
 /*Variables para header*/

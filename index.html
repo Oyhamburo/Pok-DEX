@@ -12,14 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <title>PokéDEX</title>
 </head>
-<body class="background__container__home">
-     <section >
+<body >
+     <section class="background__container__home">
         <article class="home">
             <img src="./img/gameboy.png" alt="" class="home__gameboy">
         </article>
-        <article >
-            <div class="slideshow-container">
-            
+        <article>
+            <div class="slideshow-container art">
                 <div class="mySlides fade">
                   <video src="./img/intro.mp4" muted autoplay loop class="screen"></video>
                 </div>
@@ -50,7 +49,6 @@
                 </div>
                 </div>
                 <br>
-                
                 <div style="text-align:center">
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
@@ -82,36 +80,35 @@
                     }
                     slides[slideIndex-1].style.display = "block";  
                     dots[slideIndex-1].className += " active";
-                    }
-                    
+                    } 
                 </script>
-                   <script>
+                <script>
                     window.onload=function(){
-                 
+                
                         // creamos el objeto audio
                         var audioElement = document.createElement('audio');
-                 
+                
                         // indicamos el archivo de audio a cargar
                         audioElement.setAttribute('src', './img/intro-solo-audio.mp3');
-                 
+                
                         // Si deseamos que una vez cargado empieze a sonar...
                         //audioElement.setAttribute('autoplay', 'autoplay');
-                 
+                
                         document.getElementById("play").addEventListener("click", function() {
                             // Si deseamos que inicie siempre desde el principio
                             //audioElement.currentTime = 0;
-                 
+                
                             // iniciamos el audio
                             audioElement.play();
                         });
-                 
+                
                         document.getElementById("pause").addEventListener("click", function() {
                             // hacemos pausa
                             audioElement.pause();
                         });
                     };
-                    </script>
-                
+                </script>
+            </div>
         </article>
     </section>    
         
