@@ -13,8 +13,340 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
         <title>PokéDEX</title>
     </head>
-<body>
-    <h1 class="collection__h1">Coming soon</h1>
-    <img class="collection__img" src="C:\Users\Jelee\Desktop\codigos\Proyecto0\img\pikachu-troll.png" alt="">
+<body style="background-color: #f7f7f7;">
+
+    <header>
+        <nav class="header__nav" >
+            <section class="nav bg-white">
+                <div class="nav__bar">
+                    <div >
+                        <a href="../index.html" class="nav__bar__logo">
+                            <img src="../img/pokebola.png" alt="Logo" class="nav__bar__logo__img">
+                            <div class="nav__bar__logo__pokedex">PokéDEX</div>
+                        </a>
+                    </div>
+                    <div class="nav__bar__trade nav__bar__trade__on " >
+                        <div class="nav__bar__hover">
+                            <a href="./exchange.html" class="nav__bar__hover__link ">Trade</a>
+                        </div>
+                        <div class="nav__bar__dropdown">
+                            <div class="nav__bar__dropdown__div__top">
+                                <a href="./exchange.html"  class="nav__bar__dropdown__link">Exchange</a>
+                            </div>
+                            <div class="nav__bar__dropdown__div__bot">
+                                <a href="./liquidity.html" class="nav__bar__dropdown__link">Liquidity</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__bar__trade nav__bar__trade__on " >
+                        <div class="nav__bar__hover">
+                            <a href="./farm.html" class="nav__bar__hover__link">Earn</a>
+                        </div>
+                        <div class="nav__bar__dropdown">
+                            <div class="nav__bar__dropdown__div__top">
+                                <a href="./farm.html"  class="nav__bar__dropdown__link">Farms</a>
+                            </div>
+                            <div class="nav__bar__dropdown__div__bot">
+                                <a href="./pool.html" class="nav__bar__dropdown__link">Pools</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__bar__nft">
+                        <div class="nav__bar__hover"><a href="./nft.html" style="text-decoration: none; color: black;" class="pink ">NFTs</a></div>
+                    </div>
+                    <div class="nav__bar__info"> 
+                        <div class="nav__bar__hover"><a href="./info.html" style="text-decoration: none; color: black;">info</a></div>
+                    </div>
+                </div>
+                <div class="nav__bar">
+                    <div class="language">
+                            <span class="material-icons-outlined nav__bar__language pink">
+                            language
+                            </span>
+                       <div class="language__dropdown bg-white">
+                           <div class="language__dropdown__text bg-white">English</div>
+                           <div class="language__dropdown__text bg-white">Español</div>
+                           <div class="language__dropdown__text bg-white">Deutsch</div>
+                           <div class="language__dropdown__text bg-white">Italiano</div>
+                           <div class="language__dropdown__text bg-white">Portugues</div>
+                           <div class="language__dropdown__text bg-white">Nederlands</div>
+                       </div>
+                    </div>
+                    <div>
+                        <span class="material-icons-outlined nav__bar__settings pink">
+                            settings
+                            </span>
+                    </div>
+                    <div class="nav__bar__wallet">
+                        <button onclick="document.getElementById('walle').style.display='block'" class="nav__bar__wallet__button bg-pink">Connect Wallet</button>
+                    </div>
+                </div>
+    
+            </section>
+         </nav>
+         <section class="header__nav__mobile">
+                                   <!--Navbar mobile-->
+                <article class="mobile">
+                <div class="nav__mobile bg-white">
+                    <a href="./exchange.html" class="nav__mobile__container ">
+                        <span class="material-icons-outlined">
+                            currency_exchange
+                            </span>
+                        <div class="nav__mobile__container__text">Trade</div>
+                    </a>
+                    <a href="./farm.html" class="nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            agriculture
+                            </span>
+                        <div class="nav__mobile__container__text">Farms</div>
+                    </a>
+                    <a href="./pool.html" class="nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            pool
+                            </span>
+                        <div class="nav__mobile__container__text">Pools</div>
+                    </a>
+                    <a href="./nft.html" class="nav__mobile__container">
+                        <span class="material-icons-outlined pink">
+                            catching_pokemon
+                            </span>
+                        <div class="nav__mobile__container__text pink">NFT</div>
+                    </a>
+                    <a href="./info.html" class="nav__mobile__container">
+                        <span class="material-icons-outlined">
+                            more_horiz
+                            </span>
+                        <div class="nav__mobile__container__text">Info</div>
+                    </a>
+                </div>
+                </article>
+         </section>
+        </header>
+
+        <article class="subnav bg-white" style="margin-top: 0;">
+        <h2 class="subnav__h2" ><a href="./collection.html" class="subnav__link   subnav__link__on pink pink-b ">Collection</a></h2>
+        <h2 class="subnav__h2"><a href="./lands.html" class="subnav__link ">Lands</a></h2>
+        <h2 class="subnav__h2"><a href="./mint.html" class="subnav__link">Mints</a></h2>
+        </article>
+        <!--Wallet-->
+
+        <section class="wallet" id="walle" >
+        <article class="wallet__fondo">
+           <div class="wallet__container bg-pink-ligth" >
+            <div class="wallet__encabezado bg-pink">
+                <div class="wallet__encabezado__connect" >Connect Wallet</div>
+                <span class="material-icons-outlined wallet__encabezado__close" onclick="document.getElementById('walle').style.display='none'">
+                    close
+                    </span>
+            </div>
+
+            <!--grid-->
+            <div class="wallet__grid">
+                <div class="wallet__grid__item">
+                    <img src="../img/metamask.png" alt="wallet" class="wallet__grid__item__img">
+                    <div class="wallet__grid__item__text">Metamask</div>
+                </div>
+                <div class="wallet__grid__item">
+                    <img src="../img/walletbnb.png" alt="wallet" class="wallet__grid__item__img">
+                    <div class="wallet__grid__item__text">Binance Wallet</div>
+                </div>
+                <div class="wallet__grid__item">
+                    <img src="../img/coinbase.png" alt="wallet" class="wallet__grid__item__img">
+                    <div class="wallet__grid__item__text">Coinbase Wallet</div>
+                </div>
+                <div class="wallet__grid__item wallet__grid__item__more">
+                    <span class="material-icons-outlined">
+                        more_horiz
+                    </span>
+                    
+                    <div class="wallet__grid__item__text wallet__grid__item__more__text">More</div>
+                </div>
+            </div>
+                <div class="wallet__bot">
+                    <div class="wallet__bot__text">Haven’t got a crypto wallet yet?</div>
+                    <div class="wallet__bot__text"><button class="wallet__bot__button bg-pink">Learn How to Connect</button></div>
+                </div>
+            </div>
+        </article> 
+        </section>
+        <section class="pool__titulo lands collection">           
+            <div>
+                <img src="../img/ash-pika.png" alt="" class="collection__mobile">
+            </div>
+            <div class="pool__titulo__left ">
+                <!--Encabezado-->
+             <h1 style="color: white;">Gotta Catch 'Em All</h1>
+          </div>
+        </section>
+    </br> 
+
+    <section class="land__section collection__section">
+        <article class="land__section__container  hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/color-collection.webp" alt="" >
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="land__section__container hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/color-collection.webp" alt="" >
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="land__section__container hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/butter.gif" alt="" >
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="land__section__container hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/original2.webp" alt="" class="butter-pink">
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="land__section__container hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/original.gif" alt="" class="butter-pink">
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="land__section__container hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/cubone.gif" alt="" class="butter-pink">
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="land__section__container hover" style="width: 100%;">
+            <div class="land__section__container__img">
+                <img src="../img/weedle.gif" alt="" class="butter-pink">
+            </div>
+            <div class="land__section__container__bot">
+                <h3>Titulo</h3>
+                <div class="land__section__container__bot__flex">
+                    <div>Asking price</div>
+                    <div class="flex" style="justify-content: end;">
+                        <img src="../img/squirtle.png" alt="" style="width: 20%;">
+                        <div>0.09$</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+       
+        
+    </section>
+
+
+
+
+
+
+
+
+    
+
+
+    <footer class=" bg-pink">    
+        <section class="footer">
+            <article>
+                <div>
+                    <ul>
+                        <li><h2>Menu</h2></li>
+                        <li><a href="./exchange.html">Exchange</a></li>
+                        <li><a href="./liquidity.html">Liquidity</a></li>
+                        <li><a href="./pool.html">Pools</a></li>
+                        <li><a href="./farm.html">Farms</a></li>
+                        <li><a href="./nft.html">NFT</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer__li">
+                        <li><h2>Strategic Partners</h2></li>
+                        <li><img src="../img/CoderHouse.png" alt="" class="footer__img__2"></li>
+                        <li><img src="../img/CoderHouse.png" alt="" class="footer__img__2"></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h2>Developers</h2></li>
+                        <li><a href="">Github</a></li>
+                        <li><a href="">Documentación</a></li>
+                        <li><a href="">Bug Bounty</a></li>
+                        <li><a href="">Audits</a></li>
+                    </ul>
+                </div>
+                <img src="../img/PokeDEX.png" alt="" class="footer__img">
+            </article>
+            <article class="footer__social">
+                <div>
+                    <span class="material-icons-outlined wp">
+                        whatsapp
+                    </span>
+                    <span class="material-icons-outlined">
+                        smartphone
+                    </span>
+                    <span class="material-icons-outlined">
+                        email
+                    </span>
+                    <img src="../img/logo-git-hub.png" alt="" class="footer__social__img">
+                </div>
+            </article>
+        </section>
+    </footer>
+
 </body>
 </html>

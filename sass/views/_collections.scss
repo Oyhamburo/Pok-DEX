@@ -1,20 +1,31 @@
-/*extend*/
-
-
-.collection {
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
-    margin-left: 700px;
+.collection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../img/fondo-index-noche2.jpg");
+    background-size: contain;
+    background-position: center;
+}
+.collection__section{
+    display: grid;
+    grid-template-areas: 'auto auto auto auto'!important;
 }
 
-.collection__h1 {
-    @extend .collection;
-    background-color: orange;
-    font-weight: bold;
-    font-size: 3rem;
-}
-.collection__img {
-    @extend .collection;
-    padding: 1rem;
+
+@media only screen and (max-width: 1024px){
+
+    .collection__section{
+        grid-template-areas: 'auto auto '!important;
+    }
+    .collection__mobile{
+        display: none;
+    }
+    .mint-img{
+        display: none;
+    }
+    @media only screen and (max-width: 1024px){ 
+        .collection__section{
+            grid-template-areas: 'auto ' !important;
+        }
+    }
 }

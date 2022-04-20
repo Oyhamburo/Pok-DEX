@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Smart Chain (BSC) trainers with the best DeFi farms.">
-    <meta name="keywords" content="DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <title>PokéDEX</title>
-</head>
-<body >
-     <section class="background__container__home">
+<html lang="en" class="background__container__home">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cheaper and faster than Uniswap? Discover PokéDEX, the DEX of the BNB Smart Chain (BSC) trainers with the best DeFi farms.">
+        <meta name="keywords" content="DEFI, DEX, EXCHANGE, CRIPTO, YIELD FARMING, POKEMON, NFT">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+        <title>PokéDEX</title>
+    </head>
+<body class="background__home ">
+    <nav class="header__nav header__nav__index" >
+        <section class="nav bg-white">
+            <div class="nav__bar nav__bar__mobile">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div >
+                    <a href="../index.html" class="nav__bar__logo">
+                        <img src="./img/pokebola.png" alt="Logo" class="nav__bar__logo__img">
+                    </a>
+                </div>
+            </div>
+            <div class="nav__bar">
+                <div class="language">
+                        <span class="material-icons-outlined nav__bar__language red">
+                        language
+                        </span>
+                   <div class="language__dropdown bg-white">
+                       <div class="language__dropdown__text bg-white">English</div>
+                       <div class="language__dropdown__text bg-white">Español</div>
+                       <div class="language__dropdown__text bg-white">Deutsch</div>
+                       <div class="language__dropdown__text bg-white">Italiano</div>
+                       <div class="language__dropdown__text bg-white">Portugues</div>
+                       <div class="language__dropdown__text bg-white">Nederlands</div>
+                   </div>
+                </div>
+                <div>
+                    <span class="material-icons-outlined nav__bar__settings red">
+                        settings
+                        </span>
+                </div>
+                <div class="nav__bar__wallet">
+                    <button onclick="document.getElementById('walle').style.display='block'" class="nav__bar__wallet__button bg-red">Connect Wallet</button>
+                </div>
+            </div>
+        </section>
+     </nav>
+     <section class="">
         <article class="home">
             <img src="./img/gameboy.png" alt="" class="home__gameboy">
         </article>
-        <article>
+        <article class="mobile__none">
             <div class="slideshow-container art">
                 <div class="mySlides fade">
                   <video src="./img/intro.mp4" muted autoplay loop class="screen"></video>
@@ -49,69 +89,199 @@
                 </div>
                 </div>
                 <br>
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>
-                <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-                    
-                    function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                    }
-                    
-                    function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                    }
-                    
-                    function showSlides(n) {
-                    let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    let dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) {slideIndex = 1}    
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";  
-                    dots[slideIndex-1].className += " active";
-                    } 
-                </script>
-                <script>
-                    window.onload=function(){
-                
-                        // creamos el objeto audio
-                        var audioElement = document.createElement('audio');
-                
-                        // indicamos el archivo de audio a cargar
-                        audioElement.setAttribute('src', './img/intro-solo-audio.mp3');
-                
-                        // Si deseamos que una vez cargado empieze a sonar...
-                        //audioElement.setAttribute('autoplay', 'autoplay');
-                
-                        document.getElementById("play").addEventListener("click", function() {
-                            // Si deseamos que inicie siempre desde el principio
-                            //audioElement.currentTime = 0;
-                
-                            // iniciamos el audio
-                            audioElement.play();
-                        });
-                
-                        document.getElementById("pause").addEventListener("click", function() {
-                            // hacemos pausa
-                            audioElement.pause();
-                        });
-                    };
-                </script>
+
             </div>
         </article>
-    </section>    
+    </section>
+    <!--Diseño mobile-->
+    <section class="header__nav__mobile">
+            <!--Navbar mobile-->
+        <article class="mobile">
+            <div class="nav__mobile bg-white">
+            <a href="./exchange.html" class="nav__mobile__container red">
+            <span class="material-icons-outlined">
+                currency_exchange
+                </span>
+            <div class="nav__mobile__container__text">Trade</div>
+            </a>
+            <a href="./farm.html" class="nav__mobile__container">
+            <span class="material-icons-outlined">
+                agriculture
+                </span>
+            <div class="nav__mobile__container__text">Farms</div>
+            </a>
+            <a href="./pool.html" class="nav__mobile__container">
+            <span class="material-icons-outlined">
+                pool
+                </span>
+            <div class="nav__mobile__container__text">Pools</div>
+            </a>
+            <a href="./nft.html" class="nav__mobile__container">
+            <span class="material-icons-outlined">
+                catching_pokemon
+                </span>
+            <div class="nav__mobile__container__text">NFT</div>
+            </a>
+            <a href="./info.html" class="nav__mobile__container">
+            <span class="material-icons-outlined">
+                more_horiz
+                </span>
+            <div class="nav__mobile__container__text">Info</div>
+            </a>
+            </div>
+        </article>
+    </section>
+    <!--Sidebar-->
+    <section class="sidebar__home" id="mySidebar">
+        <div class="sidebar__home__container">
+            <div class="sidebar__home__container__titulo flex">
+                <a href="../index.html" class="nav__bar__logo">
+                    <img src="./img/pokebola.png" alt="Logo" class="nav__bar__logo__img">
+                </a>
+                <h1>PokeDEX</h1>
+            </div>
+            <div class="sidebar__home__container__list">
+                <ul>
+                    <li style="border-left: 4px red solid;">
+                        <a href="./index.html">
+                            <span class="material-icons-outlined">
+                                home
+                        </span>
+                        <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./menu/exchange.html">
+                            <span class="material-icons-outlined">
+                                currency_exchange
+                            </span>
+                            <span>Exchange</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./menu/exchange.html">
+                            <span class="material-icons-outlined">
+                                paid
+                            </span>
+                            <span>Liquidity</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="material-icons-outlined">
+                                agriculture
+                            </span>
+                            <span>Farm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="material-icons-outlined">
+                                pool
+                            </span>
+                            <span>Pools</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./menu/nft.html">
+                            <span class="material-icons-outlined">
+                                catching_pokemon
+                            </span>
+                            <span>NFT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./menu/info.html">
+                            <span class="material-icons-outlined">
+                                info
+                            </span>
+                            <span>Info</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__home__container__social">
+                <span class="material-icons-outlined">
+                    whatsapp
+                </span>
+                <span class="material-icons-outlined">
+                    smartphone
+                </span>
+                <span class="material-icons-outlined">
+                    email
+                </span>
+                <img src="./img/logo-git-hub.png" alt="" style="height: 2.5rem;">
+            </div>
+        </div>
+    </section>
+    <!--Script Sidebar-->
+    <script>
+        var btn = document.getElementById("mySidebar");
+        function myFunction(x) {
+            x.classList.toggle("change");
+            if (btn.style.display === 'block') {
+                btn.style.display = 'none';
+            } else {
+                btn.style.display = 'block';
+            }
+        }
+    </script>
+    <!-- script Carrusel-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
         
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        } 
+    </script>
+    <!-- script audio-->
+    <script>
+        window.onload=function(){
+    
+            // creamos el objeto audio
+            var audioElement = document.createElement('audio');
+    
+            // indicamos el archivo de audio a cargar
+            audioElement.setAttribute('src', './img/intro-solo-audio.mp3');
+    
+            // Si deseamos que una vez cargado empieze a sonar...
+            //audioElement.setAttribute('autoplay', 'autoplay');
+    
+            document.getElementById("play").addEventListener("click", function() {
+                // Si deseamos que inicie siempre desde el principio
+                //audioElement.currentTime = 0;
+    
+                // iniciamos el audio
+                audioElement.play();
+            });
+    
+            document.getElementById("pause").addEventListener("click", function() {
+                // hacemos pausa
+                audioElement.pause();
+            });
+        };
+    </script>
     
         
 </html>

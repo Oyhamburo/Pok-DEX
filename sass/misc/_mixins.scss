@@ -5,6 +5,7 @@ $colores2:(
     blue: #d4effc,
     red:#faeded,
     green:#9efa9e,
+    pink: #fdd8f9,
     yellow:#FFFFE0
 );
 
@@ -12,7 +13,8 @@ $colores:(
     blue: #0dcaf0,
     red:#dc3545,
     green:#1ebd1e,
-    yellow:#ffd700
+    yellow:#ffd700,
+    pink: #ff83f0
 );
 
 @each $aceite, $var-colores in $colores {

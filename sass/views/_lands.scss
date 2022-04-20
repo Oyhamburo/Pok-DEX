@@ -1,10 +1,45 @@
-.lands {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(209, 200, 200);
-    &__img {
-        border-radius: 2rem;
+@import "../misc/variables";
+.lands{
+    padding: 3rem 0rem;
+}
+.land__section{
+    display: grid;
+    grid-template-areas: 'auto auto';
+    gap: 3rem;
+    padding: 2rem;
+    &__container{
+        border-radius: 1rem;
+        background-color: white;
+        border: solid $border-blanco 1px;
+        &__img{
+            padding: 1rem;
+        }
+        & div img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+        &__bot {
+            padding:  0rem 1rem 1rem 1rem;
+            &__flex{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 1.5rem;
+                border-top: solid $border-blanco 1px;
+                padding-top: 0.2rem;
+            }
+        }
     }
-
 }
 
+@media only screen and (max-width: 1024px){
+
+    .land__section{
+        grid-template-areas: 'auto';
+    }
+    .land__mobile{
+        margin-bottom: 7rem;
+    }
+    
+
+}

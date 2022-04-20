@@ -80,3 +80,25 @@
         }
     }
 }   
+@media only screen and (max-width: 776px) {
+
+    .liquidity__pikachu__trader {
+        margin-bottom: 4rem;
+        &__img {
+            width: 51%;
+        }
+        &__globo {
+            text-align: end;
+            &__img {
+                width: 100%;
+                margin-top: 4%;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.1;
+                    transition: 0.2s;
+                }
+            }
+    
+        }
+    }
+}

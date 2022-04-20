@@ -31,3 +31,38 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px){
+    .background__container__info{
+        background-image:none;
+        & img {
+            display: none;
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2%;
+        & h1 {
+            font-family: pokemon;
+            font-size: 3rem;
+        }
+        & article {
+            background-color: #faf9fa23;
+            border: solid 1px #e7e3eb;
+            width: auto;
+            & h2 {
+                border-bottom: solid 1px #e7e3eb;
+                padding: 1rem;
+                font-size: 1rem;
+                font-family: gameboy;
+            }
+            & p {
+                padding: 1rem;
+                font-size: 0.8rem;
+                font-family: gameboy;
+            }
+        }
+}
+}

@@ -150,3 +150,44 @@
     100%  { opacity: 1; }
 }
 
+@media only screen and (max-width: 1024px){
+    .recuadro {
+        width: 51%;
+        height: 50%;
+        left: 0%;
+        &__opt {
+            width: 100%;
+            & div div a {
+                font-size: 2rem;
+            }
+        }
+    }
+    .border{
+        display: none;
+    }
+    
+    .btn {
+        left: 0%;
+        bottom: 0%;
+        width: 100%;
+    }
+    @media only screen and (max-width: 767px){
+        .btn {
+            & p {
+                font-size: 1rem;
+            }
+        }
+        .recuadro {
+            width: 51%;
+            height: 50%;
+            left: 0%;
+            &__opt {
+                width: 100%;
+                & div div a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+  }

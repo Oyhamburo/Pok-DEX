@@ -3,7 +3,6 @@
 /*general*/
 
 .nav {
-    
     display: flex;
     border-bottom: $border-blanco solid 1px;
     justify-content: space-between;
@@ -198,9 +197,6 @@
         .mobile {
             display: block;
         }
-        .footer__none {
-            display: none;
-        }
         .help {
             justify-content: center;
             &__img {
@@ -223,3 +219,166 @@
 
 
 
+//Boton Menu para mobile
+
+.container {
+display: inline-block;
+cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: $red;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+.close{
+    font-size: 4rem;
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+.sidebar__home{
+    display: none;
+    position: absolute;
+    height: 92vh;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 100%;
+    animation-name: sidebar;
+    animation-duration: 0.5s;  
+    animation-fill-mode: both;
+    &__container{
+        background-color: $background-blanco;
+        width: 0%;
+        animation-name: sidebar-container;
+        animation-duration: 0.5s;  
+        animation-fill-mode: both;
+        height: 92vh;
+        &__titulo{
+            align-items: center;
+            justify-content: center;
+            & h1{
+                font-size: 2rem;
+                font-family: pokemon;
+            }
+        }
+        &__list{
+            display: flex;
+            height: 71vh;
+            & ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                & li {
+                    & a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        & span{
+                            font-size: 1.6rem;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        &__social{
+            display: flex;
+            justify-content: space-evenly;
+            border-top: 1px solid $border-blanco;
+            padding-top: 10px;
+            & span{
+                font-size: 1.5rem;
+                color: white;
+                background-color: black;
+                padding: 0.5rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+@keyframes sidebar {
+0%   { opacity: 0; }
+100%  { opacity: 1; }
+}
+@keyframes sidebar-container {
+    0%   { width: 0%; }
+    100%  { width: 65%; }
+}
+
+
+//sidebar para corregir erro de fixed
+.sidebar{
+    display: none;
+    position: fixed;
+    top: 0%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 100%;
+    animation-name: sidebar;
+    animation-duration: 0.5s;  
+    animation-fill-mode: both;
+    &__container{
+        background-color: $background-blanco;
+        width: 0%;
+        animation-name: sidebar-container;
+        animation-duration: 0.5s;  
+        animation-fill-mode: both;
+        height: 100vh;
+        &__titulo{
+            align-items: center;
+            justify-content: center;
+            & h1{
+                font-size: 2rem;
+                font-family: pokemon;
+            }
+        }
+        &__list{
+            display: flex;
+            height: 71vh;
+            & ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                & li {
+                    & a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        & span{
+                            font-size: 1.6rem;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        &__social{
+            display: flex;
+            justify-content: space-evenly;
+            border-top: 1px solid $border-blanco;
+            padding-top: 10px;
+            & span{
+                font-size: 1.5rem;
+                color: white;
+                background-color: black;
+                padding: 0.5rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
