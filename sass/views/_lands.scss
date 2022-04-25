@@ -11,6 +11,9 @@
         border-radius: 1rem;
         background-color: white;
         border: solid $border-blanco 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &__img{
             padding: 1rem;
         }

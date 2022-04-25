@@ -5,10 +5,12 @@
     background-image: url("../img/fondo-index-noche2.jpg");
     background-size: contain;
     background-position: center;
+    
 }
 .collection__section{
     display: grid;
     grid-template-areas: 'auto auto auto auto'!important;
+    margin-bottom: 4rem;
 }
 
 

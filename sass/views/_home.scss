@@ -1,6 +1,6 @@
 .background__container__home{
     background-image: url(../img/fondo-index-noche.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 }
 
@@ -312,6 +312,7 @@
         font-family: pokemon;
         font-size: 3rem;
         padding: 1rem;
+        color: $red;
       }
       & h2 {
         font-size: 1.5rem;
@@ -330,13 +331,15 @@
       background-color: $red;
       color: white;
       border: none;
+      font-size: 1.5rem;
     }
     .btn__2{
       padding: 1rem;
       margin: 1rem;
-      background-color: none;
-      border: solid 1px $red;
+      background-color: #faeded;
+      border: solid 3px $red;
       border-radius: 1.5rem;
+      font-size: 1.5rem;
     }
     .background__home{
       background-color: #faeded;

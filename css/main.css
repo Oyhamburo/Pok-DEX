@@ -16,6 +16,9 @@
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
 
+.black {
+  color: black; }
+
 .background__container__pool {
   background-color: #faf9fa; }
 
@@ -147,6 +150,9 @@
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
 
+.black {
+  color: black; }
+
 .background__container__liquidity {
   background-color: #FFFFE0; }
 
@@ -243,6 +249,9 @@
 @font-face {
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 .background__container__exchange {
   background-color: #faeded; }
@@ -511,7 +520,7 @@
 
 .background__container__home {
   background-image: url(../img/fondo-index-noche.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover; }
 
 .home__gameboy {
@@ -768,7 +777,8 @@
   .mobile__index h1 {
     font-family: pokemon;
     font-size: 3rem;
-    padding: 1rem; }
+    padding: 1rem;
+    color: #dc3545; }
   .mobile__index h2 {
     font-size: 1.5rem;
     padding: 1rem; }
@@ -781,13 +791,15 @@
     border-radius: 1.5rem;
     background-color: #dc3545;
     color: white;
-    border: none; }
+    border: none;
+    font-size: 1.5rem; }
   .btn__2 {
     padding: 1rem;
     margin: 1rem;
-    background-color: none;
-    border: solid 1px #dc3545;
-    border-radius: 1.5rem; }
+    background-color: #faeded;
+    border: solid 3px #dc3545;
+    border-radius: 1.5rem;
+    font-size: 1.5rem; }
   .background__home {
     background-color: #faeded; } }
 
@@ -970,7 +982,8 @@
 
 .collection__section {
   display: grid;
-  grid-template-areas: "auto auto auto auto" !important; }
+  grid-template-areas: "auto auto auto auto" !important;
+  margin-bottom: 4rem; }
 
 @media only screen and (max-width: 1024px) {
   .collection__section {
@@ -1001,6 +1014,9 @@
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
 
+.black {
+  color: black; }
+
 .lands {
   padding: 3rem 0rem; }
 
@@ -1012,7 +1028,10 @@
   .land__section__container {
     border-radius: 1rem;
     background-color: white;
-    border: solid #e7e3eb 1px; }
+    border: solid #e7e3eb 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     .land__section__container__img {
       padding: 1rem; }
     .land__section__container div img {
@@ -1050,6 +1069,9 @@
 @font-face {
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 .background__container__info {
   background-image: url(../img/fondo-info.gif);
@@ -1106,6 +1128,9 @@
         font-size: 0.8rem;
         font-family: gameboy; } }
 
+html {
+  scroll-behavior: smooth; }
+
 /*Partials*/
 /*Generales*/
 /*Variables para header*/
@@ -1123,6 +1148,9 @@
 @font-face {
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 /*general*/
 .nav {
@@ -1280,7 +1308,7 @@
 
 @media only screen and (max-width: 1024px) and (max-width: 767px) {
   .nav__bar__info, .nav__bar__trade, .nav__bar__nft {
-    display: block; }
+    display: none; }
   .mobile {
     display: block; }
   .help {
@@ -1325,7 +1353,7 @@
 .sidebar__home {
   display: none;
   position: absolute;
-  height: 92vh;
+  height: 94vh;
   background-color: rgba(0, 0, 0, 0.158);
   width: 100%;
   animation-name: sidebar;
@@ -1383,55 +1411,25 @@
   100% {
     width: 65%; } }
 
-.sidebar {
-  display: none;
-  position: absolute;
-  top: 0%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.158);
-  width: 100%;
-  animation-name: sidebar;
-  animation-duration: 0.5s;
-  animation-fill-mode: both; }
-  .sidebar__container {
-    background-color: #faf9fa;
-    width: 0%;
-    animation-name: sidebar-container;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    height: 100vh; }
-    .sidebar__container__titulo {
-      align-items: center;
-      justify-content: center; }
-      .sidebar__container__titulo h1 {
-        font-size: 2rem;
-        font-family: pokemon; }
-    .sidebar__container__list {
-      display: flex;
-      height: 71vh; }
-      .sidebar__container__list ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; }
-        .sidebar__container__list ul li a {
-          display: flex;
-          align-items: center;
-          text-decoration: none; }
-          .sidebar__container__list ul li a span {
-            font-size: 1.6rem;
-            color: black; }
-    .sidebar__container__social {
-      display: flex;
-      justify-content: space-evenly;
-      border-top: 1px solid #e7e3eb;
-      padding-top: 10px; }
-      .sidebar__container__social span {
-        font-size: 1.5rem;
-        color: white;
-        background-color: black;
-        padding: 0.5rem;
-        border-radius: 50%; }
+/*Generales*/
+/*Variables para header*/
+.flex {
+  display: flex; }
+
+.bg-white {
+  background-color: #faf9fa; }
+
+/*Fuentes*/
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+@font-face {
+  font-family: gameboy;
+  src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 /*Generales*/
 /*Variables para header*/
@@ -1449,6 +1447,9 @@
 @font-face {
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 /*Maps*/
 .blue {
@@ -1549,7 +1550,7 @@
       height: 64px;
       border-radius: 1rem; }
   .footer article div ul li h2 {
-    color: #420000;
+    color: #000000;
     font-size: 1.5rem; }
   .footer__li {
     text-align: center; }
@@ -1561,6 +1562,8 @@
     .footer__social__img {
       height: 1.6rem;
       cursor: pointer; }
+    .footer__social div a {
+      text-decoration: none; }
 
 .wp {
   margin-left: 30px; }
@@ -1585,6 +1588,9 @@
 @font-face {
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 /* Wallet exchange*/
 .wallet {
@@ -1658,7 +1664,8 @@
 /*Misc*/
 * {
   font-family: 'Kanit', sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 0px; }
 
 /*Generales*/
 /*Variables para header*/
@@ -1676,6 +1683,29 @@
 @font-face {
   font-family: gameboy;
   src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
+
+/*Generales*/
+/*Variables para header*/
+.flex {
+  display: flex; }
+
+.bg-white {
+  background-color: #faf9fa; }
+
+/*Fuentes*/
+@font-face {
+  font-family: pokemon;
+  src: url(../letras/ketchum.otf); }
+
+@font-face {
+  font-family: gameboy;
+  src: url(../letras/pokemon-classic.ttf); }
+
+.black {
+  color: black; }
 
 /*Maps*/
 .blue {
@@ -1743,6 +1773,3 @@
   cursor: pointer;
   opacity: 0.7;
   transition: 0.2s; }
-
-* {
-  margin: 0px; }

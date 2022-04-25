@@ -1,4 +1,4 @@
-
+@import "../misc/variables";
 /*Maps*/
 
 $colores2:(
@@ -10,10 +10,10 @@ $colores2:(
 );
 
 $colores:(
-    blue: #0dcaf0,
-    red:#dc3545,
-    green:#1ebd1e,
-    yellow:#ffd700,
+    blue: $blue,
+    red:$red,
+    green:$green,
+    yellow:$yellow,
     pink: #ff83f0
 );
 

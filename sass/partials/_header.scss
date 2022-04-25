@@ -192,7 +192,7 @@
     @media only screen and (max-width: 767px) {
 
         .nav__bar__info , .nav__bar__trade , .nav__bar__nft{
-            display: block;
+            display: none;
         }
         .mobile {
             display: block;
@@ -253,7 +253,7 @@ transform: rotate(45deg) translate(-8px, -8px);
 .sidebar__home{
     display: none;
     position: absolute;
-    height: 92vh;
+    height: 94vh;
     background-color: rgba(0, 0, 0, 0.158);
     width: 100%;
     animation-name: sidebar;
@@ -320,65 +320,3 @@ transform: rotate(45deg) translate(-8px, -8px);
 }
 
 
-//sidebar para corregir erro de fixed
-.sidebar{
-    display: none;
-    position: absolute;
-    top: 0%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.158);
-    width: 100%;
-    animation-name: sidebar;
-    animation-duration: 0.5s;  
-    animation-fill-mode: both;
-    &__container{
-        background-color: $background-blanco;
-        width: 0%;
-        animation-name: sidebar-container;
-        animation-duration: 0.5s;  
-        animation-fill-mode: both;
-        height: 100vh;
-        &__titulo{
-            align-items: center;
-            justify-content: center;
-            & h1{
-                font-size: 2rem;
-                font-family: pokemon;
-            }
-        }
-        &__list{
-            display: flex;
-            height: 71vh;
-            & ul {
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                & li {
-                    & a {
-                        display: flex;
-                        align-items: center;
-                        text-decoration: none;
-                        & span{
-                            font-size: 1.6rem;
-                            color: black;
-                        }
-                    }
-                }
-            }
-        }
-        &__social{
-            display: flex;
-            justify-content: space-evenly;
-            border-top: 1px solid $border-blanco;
-            padding-top: 10px;
-            & span{
-                font-size: 1.5rem;
-                color: white;
-                background-color: black;
-                padding: 0.5rem;
-                border-radius: 50%;
-            }
-        }
-    }
-}
